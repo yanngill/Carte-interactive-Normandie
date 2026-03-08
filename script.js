@@ -686,35 +686,6 @@ POINTS.forEach((point) => {
   marker.addTo(categoryLayers[point.category]);
 });
 
-/* =========================================================
-   ACTIVATION ET CORRECTION DES CARROUSELS
-========================================================= */
-  }
-
-  images.forEach((img) => {
-    if (img.complete) {
-      loadedCount += 1;
-      if (loadedCount === images.length) {
-        initGliderNow();
-      }
-    } else {
-      img.addEventListener("load", () => {
-        loadedCount += 1;
-        if (loadedCount === images.length) {
-          initGliderNow();
-        }
-      }, { once: true });
-
-      img.addEventListener("error", () => {
-        loadedCount += 1;
-        if (loadedCount === images.length) {
-          initGliderNow();
-        }
-      }, { once: true });
-    }
-  });
-});
-
 function updateCategoryVisibility() {
   Object.keys(CATEGORIES).forEach((categoryKey) => {
     const layer = categoryLayers[categoryKey];

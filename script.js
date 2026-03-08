@@ -460,11 +460,12 @@ updateBigLabelsVisibility();
    GÉOLOCALISATION UTILISATEUR
 ========================================================= */
 
-const helmetIcon = L.icon({
-  iconUrl: svgToDataUri(HELMET_ICON_SVG),
-  iconSize: [34, 34],
-  iconAnchor: [17, 17],
-  popupAnchor: [0, -14]
+const helmetIcon = L.divIcon({
+  className: "user-location-icon",
+  html: "🪖",
+  iconSize: [30, 30],
+  iconAnchor: [15, 15],
+  popupAnchor: [0, -15]
 });
 
 let userMarker = null;

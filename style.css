@@ -25,17 +25,27 @@ body {
 }
 
 .sidebar {
-  width: 340px;
-  min-width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  
+  width: 300px;
+  max-height: 80vh;
+
   background: #ffffff;
-  border-right: 1px solid #d1d5db;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+
   z-index: 1200;
   overflow-y: auto;
-  transition: transform 0.25s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .sidebar-header h1 {

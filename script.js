@@ -353,6 +353,7 @@ const hideAllBtn = document.getElementById("hideAllBtn");
 const legendSidebar = document.getElementById("legendSidebar");
 const openLegendBtn = document.getElementById("openLegendBtn");
 const closeLegendBtn = document.getElementById("closeLegendBtn");
+const legendToggleWrap = document.getElementById("legendToggleWrap");
 
 function buildLegend() {
   legendList.innerHTML = "";
@@ -397,26 +398,28 @@ function updateLegendUI() {
 
 function openLegend() {
   legendSidebar.classList.add("open");
+  legendToggleWrap.classList.add("hidden");
 }
 
 function closeLegend() {
   legendSidebar.classList.remove("open");
+  legendToggleWrap.classList.remove("hidden");
 }
 
 openLegendBtn.addEventListener("click", openLegend);
 closeLegendBtn.addEventListener("click", closeLegend);
-
 showAllBtn.addEventListener("click", showAllCategories);
 hideAllBtn.addEventListener("click", hideAllCategories);
 
 map.on("click", () => {
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth <= 900 && legendSidebar.classList.contains("open")) {
     closeLegend();
   }
 });
 
 buildLegend();
 updateCategoryVisibility();
+closeLegend();
 
 /* =========================================================
    GRANDS LABELS

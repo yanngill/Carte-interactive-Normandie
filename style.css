@@ -78,7 +78,7 @@ body {
 .legend-sidebar {
   position: absolute;
   left: 20px;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 300px;
   max-height: 75vh;

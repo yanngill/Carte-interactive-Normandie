@@ -58,6 +58,7 @@ const POINTS = [
       "https://upload.wikimedia.org/wikipedia/commons/5/59/Pointe_du_Hoc_2014_01.JPG",
     oldPhoto: "",
     video: "",
+    website: "",
     googleMapsLink: "https://www.google.com/maps?q=49.3908,-0.9886"
   },
   {
@@ -71,6 +72,7 @@ const POINTS = [
     oldPhoto:
       "https://upload.wikimedia.org/wikipedia/commons/4/4f/Sainte-Mere-Eglise_1944.jpg",
     video: "",
+    website: "",
     googleMapsLink: "https://www.google.com/maps?q=49.4085,-1.3174"
   },
   {
@@ -84,6 +86,7 @@ const POINTS = [
       "https://upload.wikimedia.org/wikipedia/commons/2/2d/Carentan_les_marais.jpg",
     oldPhoto: "",
     video: "",
+    website: "",
     googleMapsLink: "https://www.google.com/maps?q=49.3032,-1.2469"
   },
   {
@@ -97,129 +100,139 @@ const POINTS = [
       "https://upload.wikimedia.org/wikipedia/commons/1/18/Normandy_American_Cemetery.jpg",
     oldPhoto: "",
     video: "",
+    website: "",
     googleMapsLink: "https://www.google.com/maps?q=49.3592,-0.8584"
   },
 
-   /* =========================================================
-   MUSÉES DU DÉBARQUEMENT AMÉRICAIN
-========================================================= */
+  /* =========================================================
+     MUSÉES DU DÉBARQUEMENT AMÉRICAIN
+  ========================================================= */
 
-{
-  title: "Airborne Museum",
-  category: "museum",
-  lat: 49.4101,
-  lng: -1.3177,
-  description:
-    "Grand musée consacré aux parachutistes américains des 82e et 101e divisions aéroportées. Plusieurs pavillons présentent avions, planeurs, équipements et objets authentiques. Site officiel : https://airborne-museum.org",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.4101,-1.3177"
-},
+  {
+    title: "Airborne Museum",
+    category: "museum",
+    lat: 49.4101,
+    lng: -1.3177,
+    description:
+      "Grand musée consacré aux parachutistes américains des 82e et 101e divisions aéroportées. Plusieurs pavillons présentent avions, planeurs, équipements et objets authentiques.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://airborne-museum.org",
+    googleMapsLink: "https://www.google.com/maps?q=49.4101,-1.3177"
+  },
 
-{
-  title: "Utah Beach Landing Museum",
-  category: "museum",
-  lat: 49.4185,
-  lng: -1.1704,
-  description:
-    "Musée situé directement sur Utah Beach, à l’endroit même où les troupes américaines ont débarqué le 6 juin 1944. La visite retrace toute l’opération militaire et la libération du secteur. Site officiel : https://utah-beach.com",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.4185,-1.1704"
-},
+  {
+    title: "Utah Beach Landing Museum",
+    category: "museum",
+    lat: 49.4185,
+    lng: -1.1704,
+    description:
+      "Musée situé directement sur Utah Beach, à l’endroit même où les troupes américaines ont débarqué le 6 juin 1944. La visite retrace toute l’opération militaire et la libération du secteur.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://utah-beach.com",
+    googleMapsLink: "https://www.google.com/maps?q=49.4185,-1.1704"
+  },
 
-{
-  title: "D-Day Experience – Dead Man's Corner",
-  category: "museum",
-  lat: 49.3388,
-  lng: -1.2586,
-  description:
-    "Musée installé à Dead Man's Corner, lieu stratégique des combats entre parachutistes américains et forces allemandes. Le site propose plusieurs espaces d’exposition et une expérience immersive autour des opérations aéroportées. Site officiel : https://dday-experience.com",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3388,-1.2586"
-},
+  {
+    title: "D-Day Experience – Dead Man's Corner",
+    category: "museum",
+    lat: 49.3388,
+    lng: -1.2586,
+    description:
+      "Musée installé à Dead Man's Corner, lieu stratégique des combats entre parachutistes américains et forces allemandes. Le site propose plusieurs espaces d’exposition et une expérience immersive autour des opérations aéroportées.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://dday-experience.com",
+    googleMapsLink: "https://www.google.com/maps?q=49.3388,-1.2586"
+  },
 
-{
-  title: "Normandy Victory Museum",
-  category: "museum",
-  lat: 49.3160,
-  lng: -1.2109,
-  description:
-    "Musée consacré à la bataille de Normandie et aux combats dans le bocage après le Débarquement. De nombreuses scènes reconstituées et objets authentiques permettent de comprendre la progression des troupes américaines. Site officiel : https://normandy-victory-museum.fr",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3160,-1.2109"
-},
+  {
+    title: "Normandy Victory Museum",
+    category: "museum",
+    lat: 49.3160,
+    lng: -1.2109,
+    description:
+      "Musée consacré à la bataille de Normandie et aux combats dans le bocage après le Débarquement. De nombreuses scènes reconstituées et objets authentiques permettent de comprendre la progression des troupes américaines.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://normandy-victory-museum.fr",
+    googleMapsLink: "https://www.google.com/maps?q=49.3160,-1.2109"
+  },
 
-{
-  title: "World War II Museum",
-  category: "museum",
-  lat: 49.5146,
-  lng: -1.4640,
-  description:
-    "Musée original qui reconstitue une rue normande sous l’Occupation. La visite montre la vie quotidienne des civils entre 1940 et 1944 avec objets authentiques et scènes reconstituées. Site officiel : https://worldwar2-museum.com",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.5146,-1.4640"
-},
+  {
+    title: "World War II Museum",
+    category: "museum",
+    lat: 49.5146,
+    lng: -1.4640,
+    description:
+      "Musée original qui reconstitue une rue normande sous l’Occupation. La visite montre la vie quotidienne des civils entre 1940 et 1944 avec objets authentiques et scènes reconstituées.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://worldwar2-museum.com",
+    googleMapsLink: "https://www.google.com/maps?q=49.5146,-1.4640"
+  },
 
-{
-  title: "Musée Mémorial d’Omaha Beach",
-  category: "museum",
-  lat: 49.3632,
-  lng: -0.8815,
-  description:
-    "Musée situé à proximité immédiate d’Omaha Beach. Il présente une collection importante d’armes, d’uniformes et d’objets liés aux combats du 6 juin 1944. Site officiel : https://www.musee-memorial-omaha.fr",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3632,-0.8815"
-},
+  {
+    title: "Musée Mémorial d’Omaha Beach",
+    category: "museum",
+    lat: 49.3632,
+    lng: -0.8815,
+    description:
+      "Musée situé à proximité immédiate d’Omaha Beach. Il présente une collection importante d’armes, d’uniformes et d’objets liés aux combats du 6 juin 1944.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.musee-memorial-omaha.fr",
+    googleMapsLink: "https://www.google.com/maps?q=49.3632,-0.8815"
+  },
 
-{
-  title: "Overlord Museum",
-  category: "museum",
-  lat: 49.3662,
-  lng: -0.8865,
-  description:
-    "L’un des grands musées consacrés au Débarquement en Normandie. Il présente une collection exceptionnelle de véhicules, chars et objets militaires utilisés pendant la bataille de Normandie. Site officiel : https://www.overlordmuseum.com",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3662,-0.8865"
-},
+  {
+    title: "Overlord Museum",
+    category: "museum",
+    lat: 49.3662,
+    lng: -0.8865,
+    description:
+      "L’un des grands musées consacrés au Débarquement en Normandie. Il présente une collection exceptionnelle de véhicules, chars et objets militaires utilisés pendant la bataille de Normandie.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.overlordmuseum.com",
+    googleMapsLink: "https://www.google.com/maps?q=49.3662,-0.8865"
+  },
 
-{
-  title: "D-Day Omaha Museum",
-  category: "museum",
-  lat: 49.3748,
-  lng: -0.9066,
-  description:
-    "Musée situé à Vierville-sur-Mer dans le secteur d’Omaha Beach. Il présente de nombreux objets retrouvés sur le champ de bataille et permet de mieux comprendre les combats du débarquement. Site officiel : https://www.dday-omaha.fr",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3748,-0.9066"
-},
+  {
+    title: "D-Day Omaha Museum",
+    category: "museum",
+    lat: 49.3748,
+    lng: -0.9066,
+    description:
+      "Musée situé à Vierville-sur-Mer dans le secteur d’Omaha Beach. Il présente de nombreux objets retrouvés sur le champ de bataille et permet de mieux comprendre les combats du débarquement.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.dday-omaha.fr",
+    googleMapsLink: "https://www.google.com/maps?q=49.3748,-0.9066"
+  },
 
-{
-  title: "Visitor Center – Normandy American Cemetery",
-  category: "museum",
-  lat: 49.3599,
-  lng: -0.8836,
-  description:
-    "Centre d’interprétation du cimetière américain de Colleville-sur-Mer. Il présente une exposition sur les soldats américains tombés pendant la bataille de Normandie. L’accès est gratuit. Site officiel : https://www.abmc.gov",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  googleMapsLink: "https://www.google.com/maps?q=49.3599,-0.8836"
-},
+  {
+    title: "Visitor Center – Normandy American Cemetery",
+    category: "museum",
+    lat: 49.3599,
+    lng: -0.8836,
+    description:
+      "Centre d’interprétation du cimetière américain de Colleville-sur-Mer. Il présente une exposition sur les soldats américains tombés pendant la bataille de Normandie. L’accès est gratuit.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.abmc.gov",
+    googleMapsLink: "https://www.google.com/maps?q=49.3599,-0.8836"
+  }
 ];
 
 const BIG_LABELS = [
@@ -296,9 +309,15 @@ function buildPopupContent(point) {
     ${buildVideoBlock(point.video)}
   `.trim();
 
+  const websiteButton = isSafeUrl(point.website)
+    ? `<a class="popup-btn" href="${point.website}" target="_blank" rel="noopener noreferrer">Site officiel</a>`
+    : "";
+
   const mapsButton = isSafeUrl(point.googleMapsLink)
     ? `<a class="popup-btn" href="${point.googleMapsLink}" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps</a>`
     : "";
+
+  const buttonsHtml = [websiteButton, mapsButton].filter(Boolean).join("");
 
   return `
     <div class="popup-content">
@@ -308,7 +327,7 @@ function buildPopupContent(point) {
       </span>
       <p class="popup-description">${escapeHtml(point.description)}</p>
       ${mediaHtml ? `<div class="popup-media">${mediaHtml}</div>` : ""}
-      ${mapsButton}
+      ${buttonsHtml}
     </div>
   `;
 }

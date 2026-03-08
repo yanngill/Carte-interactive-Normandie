@@ -399,7 +399,6 @@ function buildImageBlock(label, url, altText) {
   if (!isSafeUrl(url)) return "";
   return `
     <div>
-      <div class="popup-label">${escapeHtml(label)}</div>
       <img src="${url}" alt="${escapeHtml(altText)}" loading="lazy">
     </div>
   `;

@@ -684,6 +684,10 @@ POINTS.forEach((point) => {
   marker.addTo(categoryLayers[point.category]);
 });
 
+/* =========================================================
+   ACTIVATION ET CORRECTION DES CARROUSELS
+========================================================= */
+
 map.on("popupopen", function (e) {
   const popupElement = e.popup.getElement();
   if (!popupElement) return;
@@ -691,62 +695,92 @@ map.on("popupopen", function (e) {
   const gliderElement = popupElement.querySelector(".glider");
   if (!gliderElement) return;
 
-  const existingGlider = gliderElement._glider;
-  if (existingGlider) {
-    existingGlider.destroy();
+  if (gliderElement._glider) {
+    gliderElement._glider.destroy();
   }
 
-  const gliderInstance = new Glider(gliderElement, {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    scrollLock: true,
-    exactWidth: false,
-    duration: 0.35,
-    resizeLock: false,
-    dots: popupElement.querySelector(".dots"),
-    arrows: {
-      prev: popupElement.querySelector(".glider-prev"),
-      next: popupElement.querySelector(".glider-next")
-    }
-  });
+  const images = gliderElement.querySelectorAll("img");
+  if (!images.length) return;
 
-  setTimeout(() => {
-    if (gliderElement._glider) {
-      gliderElement._glider.refresh(true);
-    }
-  }, 50);
+  let loadedCount = 0;
 
-  const safeId = gliderElement.id.replace("glider-", "");
-  const point = POINTS.find((p) => {
-    const pointId = p.carouselId || p.title.replace(/\s+/g, "-").toLowerCase();
-    return pointId === safeId;
-  });
+  function initGliderNow() {
+    new Glider(gliderElement, {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      scrollLock: true,
+      exactWidth: false,
+      duration: 0.35,
+      resizeLock: false,
+      itemWidth: undefined,
+      dots: popupElement.querySelector(".dots"),
+      arrows: {
+        prev: popupElement.querySelector(".glider-prev"),
+        next: popupElement.querySelector(".glider-next")
+      }
+    });
 
-  if (!point) return;
+    setTimeout(() => {
+      if (gliderElement._glider) {
+        gliderElement._glider.refresh(true);
+      }
+    }, 80);
 
-  const titleTarget = popupElement.querySelector(`#carousel-title-${safeId}`);
-  const descTarget = popupElement.querySelector(`#carousel-description-${safeId}`);
+    const safeId = gliderElement.id.replace("glider-", "");
+    const point = POINTS.find((p) => {
+      const pointId = p.carouselId || p.title.replace(/\s+/g, "-").toLowerCase();
+      return pointId === safeId;
+    });
 
-  if (!titleTarget && !descTarget) return;
+    if (!point) return;
 
-  gliderElement.addEventListener("glider-slide-visible", function (event) {
-    const slideIndex = event.detail.slide;
+    const titleTarget = popupElement.querySelector(`#carousel-title-${safeId}`);
+    const descTarget = popupElement.querySelector(`#carousel-description-${safeId}`);
 
-    if (
-      titleTarget &&
-      Array.isArray(point.carouselTitle) &&
-      point.carouselTitle[slideIndex]
-    ) {
-      titleTarget.innerText = point.carouselTitle[slideIndex];
-    }
+    if (!titleTarget && !descTarget) return;
 
-    if (
-      descTarget &&
-      Array.isArray(point.carouselDescription) &&
-      point.carouselDescription[slideIndex]
-    ) {
-      descTarget.innerText = point.carouselDescription[slideIndex];
+    gliderElement.addEventListener("glider-slide-visible", function (event) {
+      const slideIndex = event.detail.slide;
+
+      if (
+        titleTarget &&
+        Array.isArray(point.carouselTitle) &&
+        point.carouselTitle[slideIndex]
+      ) {
+        titleTarget.innerText = point.carouselTitle[slideIndex];
+      }
+
+      if (
+        descTarget &&
+        Array.isArray(point.carouselDescription) &&
+        point.carouselDescription[slideIndex]
+      ) {
+        descTarget.innerText = point.carouselDescription[slideIndex];
+      }
+    });
+  }
+
+  images.forEach((img) => {
+    if (img.complete) {
+      loadedCount += 1;
+      if (loadedCount === images.length) {
+        initGliderNow();
+      }
+    } else {
+      img.addEventListener("load", () => {
+        loadedCount += 1;
+        if (loadedCount === images.length) {
+          initGliderNow();
+        }
+      }, { once: true });
+
+      img.addEventListener("error", () => {
+        loadedCount += 1;
+        if (loadedCount === images.length) {
+          initGliderNow();
+        }
+      }, { once: true });
     }
   });
 });

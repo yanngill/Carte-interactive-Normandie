@@ -589,3 +589,53 @@ body {
 .dots .glider-dot.active {
   background: #111111;
 }
+/* =========================================================
+   CORRECTION DÉBORDEMENT CARROUSEL
+========================================================= */
+
+.leaflet-popup-content {
+  margin: 14px 16px;
+}
+
+.leaflet-popup-content-wrapper {
+  overflow: hidden;
+}
+
+.popup-content {
+  width: 280px;
+  max-width: 280px;
+  overflow: hidden;
+}
+
+.popup-media {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.glider-contain {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.glider {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.glider-track {
+  align-items: stretch;
+}
+
+.glider-slide {
+  min-width: 100%;
+}
+
+.glider img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

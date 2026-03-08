@@ -689,78 +689,6 @@ POINTS.forEach((point) => {
 /* =========================================================
    ACTIVATION ET CORRECTION DES CARROUSELS
 ========================================================= */
-
-map.on("popupopen", function (e) {
-  const popupElement = e.popup.getElement();
-  if (!popupElement) return;
-
-  const gliderElement = popupElement.querySelector(".glider");
-  if (!gliderElement) return;
-
-  if (gliderElement._glider) {
-    gliderElement._glider.destroy();
-  }
-
-  const images = gliderElement.querySelectorAll("img");
-  if (!images.length) return;
-
-  let loadedCount = 0;
-
-  function initGliderNow() {
-    new Glider(gliderElement, {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      draggable: true,
-      scrollLock: true,
-      exactWidth: false,
-      duration: 0.35,
-      resizeLock: false,
-      itemWidth: undefined,
-      dots: popupElement.querySelector(".dots"),
-      arrows: {
-        prev: popupElement.querySelector(".glider-prev"),
-        next: popupElement.querySelector(".glider-next")
-      }
-    });
-
-    setTimeout(() => {
-      if (gliderElement._glider) {
-        gliderElement._glider.refresh(true);
-      }
-    }, 80);
-
-    const safeId = gliderElement.id.replace("glider-", "");
-    const point = POINTS.find((p) => {
-      const pointId = p.carouselId || p.title.replace(/\s+/g, "-").toLowerCase();
-      return pointId === safeId;
-    });
-
-    if (!point) return;
-
-    const titleTarget = popupElement.querySelector(`#carousel-title-${safeId}`);
-    const descTarget = popupElement.querySelector(`#carousel-description-${safeId}`);
-
-    if (!titleTarget && !descTarget) return;
-
-    gliderElement.addEventListener("glider-slide-visible", function (event) {
-      const slideIndex = event.detail.slide;
-
-      if (
-        titleTarget &&
-        Array.isArray(point.carouselTitle) &&
-        point.carouselTitle[slideIndex]
-      ) {
-        titleTarget.innerText = point.carouselTitle[slideIndex];
-      }
-
-      if (
-        descTarget &&
-        Array.isArray(point.carouselDescription) &&
-        point.carouselDescription[slideIndex]
-      ) {
-        descTarget.innerText = point.carouselDescription[slideIndex];
-      }
-    });
   }
 
   images.forEach((img) => {
@@ -1071,3 +999,27 @@ const RecenterControl = L.Control.extend({
 });
 
 map.addControl(new RecenterControl());
+/* =========================================================
+   ACTIVATION SIMPLE DES CARROUSELS
+========================================================= */
+
+map.on("popupopen", function(e) {
+
+  const gliderElement = e.popup.getElement().querySelector(".glider");
+
+  if (gliderElement) {
+
+    new Glider(gliderElement, {
+      slidesToShow: 1,
+      draggable: true,
+      scrollLock: true,
+      dots: e.popup.getElement().querySelector(".dots"),
+      arrows: {
+        prev: e.popup.getElement().querySelector(".glider-prev"),
+        next: e.popup.getElement().querySelector(".glider-next")
+      }
+    });
+
+  }
+
+});

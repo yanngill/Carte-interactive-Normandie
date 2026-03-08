@@ -8,11 +8,17 @@
   />
   <title>Carte interactive du Débarquement américain en Normandie</title>
 
+  <!-- ===================== FEUILLES DE STYLE EXTERNES ===================== -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
   />
 
   <link rel="stylesheet" href="style.css" />
@@ -22,22 +28,22 @@
     <main class="map-wrapper">
       <!-- Bouton d’ouverture de la légende -->
       <div class="legend-toggle-wrap" id="legendToggleWrap">
-  <button id="openLegendBtn" type="button" class="legend-toggle-btn">
-    Légende
-  </button>
-</div>
+        <button id="openLegendBtn" type="button" class="legend-toggle-btn">
+          Légende
+        </button>
+      </div>
 
       <!-- Panneau de légende -->
       <aside class="legend-sidebar" id="legendSidebar" aria-label="Légende et filtres">
-  <div class="legend-header-row">
-    <div class="legend-header">
-  <h1>Carte interactive sur le débarquement américains en Normandie</h1>
-</div>
+        <div class="legend-header-row">
+          <div class="legend-header">
+            <h1>Carte interactive sur le débarquement américains en Normandie</h1>
+          </div>
 
-    <button id="closeLegendBtn" type="button" class="legend-close-btn" aria-label="Fermer la légende">
-      ✕
-    </button>
-  </div>
+          <button id="closeLegendBtn" type="button" class="legend-close-btn" aria-label="Fermer la légende">
+            ✕
+          </button>
+        </div>
 
         <div class="legend-actions">
           <button id="showAllBtn" type="button" class="control-btn compact-btn">
@@ -49,46 +55,45 @@
         </div>
 
         <div class="legend-panel" id="legendPanel">
-  <ul class="legend-list" id="legendList"></ul>
-</div>
+          <ul class="legend-list" id="legendList"></ul>
+        </div>
 
         <div class="legend-footer">
+          <div class="legend-feedback">
+            <p><strong>Questionnaire</strong></p>
 
-  <div class="legend-feedback">
+            <p>
+              Cette enquête anonyme permet d’en savoir plus sur votre profil et votre utilisation de cette carte.
+            </p>
 
-  <p><strong>Questionnaire</strong></p>
+            <a 
+              href="https://forms.gle/RuzkziYvnyVzNZ1s6"
+              target="_blank"
+              class="feedback-btn"
+            >
+              Accéder au sondage 🪖
+            </a>
+          </div>
 
-  <p>
-    Cette enquête anonyme permet d’en savoir plus sur votre profil et votre utilisation de cette carte.
-  </p>
-
-  <a 
-    href="https://forms.gle/RuzkziYvnyVzNZ1s6"
-    target="_blank"
-    class="feedback-btn"
-  >
-    Accéder au sondage 🪖
-  </a>
-
-</div>
-
-  <p class="legend-credits">
-    Carte réalisée avec Leaflet, GitHub, OpenStreetMap, HTML, CSS et JavaScript,
-    dans le cadre de l’épreuve GIT du BTS Tourisme 2024-2026 – Yann;
-  </p>
-
-</div>
+          <p class="legend-credits">
+            Carte réalisée avec Leaflet, GitHub, OpenStreetMap, HTML, CSS et JavaScript,
+            dans le cadre de l’épreuve GIT du BTS Tourisme 2024-2026 – Yann;
+          </p>
+        </div>
       </aside>
 
       <div id="map" aria-label="Carte interactive"></div>
     </main>
   </div>
 
+  <!-- ===================== SCRIPTS EXTERNES ===================== -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
   <script src="script.js"></script>
 </body>

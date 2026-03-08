@@ -35,15 +35,10 @@ const CATEGORIES = {
     key: "Orange"
   },
   museum: {
-    label: "Musée / site visitable",
-    color: "#2e7d32",
-    key: "Vert"
-  },
-  testimony: {
-    label: "Témoignage / vidéo / audio",
-    color: "#6a1b9a",
-    key: "Violet"
-  },
+  label: "Musée",
+  color: "#6a1b9a",
+  key: "Violet"
+},
   practical: {
     label: "Point pratique / logistique",
     color: "#1565c0",
@@ -92,31 +87,6 @@ const POINTS = [
     googleMapsLink: "https://www.google.com/maps?q=49.3032,-1.2469"
   },
   {
-    title: "Utah Beach Landing Museum",
-    category: "museum",
-    lat: 49.4184,
-    lng: -1.1702,
-    description:
-      "Musée incontournable pour comprendre le débarquement américain à Utah Beach. Parfait pour un point de visite touristique.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Utah_Beach_Museum.jpg",
-    oldPhoto: "",
-    video: "",
-    googleMapsLink: "https://www.google.com/maps?q=49.4184,-1.1702"
-  },
-  {
-    title: "Omaha Beach – Témoignage / vidéo",
-    category: "testimony",
-    lat: 49.3677,
-    lng: -0.8797,
-    description:
-      "Exemple de point destiné à intégrer un témoignage, une capsule vidéo ou un audio explicatif sur Omaha Beach.",
-    image: "",
-    oldPhoto: "",
-    video: "https://www.youtube.com/embed/0oQ8z1mAFmI",
-    googleMapsLink: "https://www.google.com/maps?q=49.3677,-0.8797"
-  },
-  {
     title: "Parking du cimetière américain de Colleville-sur-Mer",
     category: "practical",
     lat: 49.3592,
@@ -128,7 +98,124 @@ const POINTS = [
     oldPhoto: "",
     video: "",
     googleMapsLink: "https://www.google.com/maps?q=49.3592,-0.8584"
-  }
+  },
+
+   /* =========================================================
+     MUSÉES DU DÉBARQUEMENT AMÉRICAIN
+  ========================================================= */
+     {
+    title: "Airborne Museum",
+    category: "museum",
+    lat: 49.4098,
+    lng: -1.3175,
+    description:
+      "Grand musée consacré aux parachutistes américains des 82e et 101e divisions aéroportées. On y découvre avions, planeurs, objets authentiques et une immersion très réussie dans la nuit du 6 juin 1944 autour de Sainte-Mère-Église.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Airborne_Museum_Sainte-Mere-Eglise.jpg/1280px-Airborne_Museum_Sainte-Mere-Eglise.jpg",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.4098,-1.3175"
+  },
+  {
+    title: "Utah Beach Museum",
+    category: "museum",
+    lat: 49.4184,
+    lng: -1.1702,
+    description:
+      "Musée installé directement sur Utah Beach, à l’endroit même du débarquement américain. La visite permet de mieux comprendre l’assaut du 6 juin 1944 avec véhicules, objets, films et un véritable bombardier B-26 Marauder exposé sur le site.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/0/03/Utah_Beach_Museum.jpg",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.4184,-1.1702"
+  },
+  {
+    title: "D-Day Experience",
+    category: "museum",
+    lat: 49.3389,
+    lng: -1.2587,
+    description:
+      "Musée situé près de Dead Man’s Corner, un lieu stratégique des combats autour de Carentan. Il propose plusieurs espaces d’exposition et surtout une expérience immersive autour d’un vol en C-47, ce qui en fait un lieu très pédagogique.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dead_Man%27s_Corner_Museum.jpg/1280px-Dead_Man%27s_Corner_Museum.jpg",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3389,-1.2587"
+  },
+  {
+    title: "Normandy Victory Museum",
+    category: "museum",
+    lat: 49.3152,
+    lng: -1.2117,
+    description:
+      "Musée très intéressant consacré à l’après-débarquement et à la bataille des haies. On y trouve de grandes scènes reconstituées, du matériel authentique et une bonne mise en contexte sur la progression américaine dans le bocage normand.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3152,-1.2117"
+  },
+  {
+    title: "World War II Museum",
+    category: "museum",
+    lat: 49.5145,
+    lng: -1.4638,
+    description:
+      "Musée original qui reconstitue une rue normande sous l’Occupation. On y découvre la vie quotidienne des civils entre 1940 et 1944, avec vitrines, véhicules, objets authentiques et scènes de rue très immersives.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.5145,-1.4638"
+  },
+  {
+    title: "Musée Mémorial d’Omaha Beach",
+    category: "museum",
+    lat: 49.3630,
+    lng: -0.8814,
+    description:
+      "Musée situé à proximité immédiate d’Omaha Beach. Il présente une collection importante d’armes, d’uniformes, d’objets personnels, de véhicules et de documents permettant de mieux comprendre la violence des combats sur ce secteur.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3630,-0.8814"
+  },
+  {
+    title: "Overlord Museum",
+    category: "museum",
+    lat: 49.3660,
+    lng: -0.8862,
+    description:
+      "L’un des grands musées du Débarquement en Normandie, situé près du cimetière américain. On y découvre une collection très riche avec chars, canons, véhicules, objets authentiques et scènes reconstituées à grande échelle.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Overlord_Museum_Colleville-sur-Mer.jpg/1280px-Overlord_Museum_Colleville-sur-Mer.jpg",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3660,-0.8862"
+  },
+  {
+    title: "D-Day Omaha Museum",
+    category: "museum",
+    lat: 49.3747,
+    lng: -0.9065,
+    description:
+      "Petit musée situé dans le secteur d’Omaha Beach, à Vierville-sur-Mer. Il présente une collection d’objets retrouvés sur le terrain, des équipements, des documents et plusieurs éléments qui donnent une approche concrète du débarquement.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3747,-0.9065"
+  },
+  {
+    title: "Visitor Center du cimetière américain",
+    category: "museum",
+    lat: 49.3599,
+    lng: -0.8836,
+    description:
+      "Centre de visite du cimetière américain de Colleville-sur-Mer. On y trouve une exposition et un espace d’interprétation permettant de mieux comprendre le sacrifice des soldats américains pendant la bataille de Normandie. L’entrée est gratuite.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Normandy_American_Cemetery.jpg",
+    oldPhoto: "",
+    video: "",
+    googleMapsLink: "https://www.google.com/maps?q=49.3599,-0.8836"
+  },
 ];
 
 const BIG_LABELS = [

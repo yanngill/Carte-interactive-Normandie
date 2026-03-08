@@ -8,7 +8,6 @@
   />
   <title>Carte interactive du Débarquement américain en Normandie</title>
 
-  <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,70 +15,68 @@
     crossorigin=""
   />
 
-  <!-- Ton CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app">
-    <aside class="sidebar" id="sidebar" aria-label="Légende et filtres">
-      <div class="sidebar-header">
-        <h1>Débarquement américain</h1>
-        <p>Carte interactive historique et touristique</p>
-      </div>
-
-      <div class="sidebar-actions">
-        <button id="toggleLegendBtn" type="button" class="control-btn">
-          Masquer la légende
-        </button>
-        <button id="showAllBtn" type="button" class="control-btn">
-          Tout afficher
-        </button>
-        <button id="hideAllBtn" type="button" class="control-btn">
-          Tout masquer
-        </button>
-      </div>
-
-      <div class="legend-panel" id="legendPanel">
-        <h2>Catégories</h2>
-        <p class="legend-help">
-          Clique sur une catégorie pour l’activer ou la désactiver.
-          Double-clic sur une catégorie pour n’afficher qu’elle.
-        </p>
-
-        <ul class="legend-list" id="legendList"></ul>
-
-        <div class="legend-note">
-          <strong>Astuce :</strong> tu peux combiner plusieurs catégories à la fois.
-        </div>
-      </div>
-
-      <div class="sidebar-footer">
-        <p>
-          Fonds de carte : OpenStreetMap / Esri World Imagery<br />
-          Carte réalisée avec Leaflet.
-        </p>
-      </div>
-    </aside>
-
     <main class="map-wrapper">
-      <div class="top-mobile-bar">
-        <button id="mobileLegendBtn" type="button" class="control-btn mobile-only">
-          Filtres
+      <!-- Bouton d’ouverture de la légende -->
+      <div class="legend-toggle-wrap">
+        <button id="openLegendBtn" type="button" class="legend-toggle-btn">
+          Légende
         </button>
       </div>
+
+      <!-- Panneau de légende -->
+      <aside class="legend-sidebar" id="legendSidebar" aria-label="Légende et filtres">
+        <div class="legend-header-row">
+          <div class="legend-header">
+            <h1>Débarquement américain</h1>
+            <p>Carte interactive historique et touristique</p>
+          </div>
+
+          <button id="closeLegendBtn" type="button" class="legend-close-btn" aria-label="Fermer la légende">
+            ✕
+          </button>
+        </div>
+
+        <div class="legend-actions">
+          <button id="showAllBtn" type="button" class="control-btn compact-btn">
+            Tout afficher
+          </button>
+          <button id="hideAllBtn" type="button" class="control-btn compact-btn">
+            Tout masquer
+          </button>
+        </div>
+
+        <div class="legend-panel" id="legendPanel">
+          <h2>Catégories</h2>
+          <p class="legend-help">
+            Clique sur une catégorie pour l’activer ou la désactiver.
+            Double-clic sur une catégorie pour n’afficher qu’elle.
+          </p>
+
+          <ul class="legend-list" id="legendList"></ul>
+        </div>
+
+        <div class="legend-footer">
+          <p>
+            Fonds de carte : OpenStreetMap / Esri World Imagery<br />
+            Carte réalisée avec Leaflet.
+          </p>
+        </div>
+      </aside>
 
       <div id="map" aria-label="Carte interactive"></div>
     </main>
   </div>
 
-  <!-- Leaflet JS -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
 
-  <!-- Ton JS -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -46,6 +46,10 @@ body {
   z-index: 1300;
 }
 
+.legend-toggle-wrap.hidden {
+  display: none;
+}
+
 .legend-toggle-btn {
   border: 1px solid #cbd5e1;
   background: rgba(255, 255, 255, 0.96);
@@ -94,11 +98,39 @@ body {
   display: flex;
 }
 
+.legend-sidebar.open {
+  display: flex;
+}
+
 .legend-header-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
+}
+
+.legend-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #111827;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.legend-close-btn:hover {
+  background: #eef2f7;
+  border-color: #94a3b8;
 }
 
 .legend-header h1 {

@@ -408,3 +408,32 @@ body {
     font-size: 0.82rem;
   }
 }
+
+.legend-feedback {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.feedback-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 7px 12px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.feedback-btn:hover {
+  background: #1d4ed8;
+}
+
+.legend-credits {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

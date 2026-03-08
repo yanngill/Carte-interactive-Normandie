@@ -140,34 +140,6 @@ const POINTS = [
   },
 
   {
-    title: "Chez Jeanne – Sainte-Mère-Église",
-    category: "oldphoto",
-    lat: 49.408914,
-    lng: -1.317977,
-    description:
-      "Lieu emblématique du centre de Sainte-Mère-Église. Ce point permet d’illustrer à la fois la libération du bourg par les troupes américaines et, plus tard, le passage de la 2e DB.",
-    image: "",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives / War Documentary – Maxim Chornyi",
-    carouselId: "jeanne",
-    carouselTitle: [
-      "7 juin 1944 – Libération du bourg",
-      "Début août 1944 – Passage de la 2e DB"
-    ],
-    carouselDescription: [
-      "Des soldats américains de la 82e Airborne avancent dans les rues de Sainte-Mère-Église, au lendemain du Débarquement.",
-      "Un char léger M3 Stuart de la 2e Division Blindée traverse le bourg, arborant la croix de Lorraine."
-    ],
-    carouselImages: [
-      "https://imgur.com/L9wnNVX.jpg",
-      "https://imgur.com/NhRNtzs.jpg"
-    ],
-    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408914,-1.317977"
-  },
-
-  {
     title: "Patrouille américaine à cheval – Sainte-Mère-Église",
     category: "oldphoto",
     lat: 49.408034,
@@ -213,27 +185,6 @@ const POINTS = [
   },
 
   {
-    title: "Devant l’hôtel de ville – Occupation allemande",
-    category: "oldphoto",
-    lat: 49.409768,
-    lng: -1.318364,
-    description:
-      "Durant l’Occupation, des soldats allemands se prennent en photo devant l’hôtel de ville de Sainte-Mère-Église. Ces clichés, antérieurs au Débarquement, témoignent de la présence militaire allemande dans le bourg.",
-    image: "",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "Collection privée / Archives locales",
-    carouselId: "mairie",
-    carouselImages: [
-      "https://imgur.com/7ybdNyn.jpg",
-      "https://imgur.com/NV79BpD.jpg",
-      "https://imgur.com/7lNsDqS.jpg"
-    ],
-    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.409768,-1.318364"
-  },
-
-  {
     title: "Entrée nord de Sainte-Mère-Église – 7 juin 1944",
     category: "oldphoto",
     lat: 49.412970,
@@ -261,50 +212,6 @@ const POINTS = [
     website: "",
     source: "US National Archives / War Documentary – Maxim Chornyi",
     googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
-  },
-
-  {
-    title: "Contre-attaque allemande – Neuville-au-Plain",
-    category: "oldphoto",
-    lat: 49.411824,
-    lng: -1.320132,
-    description:
-      "Le 7 juin 1944 au matin, les parachutistes de la 82e Airborne subissent une violente contre-attaque allemande venant de Neuville-au-Plain. Les hommes du 505e PIR tiennent leur position, et le soldat John E. Atchley détruit un StuG III engagé dans l’assaut.",
-    image: "",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives / War Documentary – Maxim Chornyi",
-    extraNote: "StuG III Ausf. G : canon de 75 mm L/48, blindage frontal 80 mm, équipage de 4 hommes.",
-    carouselId: "stug",
-    carouselImages: [
-      "https://imgur.com/ZhC6iiU.jpg",
-      "https://imgur.com/s1i2wHR.jpg",
-      "https://imgur.com/hdosB1y.jpg",
-      "https://imgur.com/NavjP4l.jpg"
-    ],
-    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411824,-1.320132"
-  },
-
-  {
-    title: "Débarquement de la 2e DB – 1er août 1944",
-    category: "oldphoto",
-    lat: 49.445259,
-    lng: -1.208396,
-    description:
-      "Le 1er août 1944, la 2e Division Blindée du général Leclerc débarque sur Utah Beach, au niveau des villages de Saint-Martin-de-Varreville et Saint-Germain-de-Varreville. C’est ici que débute sa progression vers la libération de la France.",
-    image: "",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "Fondation Maréchal Leclerc de Hauteclocque",
-    carouselId: "leclerc",
-    carouselImages: [
-      "https://i.imgur.com/RNu3elD.jpeg",
-      "https://i.imgur.com/48QAgaj.jpeg",
-      "https://i.imgur.com/vqDfznp.jpeg"
-    ],
-    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445259,-1.208396"
   },
 
   /* =========================================================
@@ -535,55 +442,11 @@ function buildPopupContent(point) {
     </div>
   `;
 
-  let mediaHtml = "";
-
-  if (Array.isArray(point.carouselImages) && point.carouselImages.length > 0) {
-    const safeId = point.carouselId || point.title.replace(/\s+/g, "-").toLowerCase();
-
-    const dynamicTitle =
-      Array.isArray(point.carouselTitle) && point.carouselTitle.length > 0
-        ? `<div id="carousel-title-${safeId}" class="carousel-dynamic-title">${escapeHtml(point.carouselTitle[0])}</div>`
-        : "";
-
-    const dynamicDescription =
-      Array.isArray(point.carouselDescription) && point.carouselDescription.length > 0
-        ? `<div id="carousel-description-${safeId}" class="carousel-dynamic-description">${escapeHtml(point.carouselDescription[0])}</div>`
-        : "";
-
-    const imagesHtml = point.carouselImages
-  .filter(isSafeUrl)
-  .map(
-    (imgUrl, index) => `
-      <div class="carousel-slide">
-        <img
-          src="${imgUrl}"
-          alt="${escapeHtml(point.title)} - image ${index + 1}"
-          loading="lazy"
-          onclick="openLightbox(this.src)">
-      </div>
-    `
-  )
-  .join("");
-
-    mediaHtml = `
-      ${dynamicTitle}
-      ${dynamicDescription}
-      <div class="glider-contain">
-        <div class="glider" id="glider-${safeId}">
-          ${imagesHtml}
-        </div>
-        <button class="glider-prev" aria-label="Précédent">«</button>
-        <button class="glider-next" aria-label="Suivant">»</button>
-        <div class="dots"></div>
-      </div>
-    `;
-  } else {
-    mediaHtml = `
-      ${buildImageBlock("Image actuelle", point.image, point.title)}
-      ${buildImageBlock("Photo d’époque", point.oldPhoto, point.title + " - photo d’époque")}
-      ${buildVideoBlock(point.video)}
-    `.trim();
-  }
+  const mediaHtml = `
+    ${buildImageBlock("Image actuelle", point.image, point.title)}
+    ${buildImageBlock("Photo d’époque", point.oldPhoto, point.title + " - photo d’époque")}
+    ${buildVideoBlock(point.video)}
+  `.trim();
 
   const sourceHtml =
     point.source && point.source.trim() !== ""
@@ -685,6 +548,133 @@ POINTS.forEach((point) => {
 
   marker.addTo(categoryLayers[point.category]);
 });
+
+/* =========================================================
+   POPUPS SPÉCIALES AVEC CARROUSEL
+========================================================= */
+
+const specialOldPhotoStyle = {
+  radius: 9,
+  fillColor: CATEGORIES.oldphoto.color,
+  color: "#ffffff",
+  weight: 2,
+  opacity: 1,
+  fillOpacity: 0.92
+};
+
+// Chez Jeanne
+const coordsChezJeanne = [49.408914, -1.317977];
+const popupChezJeanne = `
+  <div class="popup-content">
+    <strong id="carousel-title-jeanne">7 juin 1944 – Libération du bourg</strong><br>
+    <div id="carousel-description-jeanne">
+      Des soldats américains de la 82e Airborne avancent dans les rues de Sainte-Mère-Église, au lendemain du Débarquement.
+    </div>
+
+    <div class="glider-contain">
+      <div class="glider" id="glider-jeanne">
+        <img src="https://imgur.com/L9wnNVX.jpg" alt="Soldats à pied" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/NhRNtzs.jpg" alt="M3 Stuart 2e DB" onclick="openLightbox(this.src)">
+      </div>
+      <button class="glider-prev">«</button>
+      <button class="glider-next">»</button>
+      <div class="dots"></div>
+    </div>
+
+    <div style="font-size:10px; margin-top:5px;">Source : US National Archives / War Documentary – Maxim Chornyi</div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=49.408914,-1.317977" target="_blank" class="popup-btn">Ouvrir dans Google Maps</a>
+  </div>
+`;
+L.circleMarker(coordsChezJeanne, specialOldPhotoStyle)
+  .addTo(categoryLayers.oldphoto)
+  .bindPopup(popupChezJeanne, { maxWidth: 320 });
+
+// Mairie occupation allemande
+const coordsMairieOccupation = [49.409768, -1.318364];
+const popupMairieOccupation = `
+  <div class="popup-content">
+    <strong>Devant l'hôtel de ville – Occupation allemande</strong><br>
+    Durant l’occupation, des soldats allemands se prennent en photo devant l’hôtel de ville de Sainte-Mère-Église.
+    Ces images, prises bien avant le Débarquement, témoignent du quotidien militaire des occupants.
+
+    <div class="glider-contain">
+      <div class="glider" id="glider-mairie">
+        <img src="https://imgur.com/7ybdNyn.jpg" alt="Soldats allemands mairie 1" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/NV79BpD.jpg" alt="Soldats allemands mairie 2" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/7lNsDqS.jpg" alt="Soldats allemands mairie 3" onclick="openLightbox(this.src)">
+      </div>
+      <button class="glider-prev">«</button>
+      <button class="glider-next">»</button>
+      <div class="dots"></div>
+    </div>
+
+    <div style="font-size:10px; margin-top:5px;">Source : Collection privée / Archives locales</div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=49.409768,-1.318364" target="_blank" class="popup-btn">Ouvrir dans Google Maps</a>
+  </div>
+`;
+L.circleMarker(coordsMairieOccupation, specialOldPhotoStyle)
+  .addTo(categoryLayers.oldphoto)
+  .bindPopup(popupMairieOccupation, { maxWidth: 320 });
+
+// Neuville / StuG
+const coordsStugNeuville = [49.411824, -1.320132];
+const popupStugNeuville = `
+  <div class="popup-content">
+    <strong>Contre-attaque allemande – Neuville-au-Plain</strong><br>
+    Le 7 juin 1944 au matin, les parachutistes de la 82e Airborne subissent une violente contre-attaque allemande venant de Neuville-au-Plain.
+    Les hommes du 505e PIR tiennent leur position, et le soldat John E. Atchley détruit un StuG III engagé dans l’assaut.
+
+    <div class="glider-contain">
+      <div class="glider" id="glider-stug">
+        <img src="https://imgur.com/ZhC6iiU.jpg" alt="Vue de loin" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/s1i2wHR.jpg" alt="StuG détruit face" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/hdosB1y.jpg" alt="StuG côté" onclick="openLightbox(this.src)">
+        <img src="https://imgur.com/NavjP4l.jpg" alt="StuG côté" onclick="openLightbox(this.src)">
+      </div>
+      <button class="glider-prev">«</button>
+      <button class="glider-next">»</button>
+      <div class="dots"></div>
+    </div>
+
+    <div style="font-size:11px; margin-top:8px; font-style:italic;">
+      StuG III Ausf. G : canon de 75 mm L/48, blindage frontal 80 mm, équipage de 4 hommes.
+    </div>
+
+    <div style="font-size:10px; margin-top:5px;">Source : US National Archives / War Documentary – Maxim Chornyi</div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=49.411824,-1.320132" target="_blank" class="popup-btn">Ouvrir dans Google Maps</a>
+  </div>
+`;
+L.circleMarker(coordsStugNeuville, specialOldPhotoStyle)
+  .addTo(categoryLayers.oldphoto)
+  .bindPopup(popupStugNeuville, { maxWidth: 320 });
+
+// Débarquement 2e DB
+const coordsLeclerc = [49.445259, -1.208396];
+const popupLeclerc = `
+  <div class="popup-content">
+    <strong>Débarquement de la 2e DB – 1er août 1944</strong><br>
+    Le 1er août 1944, la 2e Division Blindée du général Leclerc débarque sur Utah Beach,
+    au niveau des villages de Saint-Martin-de-Varreville et Saint-Germain-de-Varreville.
+    Ici débute la progression de la 2e DB vers la libération de la France.
+
+    <div class="glider-contain">
+      <div class="glider" id="glider-leclerc">
+        <img src="https://i.imgur.com/RNu3elD.jpeg" alt="Photo 1" onclick="openLightbox(this.src)">
+        <img src="https://i.imgur.com/48QAgaj.jpeg" alt="Photo 2" onclick="openLightbox(this.src)">
+        <img src="https://i.imgur.com/vqDfznp.jpeg" alt="Photo 3" onclick="openLightbox(this.src)">
+      </div>
+      <button class="glider-prev">«</button>
+      <button class="glider-next">»</button>
+      <div class="dots"></div>
+    </div>
+
+    <div style="font-size:10px; margin-top:5px;">Source : Fondation Maréchal Leclerc de Hauteclocque</div>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=49.445259,-1.208396" target="_blank" class="popup-btn">Ouvrir dans Google Maps</a>
+  </div>
+`;
+L.circleMarker(coordsLeclerc, specialOldPhotoStyle)
+  .addTo(categoryLayers.oldphoto)
+  .bindPopup(popupLeclerc, { maxWidth: 320 });
 
 function updateCategoryVisibility() {
   Object.keys(CATEGORIES).forEach((categoryKey) => {

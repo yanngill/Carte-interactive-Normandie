@@ -691,16 +691,31 @@ map.on("popupopen", function (e) {
   const gliderElement = popupElement.querySelector(".glider");
   if (!gliderElement) return;
 
-  new Glider(gliderElement, {
+  const existingGlider = gliderElement._glider;
+  if (existingGlider) {
+    existingGlider.destroy();
+  }
+
+  const gliderInstance = new Glider(gliderElement, {
     slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    scrollLock: true,
+    exactWidth: false,
+    duration: 0.35,
+    resizeLock: false,
     dots: popupElement.querySelector(".dots"),
     arrows: {
       prev: popupElement.querySelector(".glider-prev"),
       next: popupElement.querySelector(".glider-next")
-    },
-    draggable: true,
-    scrollLock: true
+    }
   });
+
+  setTimeout(() => {
+    if (gliderElement._glider) {
+      gliderElement._glider.refresh(true);
+    }
+  }, 50);
 
   const safeId = gliderElement.id.replace("glider-", "");
   const point = POINTS.find((p) => {

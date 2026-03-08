@@ -673,11 +673,14 @@ body {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: auto;
+  max-height: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 10px;
   border: 1px solid #d1d5db;
   cursor: pointer;
-  object-fit: contain;
+  background: #f8fafc;
 }
 
 .glider-prev,

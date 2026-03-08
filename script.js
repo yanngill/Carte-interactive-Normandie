@@ -317,7 +317,12 @@ function buildPopupContent(point) {
     ? `<a class="popup-btn" href="${point.googleMapsLink}" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps</a>`
     : "";
 
-  const buttonsHtml = [websiteButton, mapsButton].filter(Boolean).join("");
+  const buttonsHtml = `
+<div class="popup-buttons">
+  ${websiteButton}
+  ${mapsButton}
+</div>
+`;
 
   return `
     <div class="popup-content">

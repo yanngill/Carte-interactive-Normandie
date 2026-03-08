@@ -1,29 +1,14 @@
 /* =========================================================
    PERSONNALISATION RAPIDE
-   ---------------------------------------------------------
-   C’est ici que tu modifies rapidement :
-   - les couleurs des catégories
-   - le centre et le zoom de départ
-   - l’icône casque
-   - les catégories
-   - les points
-   - les grands labels
-   - le zoom d’apparition/disparition des labels
 ========================================================= */
 
-// Centre initial de la carte : secteur américain en Normandie
 const INITIAL_VIEW = {
   center: [49.38, -0.93],
   zoom: 10
 };
 
-// Zoom maximum pour afficher les grands labels.
-// Exemple : si zoom <= 10, les labels apparaissent.
-// Si zoom > 10, ils disparaissent.
 const LABELS_VISIBLE_MAX_ZOOM = 10;
 
-// Icône casque utilisateur
-// Tu peux remplacer ce SVG inline par une autre image URL si tu veux.
 const HELMET_ICON_SVG = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <circle cx="32" cy="32" r="30" fill="#ffffff" />
@@ -33,52 +18,39 @@ const HELMET_ICON_SVG = `
 </svg>
 `;
 
-// Définition unique des catégories.
-// Pour changer une couleur, change seulement la valeur "color" ici.
 const CATEGORIES = {
   remarkable: {
     label: "Lieu remarquable",
-    color: "#c62828", // rouge
+    color: "#c62828",
     key: "Rouge"
   },
   oldphoto: {
     label: "Photo d’époque",
-    color: "#111111", // noir
+    color: "#111111",
     key: "Noir"
   },
   info: {
     label: "Point d’information",
-    color: "#ef6c00", // orange
+    color: "#ef6c00",
     key: "Orange"
   },
   museum: {
     label: "Musée / site visitable",
-    color: "#2e7d32", // vert
+    color: "#2e7d32",
     key: "Vert"
   },
   testimony: {
     label: "Témoignage / vidéo / audio",
-    color: "#6a1b9a", // violet
+    color: "#6a1b9a",
     key: "Violet"
   },
   practical: {
     label: "Point pratique / logistique",
-    color: "#1565c0", // bleu
+    color: "#1565c0",
     key: "Bleu"
   }
 };
 
-// Points d’exemple : 1 point par catégorie minimum.
-// Structure demandée :
-// - title
-// - category
-// - lat
-// - lng
-// - description
-// - image
-// - oldPhoto
-// - video
-// - googleMapsLink
 const POINTS = [
   {
     title: "Pointe du Hoc",
@@ -159,8 +131,6 @@ const POINTS = [
   }
 ];
 
-// Grands labels visibles en zoom arrière seulement.
-// Tu peux en ajouter ou en enlever facilement.
 const BIG_LABELS = [
   { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318 },
   { text: "Utah Beach", lat: 49.420, lng: -1.172 },
@@ -170,10 +140,9 @@ const BIG_LABELS = [
 ];
 
 /* =========================================================
-   OUTILS UTILES
+   OUTILS
 ========================================================= */
 
-// Sécurise le texte injecté dans le HTML des popups
 function escapeHtml(value) {
   if (typeof value !== "string") return "";
   return value
@@ -184,7 +153,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-// Vérifie si une URL semble correcte
 function isSafeUrl(url) {
   if (!url || typeof url !== "string") return false;
   try {
@@ -195,12 +163,10 @@ function isSafeUrl(url) {
   }
 }
 
-// Transforme le SVG en data URI pour l’icône Leaflet
 function svgToDataUri(svgString) {
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svgString)}`;
 }
 
-// Génère le HTML d’un média image
 function buildImageBlock(label, url, altText) {
   if (!isSafeUrl(url)) return "";
   return `
@@ -211,7 +177,6 @@ function buildImageBlock(label, url, altText) {
   `;
 }
 
-// Génère le HTML d’une vidéo
 function buildVideoBlock(url) {
   if (!isSafeUrl(url)) return "";
   return `
@@ -229,7 +194,6 @@ function buildVideoBlock(url) {
   `;
 }
 
-// Construit le popup complet d’un point
 function buildPopupContent(point) {
   const category = CATEGORIES[point.category];
   const categoryLabel = category ? category.label : "Catégorie";
@@ -268,25 +232,22 @@ const map = L.map("map", {
   zoomControl: true
 });
 
-// Fond classique OpenStreetMap
 const classicLayer = L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
     maxZoom: 19,
-    attribution: '&copy; OpenStreetMap contributors'
+    attribution: "&copy; OpenStreetMap contributors"
   }
 ).addTo(map);
 
-// Fond satellite Esri
 const satelliteLayer = L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
   {
     maxZoom: 19,
-    attribution: 'Tiles &copy; Esri'
+    attribution: "Tiles &copy; Esri"
   }
 );
 
-// Contrôle pour changer le fond de carte
 L.control.layers(
   {
     "Plan classique": classicLayer,
@@ -298,29 +259,25 @@ L.control.layers(
   }
 ).addTo(map);
 
-// Échelle
 L.control.scale({
   metric: true,
   imperial: false
 }).addTo(map);
 
 /* =========================================================
-   GESTION DES CATÉGORIES / FILTRES
+   FILTRES / CATÉGORIES
 ========================================================= */
 
-// État actif/inactif de chaque catégorie
 const activeCategories = {};
 Object.keys(CATEGORIES).forEach((categoryKey) => {
   activeCategories[categoryKey] = true;
 });
 
-// Groupe de couches par catégorie
 const categoryLayers = {};
 Object.keys(CATEGORIES).forEach((categoryKey) => {
   categoryLayers[categoryKey] = L.layerGroup().addTo(map);
 });
 
-// Création des points
 POINTS.forEach((point) => {
   const category = CATEGORIES[point.category];
   if (!category) return;
@@ -341,7 +298,6 @@ POINTS.forEach((point) => {
   marker.addTo(categoryLayers[point.category]);
 });
 
-// Met à jour l’affichage des catégories sur la carte
 function updateCategoryVisibility() {
   Object.keys(CATEGORIES).forEach((categoryKey) => {
     const layer = categoryLayers[categoryKey];
@@ -361,7 +317,6 @@ function updateCategoryVisibility() {
   updateLegendUI();
 }
 
-// Active toutes les catégories
 function showAllCategories() {
   Object.keys(activeCategories).forEach((key) => {
     activeCategories[key] = true;
@@ -369,7 +324,6 @@ function showAllCategories() {
   updateCategoryVisibility();
 }
 
-// Désactive toutes les catégories
 function hideAllCategories() {
   Object.keys(activeCategories).forEach((key) => {
     activeCategories[key] = false;
@@ -377,7 +331,6 @@ function hideAllCategories() {
   updateCategoryVisibility();
 }
 
-// N’affiche qu’une catégorie
 function showOnlyCategory(categoryKey) {
   Object.keys(activeCategories).forEach((key) => {
     activeCategories[key] = key === categoryKey;
@@ -385,25 +338,22 @@ function showOnlyCategory(categoryKey) {
   updateCategoryVisibility();
 }
 
-// Active/désactive une catégorie
 function toggleCategory(categoryKey) {
   activeCategories[categoryKey] = !activeCategories[categoryKey];
   updateCategoryVisibility();
 }
 
 /* =========================================================
-   LÉGENDE INTERACTIVE
+   LÉGENDE OUVRABLE / FERMABLE
 ========================================================= */
 
 const legendList = document.getElementById("legendList");
 const showAllBtn = document.getElementById("showAllBtn");
 const hideAllBtn = document.getElementById("hideAllBtn");
-const toggleLegendBtn = document.getElementById("toggleLegendBtn");
-const legendPanel = document.getElementById("legendPanel");
-const sidebar = document.getElementById("sidebar");
-const mobileLegendBtn = document.getElementById("mobileLegendBtn");
+const legendSidebar = document.getElementById("legendSidebar");
+const openLegendBtn = document.getElementById("openLegendBtn");
+const closeLegendBtn = document.getElementById("closeLegendBtn");
 
-// Construit la légende dynamique
 function buildLegend() {
   legendList.innerHTML = "";
 
@@ -420,12 +370,10 @@ function buildLegend() {
       </span>
     `;
 
-    // Clic simple = active/désactive
     item.addEventListener("click", () => {
       toggleCategory(categoryKey);
     });
 
-    // Double-clic = n’afficher que cette catégorie
     item.addEventListener("dblclick", (event) => {
       event.preventDefault();
       showOnlyCategory(categoryKey);
@@ -437,59 +385,45 @@ function buildLegend() {
   updateLegendUI();
 }
 
-// Met à jour l’état visuel de la légende
 function updateLegendUI() {
   const items = legendList.querySelectorAll(".legend-item");
 
   items.forEach((item) => {
     const categoryKey = item.dataset.category;
     const isActive = activeCategories[categoryKey];
-
     item.classList.toggle("inactive", !isActive);
   });
 }
 
-// Masquer / afficher le panneau de légende
-let isLegendVisible = true;
-
-function updateLegendVisibility() {
-  legendPanel.style.display = isLegendVisible ? "block" : "none";
-  toggleLegendBtn.textContent = isLegendVisible
-    ? "Masquer la légende"
-    : "Afficher la légende";
+function openLegend() {
+  legendSidebar.classList.add("open");
 }
 
-toggleLegendBtn.addEventListener("click", () => {
-  isLegendVisible = !isLegendVisible;
-  updateLegendVisibility();
-});
+function closeLegend() {
+  legendSidebar.classList.remove("open");
+}
+
+openLegendBtn.addEventListener("click", openLegend);
+closeLegendBtn.addEventListener("click", closeLegend);
 
 showAllBtn.addEventListener("click", showAllCategories);
 hideAllBtn.addEventListener("click", hideAllCategories);
 
-// Ouverture / fermeture mobile
-mobileLegendBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-});
-
-// Fermer la sidebar mobile en cliquant sur la carte
 map.on("click", () => {
   if (window.innerWidth <= 900) {
-    sidebar.classList.remove("open");
+    closeLegend();
   }
 });
 
 buildLegend();
-updateLegendVisibility();
 updateCategoryVisibility();
 
 /* =========================================================
-   GRANDS LABELS VISIBLES EN ZOOM ARRIÈRE
+   GRANDS LABELS
 ========================================================= */
 
 const labelsLayer = L.layerGroup().addTo(map);
 
-// Crée tous les labels
 BIG_LABELS.forEach((label) => {
   const marker = L.marker([label.lat, label.lng], {
     interactive: false,
@@ -502,7 +436,6 @@ BIG_LABELS.forEach((label) => {
   marker.addTo(labelsLayer);
 });
 
-// Met à jour leur visibilité selon le zoom
 function updateBigLabelsVisibility() {
   const currentZoom = map.getZoom();
 
@@ -535,7 +468,6 @@ let userMarker = null;
 let userCircle = null;
 let lastKnownUserLatLng = null;
 
-// Popup utilisateur
 function getUserPopupContent(latlng) {
   const mapsLink = `https://www.google.com/maps?q=${latlng.lat},${latlng.lng}`;
 
@@ -552,7 +484,6 @@ function getUserPopupContent(latlng) {
   `;
 }
 
-// Mise à jour de la position utilisateur
 function updateUserLocation(latlng, accuracy = 0) {
   lastKnownUserLatLng = latlng;
 
@@ -585,7 +516,6 @@ function updateUserLocation(latlng, accuracy = 0) {
   }
 }
 
-// Lance la géolocalisation auto si autorisée
 function initGeolocation() {
   if (!navigator.geolocation) return;
 
@@ -612,7 +542,7 @@ function initGeolocation() {
 initGeolocation();
 
 /* =========================================================
-   BOUTON POUR RECENTRER SUR L’UTILISATEUR
+   BOUTON RECENTRAGE UTILISATEUR
 ========================================================= */
 
 const RecenterControl = L.Control.extend({
@@ -648,26 +578,3 @@ const RecenterControl = L.Control.extend({
 });
 
 map.addControl(new RecenterControl());
-
-/* =========================================================
-   EXEMPLE POUR AJOUTER UN NOUVEAU POINT
-   ---------------------------------------------------------
-   Tu peux copier-coller un bloc comme celui-ci dans POINTS :
-
-   {
-     title: "Nouveau lieu",
-     category: "museum",
-     lat: 49.0000,
-     lng: -1.0000,
-     description: "Description du nouveau point.",
-     image: "https://....jpg",
-     oldPhoto: "",
-     video: "",
-     googleMapsLink: "https://www.google.com/maps?q=49.0000,-1.0000"
-   }
-
-   Pour changer sa catégorie :
-   - museum -> testimony
-   - testimony -> remarkable
-   - etc.
-========================================================= */

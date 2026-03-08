@@ -464,8 +464,8 @@ const helmetIcon = L.divIcon({
   className: "user-location-icon",
   html: "🪖",
   iconSize: [30, 30],
-  iconAnchor: [15, 15],
-  popupAnchor: [0, -15]
+  iconAnchor: [13, 18],
+  popupAnchor: [0, -18]
 });
 
 let userMarker = null;

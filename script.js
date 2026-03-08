@@ -551,17 +551,19 @@ function buildPopupContent(point) {
         : "";
 
     const imagesHtml = point.carouselImages
-      .filter(isSafeUrl)
-      .map(
-        (imgUrl, index) => `
-          <img
-            src="${imgUrl}"
-            alt="${escapeHtml(point.title)} - image ${index + 1}"
-            loading="lazy"
-            onclick="openLightbox(this.src)">
-        `
-      )
-      .join("");
+  .filter(isSafeUrl)
+  .map(
+    (imgUrl, index) => `
+      <div class="carousel-slide">
+        <img
+          src="${imgUrl}"
+          alt="${escapeHtml(point.title)} - image ${index + 1}"
+          loading="lazy"
+          onclick="openLightbox(this.src)">
+      </div>
+    `
+  )
+  .join("");
 
     mediaHtml = `
       ${dynamicTitle}

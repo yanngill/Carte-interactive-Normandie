@@ -35,10 +35,10 @@ const CATEGORIES = {
     key: "Orange"
   },
   museum: {
-  label: "Musée",
-  color: "#6a1b9a",
-  key: "Violet"
-},
+    label: "Musée",
+    color: "#6a1b9a",
+    key: "Violet"
+  },
   practical: {
     label: "Point pratique / logistique",
     color: "#1565c0",
@@ -90,222 +90,222 @@ const POINTS = [
     googleMapsLink: "https://www.google.com/maps?q=49.3592,-0.8584"
   },
 
-   /* =========================================================
-   PHOTOS D’ÉPOQUE
-========================================================= */
+  /* =========================================================
+     PHOTOS D’ÉPOQUE
+  ========================================================= */
 
-{
-  title: "La Pointe du Hoc",
-  category: "oldphoto",
-  lat: 49.3965263,
-  lng: -0.9881764,
-  description:
-    "Position stratégique prise d’assaut par les Rangers américains le 6 juin 1944. Lieu emblématique du secteur américain entre Utah et Omaha.",
-  image: "https://i.imgur.com/1U8cKFq.jpeg",
-  oldPhoto: "",
-  video: "https://www.youtube.com/embed/zR7TCXmPq9M",
-  website: "",
-  source: "US National Archives",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
-},
+  {
+    title: "La Pointe du Hoc",
+    category: "oldphoto",
+    lat: 49.3965263,
+    lng: -0.9881764,
+    description:
+      "Position stratégique prise d’assaut par les Rangers américains le 6 juin 1944. Lieu emblématique du secteur américain entre Utah et Omaha.",
+    image: "https://i.imgur.com/1U8cKFq.jpeg",
+    oldPhoto: "",
+    video: "https://www.youtube.com/embed/zR7TCXmPq9M",
+    website: "",
+    source: "US National Archives",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
+  },
 
-{
-  title: "WN62 – Le Ruquet – Easy Red – Poste de commandement provisoire",
-  category: "oldphoto",
-  lat: 49.364435,
-  lng: -0.863437,
-  description:
-    "Au lendemain du Débarquement, des unités d’intendance et d’état-major de l’armée américaine installent un poste de commandement provisoire devant un blockhaus capturé. Le secteur commence à être organisé pour accueillir les renforts et la logistique.",
-  image: "https://i.imgur.com/P6rq0yq.jpeg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
-},
+  {
+    title: "WN62 – Le Ruquet – Easy Red – Poste de commandement provisoire",
+    category: "oldphoto",
+    lat: 49.364435,
+    lng: -0.863437,
+    description:
+      "Au lendemain du Débarquement, des unités d’intendance et d’état-major de l’armée américaine installent un poste de commandement provisoire devant un blockhaus capturé. Le secteur commence à être organisé pour accueillir les renforts et la logistique.",
+    image: "https://i.imgur.com/P6rq0yq.jpeg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
+  },
 
-{
-  title: "WN62 – Le Ruquet – Easy Red – Arrivée de la 2nd Infantry Division",
-  category: "oldphoto",
-  lat: 49.364151,
-  lng: -0.864825,
-  description:
-    "À partir du 7 juin 1944, les renforts américains de la 2nd Infantry Division débarquent sur Omaha Beach pour soutenir l’effort offensif vers l’intérieur des terres. La logistique massive commence à transformer la plage en zone de transit stratégique.",
-  image: "https://i.imgur.com/azReUzU.jpeg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
-},
+  {
+    title: "WN62 – Le Ruquet – Easy Red – Arrivée de la 2nd Infantry Division",
+    category: "oldphoto",
+    lat: 49.364151,
+    lng: -0.864825,
+    description:
+      "À partir du 7 juin 1944, les renforts américains de la 2nd Infantry Division débarquent sur Omaha Beach pour soutenir l’effort offensif vers l’intérieur des terres. La logistique massive commence à transformer la plage en zone de transit stratégique.",
+    image: "https://i.imgur.com/azReUzU.jpeg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
+  },
 
-{
-  title: "Chez Jeanne – Sainte-Mère-Église",
-  category: "oldphoto",
-  lat: 49.408914,
-  lng: -1.317977,
-  description:
-    "Lieu emblématique du centre de Sainte-Mère-Église. Ce point permet d’illustrer à la fois la libération du bourg par les troupes américaines et, plus tard, le passage de la 2e DB.",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  carouselId: "jeanne",
-  carouselTitle: [
-    "7 juin 1944 – Libération du bourg",
-    "Début août 1944 – Passage de la 2e DB"
-  ],
-  carouselDescription: [
-    "Des soldats américains de la 82e Airborne avancent dans les rues de Sainte-Mère-Église, au lendemain du Débarquement.",
-    "Un char léger M3 Stuart de la 2e Division Blindée traverse le bourg, arborant la croix de Lorraine."
-  ],
-  carouselImages: [
-    "https://imgur.com/L9wnNVX.jpg",
-    "https://imgur.com/NhRNtzs.jpg"
-  ],
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408914,-1.317977"
-},
+  {
+    title: "Chez Jeanne – Sainte-Mère-Église",
+    category: "oldphoto",
+    lat: 49.408914,
+    lng: -1.317977,
+    description:
+      "Lieu emblématique du centre de Sainte-Mère-Église. Ce point permet d’illustrer à la fois la libération du bourg par les troupes américaines et, plus tard, le passage de la 2e DB.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    carouselId: "jeanne",
+    carouselTitle: [
+      "7 juin 1944 – Libération du bourg",
+      "Début août 1944 – Passage de la 2e DB"
+    ],
+    carouselDescription: [
+      "Des soldats américains de la 82e Airborne avancent dans les rues de Sainte-Mère-Église, au lendemain du Débarquement.",
+      "Un char léger M3 Stuart de la 2e Division Blindée traverse le bourg, arborant la croix de Lorraine."
+    ],
+    carouselImages: [
+      "https://imgur.com/L9wnNVX.jpg",
+      "https://imgur.com/NhRNtzs.jpg"
+    ],
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408914,-1.317977"
+  },
 
-{
-  title: "Patrouille américaine à cheval – Sainte-Mère-Église",
-  category: "oldphoto",
-  lat: 49.408034,
-  lng: -1.317192,
-  description:
-    "Vous vous situez à l’endroit où passe, peu après la libération du bourg, une patrouille de reconnaissance américaine montée. Ces cavaliers appartiennent à la 82e Division aéroportée et participent à la sécurisation du secteur.",
-  image: "https://imgur.com/p3Uu4rr.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.407778,-1.317222"
-},
+  {
+    title: "Patrouille américaine à cheval – Sainte-Mère-Église",
+    category: "oldphoto",
+    lat: 49.408034,
+    lng: -1.317192,
+    description:
+      "Vous vous situez à l’endroit où passe, peu après la libération du bourg, une patrouille de reconnaissance américaine montée. Ces cavaliers appartiennent à la 82e Division aéroportée et participent à la sécurisation du secteur.",
+    image: "https://imgur.com/p3Uu4rr.jpg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.407778,-1.317222"
+  },
 
-{
-  title: "Défilé de l’armée américaine – Sainte-Mère-Église",
-  category: "oldphoto",
-  lat: 49.408546,
-  lng: -1.315331,
-  description:
-    "L’armée américaine progresse dans les rues de Sainte-Mère-Église, en passant devant l’église devenue symbole de la libération du bourg.",
-  image: "https://imgur.com/5AUR1hk.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408611,-1.315556"
-},
+  {
+    title: "Défilé de l’armée américaine – Sainte-Mère-Église",
+    category: "oldphoto",
+    lat: 49.408546,
+    lng: -1.315331,
+    description:
+      "L’armée américaine progresse dans les rues de Sainte-Mère-Église, en passant devant l’église devenue symbole de la libération du bourg.",
+    image: "https://imgur.com/5AUR1hk.jpg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408611,-1.315556"
+  },
 
-{
-  title: "Parachutistes américains – Rue Général Koenig",
-  category: "oldphoto",
-  lat: 49.408723,
-  lng: -1.317109,
-  description:
-    "Des parachutistes américains progressent le long de la rue Général Koenig, dans le centre de Sainte-Mère-Église, au lendemain du Débarquement.",
-  image: "https://imgur.com/USkLKdI.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408333,-1.316667"
-},
+  {
+    title: "Parachutistes américains – Rue Général Koenig",
+    category: "oldphoto",
+    lat: 49.408723,
+    lng: -1.317109,
+    description:
+      "Des parachutistes américains progressent le long de la rue Général Koenig, dans le centre de Sainte-Mère-Église, au lendemain du Débarquement.",
+    image: "https://imgur.com/USkLKdI.jpg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.408333,-1.316667"
+  },
 
-{
-  title: "Devant l’hôtel de ville – Occupation allemande",
-  category: "oldphoto",
-  lat: 49.409768,
-  lng: -1.318364,
-  description:
-    "Durant l’Occupation, des soldats allemands se prennent en photo devant l’hôtel de ville de Sainte-Mère-Église. Ces clichés, antérieurs au Débarquement, témoignent de la présence militaire allemande dans le bourg.",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "Collection privée / Archives locales",
-  carouselId: "mairie",
-  carouselImages: [
-    "https://imgur.com/7ybdNyn.jpg",
-    "https://imgur.com/NV79BpD.jpg",
-    "https://imgur.com/7lNsDqS.jpg"
-  ],
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.409768,-1.318364"
-},
+  {
+    title: "Devant l’hôtel de ville – Occupation allemande",
+    category: "oldphoto",
+    lat: 49.409768,
+    lng: -1.318364,
+    description:
+      "Durant l’Occupation, des soldats allemands se prennent en photo devant l’hôtel de ville de Sainte-Mère-Église. Ces clichés, antérieurs au Débarquement, témoignent de la présence militaire allemande dans le bourg.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "Collection privée / Archives locales",
+    carouselId: "mairie",
+    carouselImages: [
+      "https://imgur.com/7ybdNyn.jpg",
+      "https://imgur.com/NV79BpD.jpg",
+      "https://imgur.com/7lNsDqS.jpg"
+    ],
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.409768,-1.318364"
+  },
 
-{
-  title: "Entrée nord de Sainte-Mère-Église – 7 juin 1944",
-  category: "oldphoto",
-  lat: 49.412970,
-  lng: -1.321191,
-  description:
-    "Le soldat Elmer Habbs, de la 82e Division aéroportée, se repose à l’entrée nord de Sainte-Mère-Église près du panneau indicateur du village. Une image restée célèbre du lendemain du Débarquement.",
-  image: "https://imgur.com/8T1qi6n.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.412970,-1.321191"
-},
+  {
+    title: "Entrée nord de Sainte-Mère-Église – 7 juin 1944",
+    category: "oldphoto",
+    lat: 49.412970,
+    lng: -1.321191,
+    description:
+      "Le soldat Elmer Habbs, de la 82e Division aéroportée, se repose à l’entrée nord de Sainte-Mère-Église près du panneau indicateur du village. Une image restée célèbre du lendemain du Débarquement.",
+    image: "https://imgur.com/8T1qi6n.jpg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.412970,-1.321191"
+  },
 
-{
-  title: "Hospice – Regimental Aid Station du 505th PIR",
-  category: "oldphoto",
-  lat: 49.411297,
-  lng: -1.319750,
-  description:
-    "Des personnels médicaux américains et allemands coopèrent brièvement à proximité de l’hospice, transformé en poste de secours par le 505th PIR de la 82e Airborne.",
-  image: "https://imgur.com/AlpvDK3.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
-},
+  {
+    title: "Hospice – Regimental Aid Station du 505th PIR",
+    category: "oldphoto",
+    lat: 49.411297,
+    lng: -1.319750,
+    description:
+      "Des personnels médicaux américains et allemands coopèrent brièvement à proximité de l’hospice, transformé en poste de secours par le 505th PIR de la 82e Airborne.",
+    image: "https://imgur.com/AlpvDK3.jpg",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
+  },
 
-{
-  title: "Contre-attaque allemande – Neuville-au-Plain",
-  category: "oldphoto",
-  lat: 49.411824,
-  lng: -1.320132,
-  description:
-    "Le 7 juin 1944 au matin, les parachutistes de la 82e Airborne subissent une violente contre-attaque allemande venant de Neuville-au-Plain. Les hommes du 505e PIR tiennent leur position, et le soldat John E. Atchley détruit un StuG III engagé dans l’assaut.",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "US National Archives / War Documentary – Maxim Chornyi",
-  extraNote: "StuG III Ausf. G : canon de 75 mm L/48, blindage frontal 80 mm, équipage de 4 hommes.",
-  carouselId: "stug",
-  carouselImages: [
-    "https://imgur.com/ZhC6iiU.jpg",
-    "https://imgur.com/s1i2wHR.jpg",
-    "https://imgur.com/hdosB1y.jpg",
-    "https://imgur.com/NavjP4l.jpg"
-  ],
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411824,-1.320132"
-},
+  {
+    title: "Contre-attaque allemande – Neuville-au-Plain",
+    category: "oldphoto",
+    lat: 49.411824,
+    lng: -1.320132,
+    description:
+      "Le 7 juin 1944 au matin, les parachutistes de la 82e Airborne subissent une violente contre-attaque allemande venant de Neuville-au-Plain. Les hommes du 505e PIR tiennent leur position, et le soldat John E. Atchley détruit un StuG III engagé dans l’assaut.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "US National Archives / War Documentary – Maxim Chornyi",
+    extraNote: "StuG III Ausf. G : canon de 75 mm L/48, blindage frontal 80 mm, équipage de 4 hommes.",
+    carouselId: "stug",
+    carouselImages: [
+      "https://imgur.com/ZhC6iiU.jpg",
+      "https://imgur.com/s1i2wHR.jpg",
+      "https://imgur.com/hdosB1y.jpg",
+      "https://imgur.com/NavjP4l.jpg"
+    ],
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.411824,-1.320132"
+  },
 
-{
-  title: "Débarquement de la 2e DB – 1er août 1944",
-  category: "oldphoto",
-  lat: 49.445259,
-  lng: -1.208396,
-  description:
-    "Le 1er août 1944, la 2e Division Blindée du général Leclerc débarque sur Utah Beach, au niveau des villages de Saint-Martin-de-Varreville et Saint-Germain-de-Varreville. C’est ici que débute sa progression vers la libération de la France.",
-  image: "",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "Fondation Maréchal Leclerc de Hauteclocque",
-  carouselId: "leclerc",
-  carouselImages: [
-    "https://i.imgur.com/RNu3elD.jpeg",
-    "https://i.imgur.com/48QAgaj.jpeg",
-    "https://i.imgur.com/vqDfznp.jpeg"
-  ],
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445259,-1.208396"
-},
+  {
+    title: "Débarquement de la 2e DB – 1er août 1944",
+    category: "oldphoto",
+    lat: 49.445259,
+    lng: -1.208396,
+    description:
+      "Le 1er août 1944, la 2e Division Blindée du général Leclerc débarque sur Utah Beach, au niveau des villages de Saint-Martin-de-Varreville et Saint-Germain-de-Varreville. C’est ici que débute sa progression vers la libération de la France.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "Fondation Maréchal Leclerc de Hauteclocque",
+    carouselId: "leclerc",
+    carouselImages: [
+      "https://i.imgur.com/RNu3elD.jpeg",
+      "https://i.imgur.com/48QAgaj.jpeg",
+      "https://i.imgur.com/vqDfznp.jpeg"
+    ],
+    googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445259,-1.208396"
+  },
 
   /* =========================================================
      MUSÉES DU DÉBARQUEMENT AMÉRICAIN
@@ -520,12 +520,6 @@ function buildPopupContent(point) {
   const categoryLabel = category ? category.label : "Catégorie";
   const categoryColor = category ? category.color : "#333333";
 
-  const mediaHtml = `
-    ${buildImageBlock("Image actuelle", point.image, point.title)}
-    ${buildImageBlock("Photo d’époque", point.oldPhoto, point.title + " - photo d’époque")}
-    ${buildVideoBlock(point.video)}
-  `.trim();
-
   const websiteButton = isSafeUrl(point.website)
     ? `<a class="popup-btn" href="${point.website}" target="_blank" rel="noopener noreferrer">Site officiel</a>`
     : "";
@@ -535,11 +529,69 @@ function buildPopupContent(point) {
     : "";
 
   const buttonsHtml = `
-<div class="popup-buttons">
-  ${websiteButton}
-  ${mapsButton}
-</div>
-`;
+    <div class="popup-buttons">
+      ${websiteButton}
+      ${mapsButton}
+    </div>
+  `;
+
+  let mediaHtml = "";
+
+  if (Array.isArray(point.carouselImages) && point.carouselImages.length > 0) {
+    const safeId = point.carouselId || point.title.replace(/\s+/g, "-").toLowerCase();
+
+    const dynamicTitle =
+      Array.isArray(point.carouselTitle) && point.carouselTitle.length > 0
+        ? `<div id="carousel-title-${safeId}" class="carousel-dynamic-title">${escapeHtml(point.carouselTitle[0])}</div>`
+        : "";
+
+    const dynamicDescription =
+      Array.isArray(point.carouselDescription) && point.carouselDescription.length > 0
+        ? `<div id="carousel-description-${safeId}" class="carousel-dynamic-description">${escapeHtml(point.carouselDescription[0])}</div>`
+        : "";
+
+    const imagesHtml = point.carouselImages
+      .filter(isSafeUrl)
+      .map(
+        (imgUrl, index) => `
+          <img
+            src="${imgUrl}"
+            alt="${escapeHtml(point.title)} - image ${index + 1}"
+            loading="lazy"
+            onclick="openLightbox(this.src)">
+        `
+      )
+      .join("");
+
+    mediaHtml = `
+      ${dynamicTitle}
+      ${dynamicDescription}
+      <div class="glider-contain">
+        <div class="glider" id="glider-${safeId}">
+          ${imagesHtml}
+        </div>
+        <button class="glider-prev" aria-label="Précédent">«</button>
+        <button class="glider-next" aria-label="Suivant">»</button>
+        <div class="dots"></div>
+      </div>
+    `;
+  } else {
+    mediaHtml = `
+      ${buildImageBlock("Image actuelle", point.image, point.title)}
+      ${buildImageBlock("Photo d’époque", point.oldPhoto, point.title + " - photo d’époque")}
+      ${buildVideoBlock(point.video)}
+    `.trim();
+  }
+
+  const sourceHtml =
+    point.source && point.source.trim() !== ""
+      ? `<div class="popup-source">Source : ${escapeHtml(point.source)}</div>`
+      : "";
+
+  const extraNoteHtml =
+    point.extraNote && point.extraNote.trim() !== ""
+      ? `<div class="popup-extra-note">${escapeHtml(point.extraNote)}</div>`
+      : "";
 
   return `
     <div class="popup-content">
@@ -549,6 +601,8 @@ function buildPopupContent(point) {
       </span>
       <p class="popup-description">${escapeHtml(point.description)}</p>
       ${mediaHtml ? `<div class="popup-media">${mediaHtml}</div>` : ""}
+      ${extraNoteHtml}
+      ${sourceHtml}
       ${buttonsHtml}
     </div>
   `;
@@ -628,6 +682,58 @@ POINTS.forEach((point) => {
   });
 
   marker.addTo(categoryLayers[point.category]);
+});
+
+map.on("popupopen", function (e) {
+  const popupElement = e.popup.getElement();
+  if (!popupElement) return;
+
+  const gliderElement = popupElement.querySelector(".glider");
+  if (!gliderElement) return;
+
+  new Glider(gliderElement, {
+    slidesToShow: 1,
+    dots: popupElement.querySelector(".dots"),
+    arrows: {
+      prev: popupElement.querySelector(".glider-prev"),
+      next: popupElement.querySelector(".glider-next")
+    },
+    draggable: true,
+    scrollLock: true
+  });
+
+  const safeId = gliderElement.id.replace("glider-", "");
+  const point = POINTS.find((p) => {
+    const pointId = p.carouselId || p.title.replace(/\s+/g, "-").toLowerCase();
+    return pointId === safeId;
+  });
+
+  if (!point) return;
+
+  const titleTarget = popupElement.querySelector(`#carousel-title-${safeId}`);
+  const descTarget = popupElement.querySelector(`#carousel-description-${safeId}`);
+
+  if (!titleTarget && !descTarget) return;
+
+  gliderElement.addEventListener("glider-slide-visible", function (event) {
+    const slideIndex = event.detail.slide;
+
+    if (
+      titleTarget &&
+      Array.isArray(point.carouselTitle) &&
+      point.carouselTitle[slideIndex]
+    ) {
+      titleTarget.innerText = point.carouselTitle[slideIndex];
+    }
+
+    if (
+      descTarget &&
+      Array.isArray(point.carouselDescription) &&
+      point.carouselDescription[slideIndex]
+    ) {
+      descTarget.innerText = point.carouselDescription[slideIndex];
+    }
+  });
 });
 
 function updateCategoryVisibility() {

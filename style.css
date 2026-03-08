@@ -204,18 +204,6 @@ body {
 /* =========================================================
    CONTENU LÉGENDE
 ========================================================= */
-.legend-panel h2 {
-  margin: 0 0 8px 0;
-  font-size: 1rem;
-  color: #111827;
-}
-
-.legend-help {
-  margin: 0 0 12px 0;
-  font-size: 0.88rem;
-  color: #475569;
-  line-height: 1.4;
-}
 
 .legend-list {
   list-style: none;

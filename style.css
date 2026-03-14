@@ -315,6 +315,11 @@ body {
   border: 1px solid #d1d5db;
 }
 
+.popup-media img {
+  height: auto;
+  cursor: zoom-in;
+}
+
 .popup-label {
   font-size: 0.8rem;
   font-weight: 700;
@@ -579,7 +584,7 @@ body {
   object-position: center;
   border-radius: 10px;
   border: 1px solid #d1d5db;
-  cursor: pointer;
+  cursor: zoom-in;
   background: #f8fafc;
 }
 
@@ -632,4 +637,48 @@ body {
 
 .dots .glider-dot.active {
   background: #111111;
+}
+/* =========================================================
+   LIGHTBOX PLEIN ÉCRAN
+========================================================= */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.92);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: zoom-out;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-img {
+  display: block;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+  cursor: default;
+  background: #111111;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 100000;
+  font-size: 42px;
+  line-height: 1;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
 }

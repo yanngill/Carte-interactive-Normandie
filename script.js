@@ -616,7 +616,10 @@ const popupMairieOccupation = `
 `;
 L.circleMarker(coordsMairieOccupation, specialOldPhotoStyle)
   .addTo(categoryLayers.oldphoto)
-  .bindPopup(popupMairieOccupation, { maxWidth: 320 });
+  .bindPopup(popupMairieOccupation, {
+    maxWidth: 320,
+    autoPan: false
+  });
 
 // Neuville / StuG
 const coordsStugNeuville = [49.411824, -1.320132];
@@ -648,7 +651,10 @@ const popupStugNeuville = `
 `;
 L.circleMarker(coordsStugNeuville, specialOldPhotoStyle)
   .addTo(categoryLayers.oldphoto)
-  .bindPopup(popupStugNeuville, { maxWidth: 320 });
+  .bindPopup(popupStugNeuville, {
+    maxWidth: 320,
+    autoPan: false
+  });
 
 // Débarquement 2e DB
 const coordsLeclerc = [49.445259, -1.208396];
@@ -676,7 +682,10 @@ const popupLeclerc = `
 `;
 L.circleMarker(coordsLeclerc, specialOldPhotoStyle)
   .addTo(categoryLayers.oldphoto)
-  .bindPopup(popupLeclerc, { maxWidth: 320 });
+  .bindPopup(popupLeclerc, {
+    maxWidth: 320,
+    autoPan: false
+  });
 
 function updateCategoryVisibility() {
   Object.keys(CATEGORIES).forEach((categoryKey) => {

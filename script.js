@@ -1019,11 +1019,23 @@ const RecenterControl = L.Control.extend({
 });
 
 map.addControl(new RecenterControl());
+
+function enablePopupFocusMode() {
+  if (window.innerWidth <= 900) {
+    document.body.classList.add("popup-focus");
+  }
+}
+
+function disablePopupFocusMode() {
+  document.body.classList.remove("popup-focus");
+}
 /* =========================================================
    ACTIVATION SIMPLE DES CARROUSELS
 ========================================================= */
 
 map.on("popupopen", function (e) {
+  enablePopupFocusMode();
+
   const popupElement = e.popup.getElement();
   if (!popupElement) return;
 
@@ -1043,4 +1055,8 @@ map.on("popupopen", function (e) {
 
     gliderElement.dataset.gliderInitialized = "true";
   }
+});
+
+map.on("popupclose", function () {
+  disablePopupFocusMode();
 });

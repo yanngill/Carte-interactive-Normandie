@@ -682,3 +682,19 @@ body {
   cursor: pointer;
   user-select: none;
 }
+/* =========================================================
+   MODE FOCUS POPUP SUR MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+  body.popup-focus .legend-toggle-wrap,
+  body.popup-focus .legend-sidebar,
+  body.popup-focus .leaflet-control-layers,
+  body.popup-focus .leaflet-control-scale,
+  body.popup-focus .leaflet-top.leaflet-left .leaflet-bar,
+  body.popup-focus .leaflet-top.leaflet-right .leaflet-control {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+}

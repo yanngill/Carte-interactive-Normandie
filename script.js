@@ -586,7 +586,10 @@ const popupChezJeanne = `
 `;
 L.circleMarker(coordsChezJeanne, specialOldPhotoStyle)
   .addTo(categoryLayers.oldphoto)
-  .bindPopup(popupChezJeanne, { maxWidth: 320 });
+  .bindPopup(popupChezJeanne, {
+    maxWidth: 320,
+    autoPan: false
+  });
 
 // Mairie occupation allemande
 const coordsMairieOccupation = [49.409768, -1.318364];

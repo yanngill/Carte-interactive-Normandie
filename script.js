@@ -399,7 +399,12 @@ function buildImageBlock(label, url, altText) {
   if (!isSafeUrl(url)) return "";
   return `
     <div>
-      <img src="${url}" alt="${escapeHtml(altText)}" loading="lazy">
+      <img
+        src="${url}"
+        alt="${escapeHtml(altText)}"
+        loading="lazy"
+        onclick="openLightbox(this.src)"
+      >
     </div>
   `;
 }
@@ -471,7 +476,50 @@ function buildPopupContent(point) {
     </div>
   `;
 }
+/* =========================================================
+   LIGHTBOX IMAGE
+========================================================= */
 
+function openLightbox(src) {
+  if (!isSafeUrl(src)) return;
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  if (!lightbox || !lightboxImg) return;
+
+  lightboxImg.src = src;
+  lightbox.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox(event) {
+  if (event) {
+    event.stopPropagation();
+  }
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  if (!lightbox || !lightboxImg) return;
+
+  lightbox.classList.remove("open");
+  lightboxImg.src = "";
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("click", function (event) {
+  const lightboxImg = document.getElementById("lightbox-img");
+  if (lightboxImg && event.target === lightboxImg) {
+    event.stopPropagation();
+  }
+});
 /* =========================================================
    INITIALISATION CARTE
 ========================================================= */
@@ -975,23 +1023,24 @@ map.addControl(new RecenterControl());
    ACTIVATION SIMPLE DES CARROUSELS
 ========================================================= */
 
-map.on("popupopen", function(e) {
+map.on("popupopen", function (e) {
+  const popupElement = e.popup.getElement();
+  if (!popupElement) return;
 
-  const gliderElement = e.popup.getElement().querySelector(".glider");
+  const gliderElement = popupElement.querySelector(".glider");
 
-  if (gliderElement) {
-
+  if (gliderElement && !gliderElement.dataset.gliderInitialized) {
     new Glider(gliderElement, {
       slidesToShow: 1,
       draggable: true,
       scrollLock: true,
-      dots: e.popup.getElement().querySelector(".dots"),
+      dots: popupElement.querySelector(".dots"),
       arrows: {
-        prev: e.popup.getElement().querySelector(".glider-prev"),
-        next: e.popup.getElement().querySelector(".glider-next")
+        prev: popupElement.querySelector(".glider-prev"),
+        next: popupElement.querySelector(".glider-next")
       }
     });
 
+    gliderElement.dataset.gliderInitialized = "true";
   }
-
 });

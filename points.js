@@ -676,6 +676,21 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.380625,-0.905892"
 },
+
+{
+  title: "WN 74 – Pointe de la Percée",
+  category: "coastalDefense",
+  lat: 49.387559,
+  lng: -0.918817,
+  description:
+    "Le WN74 était situé au sommet de la falaise à la pointe de la Percée, à l’extrémité ouest d’Omaha Beach. La position comprenait deux canons de campagne de 76 mm d’origine tchèque (Skoda) installés pour tirer de flanc sur la plage. Depuis cette position dominante, les pièces pouvaient balayer une grande partie du secteur ouest d’Omaha et appuyer la défense des positions voisines.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.387559,-0.918817"
+},
 ];
 
 /* ######################################################################### */

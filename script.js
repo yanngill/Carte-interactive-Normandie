@@ -1,5 +1,34 @@
 /* =========================================================
-   PERSONNALISATION RAPIDE
+   CARTE INTERACTIVE DU DÉBARQUEMENT EN NORMANDIE
+   Projet BTS Tourisme – Épreuve GIT
+   Auteur : Yann
+========================================================= */
+
+
+/* =========================================================
+   SOMMAIRE DU FICHIER
+=========================================================
+
+1. Configuration générale
+2. Outils utilitaires
+3. Construction des popups
+4. Lightbox images
+5. Initialisation de la carte
+6. Fonds de carte
+7. Catégories et création des points
+8. Popups spéciales (carrousels photos)
+9. Gestion des catégories
+10. Légende interactive
+11. Grands labels de carte
+12. Géolocalisation utilisateur
+13. Bouton recentrage utilisateur
+14. Mode focus popup mobile
+15. Activation des carrousels
+
+========================================================= */
+
+/* =========================================================
+   CONFIG GENERALE
 ========================================================= */
 
 const INITIAL_VIEW = {
@@ -19,7 +48,7 @@ const HELMET_ICON_SVG = `
 `;
 
 /* =========================================================
-   OUTILS
+   OUTILS UTILITAIRES
 ========================================================= */
 
 function escapeHtml(value) {
@@ -45,7 +74,9 @@ function isSafeUrl(url) {
 function svgToDataUri(svgString) {
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svgString)}`;
 }
-
+/* =========================================================
+                    CONSTRUCTION DES POPUPS
+========================================================= */
 function buildImageBlock(label, url, altText) {
   if (!isSafeUrl(url)) return "";
   return `
@@ -128,7 +159,7 @@ function buildPopupContent(point) {
   `;
 }
 /* =========================================================
-   LIGHTBOX IMAGE
+                        LIGHTBOX IMAGE
 ========================================================= */
 
 function openLightbox(src) {
@@ -172,7 +203,7 @@ document.addEventListener("click", function (event) {
   }
 });
 /* =========================================================
-   INITIALISATION CARTE
+                  INITIALISATION DE LA CARTE
 ========================================================= */
 
 const map = L.map("map", {
@@ -180,7 +211,9 @@ const map = L.map("map", {
   zoom: INITIAL_VIEW.zoom,
   zoomControl: true
 });
-
+/* =========================================================
+                      FONDS DE CARTE
+========================================================= */
 const classicLayer = L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
@@ -214,7 +247,7 @@ L.control.scale({
 }).addTo(map);
 
 /* =========================================================
-   FILTRES / CATÉGORIES
+                 CATÉGORIES, FILTRES ET POINTS
 ========================================================= */
 
 const activeCategories = {};
@@ -248,7 +281,7 @@ POINTS.forEach((point) => {
 });
 
 /* =========================================================
-   POPUPS SPÉCIALES AVEC CARROUSEL
+   POPUPS SPÉCIALES POUR LES CARROUSELS
 ========================================================= */
 
 const specialOldPhotoStyle = {
@@ -260,7 +293,7 @@ const specialOldPhotoStyle = {
   fillOpacity: 0.92
 };
 
-// Chez Jeanne
+/* ------------------------- CHEZ JEANNE ------------------------- */
 const coordsChezJeanne = [49.408914, -1.317977];
 const popupChezJeanne = `
   <div class="popup-content">
@@ -289,8 +322,7 @@ L.circleMarker(coordsChezJeanne, specialOldPhotoStyle)
     maxWidth: 320,
     autoPan: false
   });
-
-// Mairie occupation allemande
+/* ------------------- MAIRIE OCCUPATION ALLEMANDE ------------------- */
 const coordsMairieOccupation = [49.409768, -1.318364];
 const popupMairieOccupation = `
   <div class="popup-content">
@@ -320,7 +352,7 @@ L.circleMarker(coordsMairieOccupation, specialOldPhotoStyle)
     autoPan: false
   });
 
-// Neuville / StuG
+/* ---------------------- NEUVILLE / STUG III ---------------------- */
 const coordsStugNeuville = [49.411824, -1.320132];
 const popupStugNeuville = `
   <div class="popup-content">
@@ -355,7 +387,7 @@ L.circleMarker(coordsStugNeuville, specialOldPhotoStyle)
     autoPan: false
   });
 
-// Débarquement 2e DB
+/* -------------------- DÉBARQUEMENT DE LA 2e DB -------------------- */
 const coordsLeclerc = [49.445259, -1.208396];
 const popupLeclerc = `
   <div class="popup-content">
@@ -385,7 +417,9 @@ L.circleMarker(coordsLeclerc, specialOldPhotoStyle)
     maxWidth: 320,
     autoPan: false
   });
-
+/* =========================================================
+                    GESTION DES CATÉGORIES
+========================================================= */
 function updateCategoryVisibility() {
   Object.keys(CATEGORIES).forEach((categoryKey) => {
     const layer = categoryLayers[categoryKey];
@@ -432,7 +466,7 @@ function toggleCategory(categoryKey) {
 }
 
 /* =========================================================
-   LÉGENDE OUVRABLE / FERMABLE
+                     LÉGENDE INTERACTIVE
 ========================================================= */
 
 const legendList = document.getElementById("legendList");
@@ -510,7 +544,7 @@ updateCategoryVisibility();
 closeLegend();
 
 /* =========================================================
-   GRANDS LABELS
+                    GRANDS TITRES DE CARTE
 ========================================================= */
 
 const labelsLayer = L.layerGroup().addTo(map);
@@ -545,7 +579,7 @@ map.on("zoomend", updateBigLabelsVisibility);
 updateBigLabelsVisibility();
 
 /* =========================================================
-   GÉOLOCALISATION UTILISATEUR
+                   GÉOLOCALISATION UTILISATEUR
 ========================================================= */
 
 const helmetIcon = L.divIcon({
@@ -634,7 +668,7 @@ function initGeolocation() {
 initGeolocation();
 
 /* =========================================================
-   BOUTON RECENTRAGE UTILISATEUR
+         BOUTON DE RECENTRAGE UTILISATEUR pointeur
 ========================================================= */
 
 const RecenterControl = L.Control.extend({
@@ -670,7 +704,9 @@ const RecenterControl = L.Control.extend({
 });
 
 map.addControl(new RecenterControl());
-
+/* =========================================================
+                    MODE FOCUS POPUP (MOBILE)
+========================================================= */
 function enablePopupFocusMode() {
   if (window.innerWidth <= 900) {
     document.body.classList.add("popup-focus");
@@ -681,7 +717,7 @@ function disablePopupFocusMode() {
   document.body.classList.remove("popup-focus");
 }
 /* =========================================================
-   ACTIVATION SIMPLE DES CARROUSELS
+                 ACTIVATION DES POPUPS / CARROUSELS
 ========================================================= */
 
 map.on("popupopen", function (e) {

@@ -22,7 +22,7 @@ const CATEGORIES = {
     label: "Musée",
     color: "#6a1b9a",
     key: ""
-  }
+  },
   cemetery: {
   label: "Cimetière militaire",
   color: "#2e7d32",

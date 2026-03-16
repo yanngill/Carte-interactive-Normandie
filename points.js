@@ -671,94 +671,80 @@ const POINTS = [
   /* ============================ OFFICE DE TOURISME  =========================== */
   /* ======================================================================= */
 {
-  title: "Office de tourisme – Sainte-Mère-Église",
+  title: "Office de tourisme – Bayeux",
   category: "officeTourism",
-  lat: 49.407951,
-  lng: -1.316454,
+  lat: 49.342961,
+  lng: -0.691930,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.bayeux-bessin-tourisme.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.342961,-0.691930"
+},
+
+{
+  title: "Office de tourisme – Omaha Beach (Isigny-Omaha Tourisme)",
+  category: "officeTourism",
+  lat: 49.347322,
+  lng: -0.856204,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.347322,-0.856204"
+},
+
+{
+  title: "Office de tourisme – Grandcamp-Maisy (Isigny-Omaha Tourisme)",
+  category: "officeTourism",
+  lat: 49.389085,
+  lng: -1.040118,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.389085,-1.040118"
+},
+
+{
+  title: "Office de tourisme – Isigny-sur-Mer (Isigny-Omaha Tourisme)",
+  category: "officeTourism",
+  lat: 49.319007,
+  lng: -1.100563,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.319007,-1.100563"
+},
+
+{
+  title: "Office de tourisme – Cotentin",
+  category: "officeTourism",
+  lat: 49.507204,
+  lng: -1.470540,
   description:
     "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
   website: "https://www.encotentin.fr",
-  googleMapsLink: "https://www.google.com/maps?q=49.407951,-1.316454"
+  googleMapsLink: "https://www.google.com/maps?q=49.507204,-1.470540"
 },
+
+{
+  title: "Office de tourisme – Sainte-Mère-Église",
+  category: "officeTourism",
+  lat: 49.408056,
+  lng: -1.316417,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.encotentin.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.408056,-1.316417"
+},
+
 {
   title: "Office de tourisme – Carentan-les-Marais",
   category: "officeTourism",
-  lat: 49.303800,
-  lng: -1.248100,
+  lat: 49.304526,
+  lng: -1.244190,
   description:
     "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
   website: "https://www.baieducotentin.com",
-  googleMapsLink: "https://www.google.com/maps?q=49.303800,-1.248100"
-},
-{
-  title: "Office de tourisme – Utah Beach",
-  category: "officeTourism",
-  lat: 49.416050,
-  lng: -1.174900,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.utah-beach.com",
-  googleMapsLink: "https://www.google.com/maps?q=49.416050,-1.174900"
-},
-{
-  title: "Office de tourisme – Isigny-sur-Mer",
-  category: "officeTourism",
-  lat: 49.316900,
-  lng: -1.103800,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.isigny-omaha-tourisme.fr",
-  googleMapsLink: "https://www.google.com/maps?q=49.316900,-1.103800"
-},
-{
-  title: "Office de tourisme – Colleville-sur-Mer",
-  category: "officeTourism",
-  lat: 49.348333,
-  lng: -0.843611,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.isigny-omaha-tourisme.fr",
-  googleMapsLink: "https://www.google.com/maps?q=49.348333,-0.843611"
-},
-{
-  title: "Office de tourisme – Saint-Laurent-sur-Mer",
-  category: "officeTourism",
-  lat: 49.359900,
-  lng: -0.863300,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.isigny-omaha-tourisme.fr",
-  googleMapsLink: "https://www.google.com/maps?q=49.359900,-0.863300"
-},
-{
-  title: "Office de tourisme – Vierville-sur-Mer",
-  category: "officeTourism",
-  lat: 49.375600,
-  lng: -0.903300,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.isigny-omaha-tourisme.fr",
-  googleMapsLink: "https://www.google.com/maps?q=49.375600,-0.903300"
-},
-{
-  title: "Office de tourisme – Port-en-Bessin-Huppain",
-  category: "officeTourism",
-  lat: 49.344400,
-  lng: -0.755700,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.bayeux-bessin-tourisme.com",
-  googleMapsLink: "https://www.google.com/maps?q=49.344400,-0.755700"
-},
-{
-  title: "Office de tourisme – Bayeux",
-  category: "officeTourism",
-  lat: 49.276000,
-  lng: -0.702000,
-  description:
-    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
-  website: "https://www.bayeux-bessin-tourisme.com",
-  googleMapsLink: "https://www.google.com/maps?q=49.276000,-0.702000"
+  googleMapsLink: "https://www.google.com/maps?q=49.304526,-1.244190"
 },
 ];
 

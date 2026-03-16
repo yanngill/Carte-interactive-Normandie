@@ -608,7 +608,7 @@ POINTS.forEach((point) => {
   const marker = L.circleMarker([point.lat, point.lng], {
     radius: 9,
     fillColor: category.color,
-    color: "#ffffff",
+    color: "#000000",
     weight: 2,
     opacity: 1,
     fillOpacity: 0.92
@@ -628,7 +628,7 @@ POINTS.forEach((point) => {
 const specialOldPhotoStyle = {
   radius: 9,
   fillColor: CATEGORIES.oldphoto.color,
-  color: "#ffffff",
+  color: "#000000",
   weight: 2,
   opacity: 1,
   fillOpacity: 0.92

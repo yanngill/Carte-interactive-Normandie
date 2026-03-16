@@ -190,6 +190,21 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.359700,-0.838975"
   },
   {
+  title: "Photo d’époque – Civils et soldats américains à Carentan après la bataille (juin 1944)",
+  category: "oldphoto",
+  lat: 49.304428,
+  lng: -1.243604,
+  description:
+    "Photographie prise sur la place de la République à Carentan après la libération de la ville en juin 1944. On y voit des soldats américains de la 101st Airborne Division assis au pied du monument aux morts, accompagnés de civils dont une jeune fille. La bataille de Carentan, menée du 10 au 13 juin 1944, permit de relier les têtes de pont d’Utah Beach et d’Omaha Beach. La ville avait déjà subi de lourdes destructions à la suite des bombardements alliés du 6 juin puis des tirs d’artillerie allemands. Au total, au moins 65 civils de Carentan, hommes, femmes et enfants, perdirent la vie durant les combats et bombardements liés à la libération de la ville.",
+  image: "https://imgur.com/gC7FYtv",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "Archives photographiques – Carentan, place de la République, juin 1944",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.304428,-1.243604"
+},
+  {
   title: "WN62 – Intérieur de la casemate du canon de 75 mm",
   category: "oldphoto",
   lat: 49.360469,

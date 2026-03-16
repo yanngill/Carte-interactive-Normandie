@@ -565,18 +565,18 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.367111,-0.875312"
 },
   {
-  title: "WN 68 – Défense du centre d’Omaha Beach",
+  title: "WN 68 – Position double de mitrailleuses",
   category: "coastalDefense",
   lat: 49.368971,
   lng: -0.882154,
   description:
-    "Le WN68 protégeait l’accès à la vallée et à la sortie de plage au centre d’Omaha Beach. La position était encore en construction en juin 1944 : plusieurs casemates devaient accueillir des canons de 5 cm KwK, ainsi que des pièces antichars et d’artillerie de 7,5 cm et 8,8 cm. Le site comprenait également des tobrouks, des mortiers de 81 mm, des tourelles de char réemployées et de nombreuses mitrailleuses MG34 et MG42. Vous vous trouvez ici à l’emplacement d’une position double de mitrailleuses qui couvrait directement la plage. Le matin du 6 juin, après le bombardement naval et aérien, les défenseurs ouvrirent le feu sur les premières vagues américaines débarquant à marée basse. Au cours de la journée, l’infanterie américaine et les chars Sherman parvinrent progressivement à neutraliser les positions en contournant les points d’appui par les falaises et les ravins.",
+    "Vous vous trouvez à l’emplacement d’une position double de mitrailleuses appartenant au WN68, qui défendait le centre d’Omaha Beach. Ces positions couvraient directement la plage et participaient au tir croisé avec les autres points d’appui voisins. Le WN68 était encore en construction en juin 1944 et comprenait tranchées, tobrouks, mortiers et plusieurs casemates destinées à recevoir des canons de 5 cm KwK et d’autres pièces antichars. Le matin du 6 juin 1944, les défenseurs ouvrirent le feu sur les premières vagues américaines débarquant à marée basse.",
   image: "",
   oldPhoto: "",
   video: "",
   website: "",
   source: "",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.371022,-0.880388"
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.368971,-0.882154"
 },
 ];
 

@@ -550,6 +550,20 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.370053,-0.877262"
 },
+  {
+  title: "WN 67 – Position dominante derrière Omaha Beach",
+  category: "coastalDefense",
+  lat: 49.367111,
+  lng: -0.875312,
+  description:
+    "Position allemande située sur les hauteurs derrière WN66. Le WN67 était organisé en deux zones : une première sur le plateau herbeux dominant la plage avec tranchées, tobrouks, mortiers et postes de mitrailleuses, et une seconde plus bas derrière le mur antichar où plusieurs casemates étaient en construction. La défense comprenait notamment des mortiers de 81 mm, une tourelle de char Renault R35 réemployée, plusieurs tobrouks et de nombreuses positions de mitrailleuses. L’ensemble était occupé par des soldats de la 10./Grenadier-Regiment 726 et devait couvrir le centre d’Omaha Beach ainsi que la vallée derrière la plage.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.367111,-0.875312"
+},
 ];
 
 /* ######################################################################### */

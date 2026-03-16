@@ -117,7 +117,7 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
   },
   {
-    title: "WN62 – Le Ruquet – Easy Red – Poste de commandement provisoire",
+    title: "WN65 - Poste de commandement provisoire",
     category: "oldphoto",
     lat: 49.364435,
     lng: -0.863437,
@@ -132,7 +132,7 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
   },
   {
-    title: "WN62 – Le Ruquet – Easy Red – Arrivée de la 2nd Infantry Division",
+    title: "WN65 –  Arrivée de la 2nd Infantry Division",
     category: "oldphoto",
     lat: 49.364151,
     lng: -0.864825,
@@ -176,6 +176,20 @@ const POINTS = [
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.359700,-0.838975"
   },
+  {
+  title: "WN62 – Intérieur de la casemate du canon de 75 mm",
+  category: "oldphoto",
+  lat: 49.360469,
+  lng: -0.847178,
+  description:
+    "À l’intérieur de la casemate basse du WN62 abritant un canon antichar de 75 mm Pak 40. Sur cette photographie prise après la capture de la position, des soldats américains inspectent le bunker. Il s’agit probablement d’hommes du génie (Engineer Combat Battalion), reconnaissables au demi-cercle peint sur leurs casques.",
+  image: "https://i.imgur.com/LJW2nga.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.360469,-0.847178"
+},
   {
     title: "Patrouille américaine à cheval – Sainte-Mère-Église",
     category: "oldphoto",

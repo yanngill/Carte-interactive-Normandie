@@ -436,6 +436,20 @@ const POINTS = [
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
   },
+  {
+  title: "WN 65 – Défense de la vallée du Ruquet",
+  category: "coastalDefense",
+  lat: 49.364384,
+  lng: -0.865269,
+  description:
+    "Le WN65 se trouvait à l’ouest de la vallée du Ruquet, correspondant à la sortie de plage E-1 vers Colleville-sur-Mer. Cette position allemande faisait face au WN64 situé de l’autre côté du vallon afin de créer un tir croisé destiné à verrouiller l’accès à l’intérieur des terres. Le point d’appui comprenait plusieurs tranchées, tobrouks et positions de mitrailleuses, ainsi que des canons antichars de 50 mm et des canons de char de 5 cm KwK installés dans des ringstands et dans des casemates R667, dont l’une était encore en construction. Un canon antichar de 7,5 cm Pak 40 était également positionné plus haut dans la vallée. Un long fossé antichar d’environ 800 mètres barrait l’accès du vallon, tandis que des champs de mines et des réseaux de barbelés protégeaient toute la position. La zone était occupée par une trentaine de soldats de la 10./Grenadier-Regiment 726.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364384,-0.865269"
+},
    {
   title: "WN 64 – Défense de la vallée du Ruquet",
   category: "coastalDefense",

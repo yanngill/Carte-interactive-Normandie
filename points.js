@@ -578,6 +578,20 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.368971,-0.882154"
 },
+  {
+  title: "WN 69 – Position de Nebelwerfer",
+  category: "coastalDefense",
+  lat: 49.362122,
+  lng: -0.882550,
+  description:
+    "Position allemande du WN69 où étaient installés des lance-roquettes Nebelwerfer destinés à tirer sur Omaha Beach et les zones de débarquement. Dans la nuit du 5 au 6 juin 1944, un petit commando américain, probablement parachuté et bien renseigné, parvient à sectionner ici un câble téléphonique reliant les positions allemandes du secteur du Ruquet, perturbant les communications juste avant le début du Débarquement.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.362122,-0.882550"
+},
 ];
 
 /* ######################################################################### */

@@ -19,7 +19,7 @@
 8. Popups spéciales (carrousels photos)
 9. Gestion des catégories
 10. Légende interactive
-
+11. Titres de cartes
 12. Géolocalisation utilisateur
 13. Bouton recentrage utilisateur
 14. Mode focus popup mobile
@@ -542,8 +542,46 @@ map.on("click", () => {
 buildLegend();
 updateCategoryVisibility();
 closeLegend();
+/* =========================================================
+                    GRANDS TITRES DE CARTE
+========================================================= */
 
+const bigLabelsLayer = L.layerGroup().addTo(map);
 
+function getLabelSize(zoom) {
+  if (zoom >= 14) return 24;
+  if (zoom >= 12) return 20;
+  if (zoom >= 10) return 18;
+  return 16;
+}
+
+function updateBigLabels() {
+  bigLabelsLayer.clearLayers();
+
+  const currentZoom = map.getZoom();
+  const fontSize = getLabelSize(currentZoom);
+
+  BIG_LABELS.forEach((label) => {
+    if (
+      currentZoom >= label.minZoom &&
+      (label.maxZoom === undefined || currentZoom <= label.maxZoom)
+    ) {
+      const marker = L.marker([label.lat, label.lng], {
+        interactive: false,
+        icon: L.divIcon({
+          className: "place-label",
+          html: `<div style="font-size:${fontSize}px;">${escapeHtml(label.text)}</div>`,
+          iconSize: null
+        })
+      });
+
+      bigLabelsLayer.addLayer(marker);
+    }
+  });
+}
+
+map.on("zoomend", updateBigLabels);
+updateBigLabels();
 /* =========================================================
                    GÉOLOCALISATION UTILISATEUR
 ========================================================= */

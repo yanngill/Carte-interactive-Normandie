@@ -23,6 +23,11 @@ const CATEGORIES = {
     color: "#6a1b9a",
     key: ""
   }
+  cemetery: {
+  label: "Cimetière militaire",
+  color: "#2e7d32",
+  key: ""
+},
 };
 
 /* ######################################################################### */
@@ -44,7 +49,7 @@ const POINTS = [
       "Position stratégique prise d’assaut par les Rangers américains le 6 juin 1944. Lieu emblématique du secteur américain entre Utah et Omaha.",
     image: "https://i.imgur.com/1U8cKFq.jpeg",
     oldPhoto: "",
-    video: "https://www.youtube.com/embed/zR7TCXmPq9M",
+    video: "",
     website: "",
     source: "US National Archives",
     googleMapsLink:
@@ -754,6 +759,65 @@ const POINTS = [
     "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
   website: "https://www.baieducotentin.com",
   googleMapsLink: "https://www.google.com/maps?q=49.304526,-1.244190"
+},
+     /* ======================================================================= */
+  /* ============================ Cimetière  =========================== */
+  /* ======================================================================= */
+  {
+  title: "Cimetière militaire allemand de Marigny",
+  category: "cemetery",
+  lat: 49.112869,
+  lng: -1.235958,
+  description:
+    "Cimetière militaire allemand. 11 169 soldats allemands y reposent. Il regroupe principalement des morts des combats autour de Saint-Lô et du bocage normand. Le site a été inauguré en 1961.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "https://kriegsgraeberstaetten.volksbund.de/fr/cimetiere-militaire/marigny",
+  source: "Volksbund",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.112869,-1.235958"
+},
+{
+  title: "Cimetière militaire allemand d’Orglandes",
+  category: "cemetery",
+  lat: 49.425365,
+  lng: -1.448244,
+  description:
+    "Cimetière militaire allemand. Plus de 10 100 soldats allemands y sont enterrés. Il est lié aux combats du Cotentin et d’Utah Beach. Le cimetière a été réaménagé après-guerre puis inauguré en 1961.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "https://kriegsgraeberstaetten.volksbund.de/en/military-cemetery/orglandesmanche",
+  source: "Volksbund",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.425365,-1.448244"
+},
+{
+  title: "Cimetière militaire allemand de La Cambe",
+  category: "cemetery",
+  lat: 49.342989,
+  lng: -1.026606,
+  description:
+    "Cimetière militaire allemand. 21 245 soldats allemands y reposent, ce qui en fait le plus grand cimetière allemand de Normandie. Son tumulus central renferme notamment des soldats inconnus et identifiés.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "https://kriegsgraeberstaetten.volksbund.de/en/military-cemetery/la-cambe",
+  source: "Volksbund",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.342989,-1.026606"
+},
+{
+  title: "Normandy American Cemetery – Colleville-sur-Mer",
+  category: "cemetery",
+  lat: 49.358198,
+  lng: -0.851555,
+  description:
+    "Cimetière militaire américain. 9 389 soldats américains y reposent et 1 557 disparus sont inscrits sur le mémorial. Il domine Omaha Beach depuis les hauteurs de Colleville-sur-Mer.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "https://www.abmc.gov/normandy",
+  source: "ABMC",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.358198,-0.851555"
 },
 ];
 

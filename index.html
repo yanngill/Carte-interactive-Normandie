@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Carte interactive du Débarquement américain en Normandie</title>
 
-  <!-- ===================== FEUILLES DE STYLE EXTERNES ===================== -->
+
+  <!-- =========================================================
+                        STYLES EXTERNES
+       Leaflet (carte) + Glider (carrousel photos)
+  ========================================================= -->
+
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -21,78 +25,149 @@
     href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
   />
 
+
+  <!-- =========================================================
+                         STYLE DU PROJET
+  ========================================================= -->
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
+
+
 <body>
+
+  <!-- =========================================================
+                        STRUCTURE PRINCIPALE
+  ========================================================= -->
+
   <div class="app">
+
     <main class="map-wrapper">
-      <!-- Bouton d’ouverture de la légende -->
+
+
+      <!-- =====================================================
+                      BOUTON OUVERTURE LÉGENDE
+      ====================================================== -->
+
       <div class="legend-toggle-wrap" id="legendToggleWrap">
         <button id="openLegendBtn" type="button" class="legend-toggle-btn">
           Légende
         </button>
       </div>
 
-      <!-- Panneau de légende -->
+
+
+      <!-- =====================================================
+                          PANNEAU LÉGENDE
+      ====================================================== -->
+
       <aside class="legend-sidebar" id="legendSidebar" aria-label="Légende et filtres">
+
         <div class="legend-header-row">
+
           <div class="legend-header">
-            <h1>Carte interactive sur le débarquement américains en Normandie</h1>
+            <h1>Carte interactive du Débarquement américain en Normandie</h1>
           </div>
 
-          <button id="closeLegendBtn" type="button" class="legend-close-btn" aria-label="Fermer la légende">
+          <button
+            id="closeLegendBtn"
+            type="button"
+            class="legend-close-btn"
+            aria-label="Fermer la légende"
+          >
             ✕
           </button>
+
         </div>
+
+
+        <!-- Actions légende -->
 
         <div class="legend-actions">
           <button id="showAllBtn" type="button" class="control-btn compact-btn">
             Tout afficher
           </button>
+
           <button id="hideAllBtn" type="button" class="control-btn compact-btn">
             Tout masquer
           </button>
         </div>
 
+
+
+        <!-- Liste des catégories -->
+
         <div class="legend-panel" id="legendPanel">
           <ul class="legend-list" id="legendList"></ul>
         </div>
 
+
+
+        <!-- Bas de la légende -->
+
         <div class="legend-footer">
+
           <div class="legend-feedback">
+
             <p><strong>Questionnaire</strong></p>
 
             <p>
-              Cette enquête anonyme permet d’en savoir plus sur votre profil et votre utilisation de cette carte.
+              Cette enquête anonyme permet d’en savoir plus sur votre profil
+              et votre utilisation de cette carte.
             </p>
 
-            <a 
+            <a
               href="https://forms.gle/RuzkziYvnyVzNZ1s6"
               target="_blank"
               class="feedback-btn"
             >
               Accéder au sondage 🪖
             </a>
+
           </div>
 
           <p class="legend-credits">
-            Carte réalisée avec Leaflet, GitHub, OpenStreetMap, HTML, CSS et JavaScript,
+            Carte réalisée avec Leaflet, GitHub, OpenStreetMap,
+            HTML, CSS et JavaScript,
             dans le cadre de l’épreuve GIT du BTS Tourisme 2024-2026 – Yann
           </p>
+
         </div>
+
       </aside>
 
+
+
+      <!-- =====================================================
+                              CARTE
+      ====================================================== -->
+
       <div id="map" aria-label="Carte interactive"></div>
+
+
     </main>
+
   </div>
 
-  <!-- ===================== LIGHTBOX IMAGE ===================== -->
+
+
+  <!-- =========================================================
+                          LIGHTBOX IMAGE
+  ========================================================= -->
+
   <div id="lightbox" class="lightbox" onclick="closeLightbox()">
     <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
     <img id="lightbox-img" class="lightbox-img" src="" alt="Image agrandie">
   </div>
 
-  <!-- ===================== SCRIPTS EXTERNES ===================== -->
+
+
+  <!-- =========================================================
+                         SCRIPTS EXTERNES
+  ========================================================= -->
+
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -101,7 +176,22 @@
 
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
-<script src="points.js"></script>
-<script src="script.js"></script>
+
+
+  <!-- =========================================================
+                       DONNÉES DE LA CARTE
+            (catégories, points, labels géographiques)
+  ========================================================= -->
+
+  <script src="points.js"></script>
+
+  <!-- =========================================================
+                 MOTEUR DE LA CARTE INTERACTIVE
+     (Leaflet, filtres, popups, légende, géolocalisation)
+  ========================================================= -->
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>

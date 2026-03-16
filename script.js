@@ -362,8 +362,7 @@ const POINTS = [
     website: "",
     googleMapsLink: "https://www.google.com/maps?q=49.375519,-1.300947"
   }
-];
-  /* =========================================================
+    /* =========================================================
      POINTS DEF COTIERE
   ========================================================= */
 {
@@ -380,6 +379,8 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
 }
+];
+ 
 
 const BIG_LABELS = [
   { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318 },

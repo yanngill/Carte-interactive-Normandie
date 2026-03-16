@@ -322,6 +322,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.412970,-1.321191"
   },
   {
+  title: "WN 5 – Canon de 5 cm KwK – Utah Beach",
+  category: "oldphoto",
+  lat: 49.416125,
+  lng: -1.175023,
+  description:
+    "Photographie prise en 1945 sur le site du WN5 à La Madeleine. On distingue un canon de char de 5 cm KwK installé dans un ringstand type Nr.1694. L’arme apparaît encore en très bon état après la bataille. Au second plan se trouvent la position du canon de campagne de 7,5 cm F.K.38 et plusieurs tobrouks du point d’appui. La photo a été prise alors que les structures étaient en train d’être transformées en mémorial, ce qui explique la présence d’échafaudages autour du ringstand.",
+  image: "https://imgur.com/BMgLItY.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.416125,-1.175023"
+},
+  {
     title: "Hospice – Regimental Aid Station du 505th PIR",
     category: "oldphoto",
     lat: 49.411297,
@@ -690,6 +704,34 @@ const POINTS = [
   website: "",
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.387559,-0.918817"
+},
+  {
+  title: "WN 5 – La Madeleine (Utah Beach)",
+  category: "coastalDefense",
+  lat: 49.415828,
+  lng: -1.174847,
+  description:
+    "Le WN5 se trouvait à La Madeleine et correspond à l’endroit exact où la 4th Infantry Division américaine débarqua le 6 juin 1944 sur Utah Beach. Cette position allemande dépendait de la 709. Infanterie-Division (3./Grenadier-Regiment 919) et servait de poste de commandement local du lieutenant Arthur Jahnke. Le point d’appui comprenait plus de vingt positions défensives : bunkers, tobrouks, tranchées, mortier de 8 cm, plusieurs canons de 5 cm KwK et des pièces d’artillerie dont un canon de campagne de 7,5 cm. Malgré ces défenses, la position était moins fortifiée que celles prévues plus au nord. Aujourd’hui, le site abrite plusieurs mémoriaux et le Utah Beach Landing Museum.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.415828,-1.174847"
+},
+  {
+  title: "WN 8 – Redoute d’Auderville / La Hubert (Utah Beach)",
+  category: "coastalDefense",
+  lat: 49.429145,
+  lng: -1.189823,
+  description:
+    "Le WN8, situé à la Redoute d’Auderville près de La Hubert, faisait partie du dispositif défensif allemand du secteur nord d’Utah Beach. La position était installée devant un ancien tertre fortifié et traversée par la route principale d’Utah Beach. Le site comprenait plusieurs bunkers dont un abri R501 et un abri double R622 encore accessibles aujourd’hui. L’armement principal comprenait un canon de campagne de 7,62 cm, un canon français capturé de 4,7 cm et deux canons de 5 cm KwK installés dans des ringstands type 1694 couvrant la plage. La position comportait également plusieurs tobrouks, dont deux Ic116 et un tobrouk pour mortier de 8 cm, reliés par un réseau de tranchées.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.429145,-1.189823"
 },
 ];
 

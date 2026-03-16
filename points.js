@@ -236,6 +236,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.408611,-1.315556"
   },
   {
+  title: "WN 64 – Défense de la vallée du Ruquet",
+  category: "coastalDefense",
+  lat: 49.363617,
+  lng: -0.862771,
+  description:
+    "Position allemande dominant la vallée du Ruquet, correspondant à la sortie de plage E-1 vers Colleville-sur-Mer. À l’origine, la position comprenait des tranchées et abris de campagne, puis deux tobrouks, des bunkers feldmäßig et un canon de campagne de 7,62 cm furent installés. Une casemate R612 destinée à accueillir un canon était en cours de construction au moment du Débarquement. Si ce bunker avait été achevé et armé, il aurait pu tirer directement dans la vallée du Ruquet et ravager toute tentative de progression depuis la plage. Avec le WN65 situé en face, la position permettait également un tir croisé destiné à verrouiller l’accès vers Colleville.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.363617,-0.862771"
+},
+  {
     title: "Parachutistes américains – Rue Général Koenig",
     category: "oldphoto",
     lat: 49.408723,

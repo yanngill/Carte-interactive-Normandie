@@ -606,6 +606,48 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.374931,-0.895209"
 },
+  {
+  title: "WN 71 – Défense de la vallée de Vierville",
+  category: "coastalDefense",
+  lat: 49.377768,
+  lng: -0.901458,
+  description:
+    "Le WN71 était situé sur la hauteur dominant la vallée de Vierville et couvrait le flanc est de la sortie de plage ainsi que le front de mer. La position comprenait deux fosses à mortiers de 80 mm installées sur la falaise, plusieurs positions de mitrailleuses et des tobrouks armés de mitrailleuses MG34. Un tobrouk couvrait l’arrière tandis qu’un autre protégeait le flanc est. D’autres mitrailleuses étaient installées dans des positions doubles et dans des tranchées le long du bord de la falaise. Comme la plupart des points d’appui du secteur, l’ensemble était relié par un réseau de tranchées et de câbles téléphoniques enterrés.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.377768,-0.901458"
+},
+  {
+  title: "WN 72 – Défense de la sortie de Vierville",
+  category: "coastalDefense",
+  lat: 49.379312,
+  lng: -0.903117,
+  description:
+    "Le WN72 faisait partie du dispositif défensif protégeant la sortie de plage de Vierville-sur-Mer (D-1). Situé sur les hauteurs dominant la vallée, ce point d’appui comprenait plusieurs positions de mitrailleuses, tobrouks et tranchées couvrant la plage et la route menant à l’intérieur des terres. Comme les autres points d’appui d’Omaha Beach, la position était reliée aux postes voisins par des tranchées et des câbles téléphoniques enterrés.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.379312,-0.903117"
+},
+  {
+  title: "WN 73 – Défense de l’ouest d’Omaha Beach",
+  category: "coastalDefense",
+  lat: 49.380625,
+  lng: -0.905892,
+  description:
+    "Le WN73 était l’un des points d’appui les plus à l’ouest d’Omaha Beach, situé au-dessus de Vierville-sur-Mer. La position comprenait des tobrouks, des positions de mitrailleuses et des tranchées destinées à couvrir la plage et l’approche de la vallée de Vierville. Ce point participait à la défense de la sortie D-1 et au dispositif de tir croisé avec les positions voisines.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.380625,-0.905892"
+},
 ];
 
 /* ######################################################################### */

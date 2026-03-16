@@ -482,16 +482,16 @@ function buildLegend() {
 
   Object.entries(CATEGORIES).forEach(([categoryKey, categoryData]) => {
     const item = document.createElement("li");
-    item.className = "legend-item";
-    item.dataset.category = categoryKey;
+item.className = "legend-item";
+item.dataset.category = categoryKey;
 
-    item.innerHTML = `
-      <span class="legend-color" style="background:${categoryData.color}"></span>
-      <span class="legend-text-wrap">
-        <span class="legend-name">${escapeHtml(categoryData.label)}</span>
-        <span class="legend-key">${escapeHtml(categoryData.key)}</span>
-      </span>
-    `;
+item.innerHTML = `
+  <span class="legend-color" style="background:${categoryData.color}"></span>
+  <span class="legend-text-wrap">
+    <span class="legend-name">${escapeHtml(categoryData.label)}</span>
+    ${categoryData.key ? `<span class="legend-key">${escapeHtml(categoryData.key)}</span>` : ""}
+  </span>
+`;
 
     item.addEventListener("click", () => {
       toggleCategory(categoryKey);

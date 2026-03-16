@@ -221,6 +221,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.356417,-0.830743"
   },
   {
+  title: "WN66 – Canon de char de 5 cm KwK L/60 sur la plage",
+  category: "oldphoto",
+  lat: 49.369775,
+  lng: -0.876389,
+  description:
+    "Vous vous trouvez à l’emplacement exact d’un canon de char allemand de 5 cm KwK L/60 installé très en avant sur la plage dans un ringstand Nr1694. Sur cette photographie prise après les combats, des soldats américains examinent la position. Le canon est encore en place et apparaît peu endommagé malgré l’intensité de la bataille sur ce secteur du centre d’Omaha Beach.",
+  image: "https://i.imgur.com/x550obe.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.369775,-0.876389"
+},
+  {
     title: "Défilé de l’armée américaine – Sainte-Mère-Église",
     category: "oldphoto",
     lat: 49.408546,

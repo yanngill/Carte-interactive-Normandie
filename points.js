@@ -15,7 +15,7 @@ const CATEGORIES = {
   },
   oldphoto: {
     label: "Photo d’époque",
-    color: "#2f2f2f",
+    color: "#36454F",
     key: "Noir"
   },
   info: {

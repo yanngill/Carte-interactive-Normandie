@@ -36,8 +36,6 @@ const INITIAL_VIEW = {
   zoom: 10
 };
 
-const LABELS_VISIBLE_MAX_ZOOM = 10;
-
 const HELMET_ICON_SVG = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <circle cx="32" cy="32" r="30" fill="#ffffff" />

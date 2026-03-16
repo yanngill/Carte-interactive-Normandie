@@ -369,6 +369,20 @@ const POINTS = [
     source: "",
     googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
   }
+   {
+  title: "WN 61 – Défense côtière d’Omaha Beach",
+  category: "coastalDefense",
+  lat: 49.359379,
+  lng: -0.838862,
+  description:
+    "Petit point fortifié allemand situé en contrebas du WN60, au pied des falaises d’Omaha Beach. Il comprenait plusieurs positions de tir dont un canon antichar de 88 mm orienté pour prendre la plage de flanc. Le site était protégé par un fossé antichar inondé et plusieurs tobrouks et bunkers légers. Aujourd’hui, les vestiges se mêlent aux habitations et au bâtiment Éolia.",
+  image: "https://i.imgur.com/mCmsRCb.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "Reconnaissance aérienne américaine – 19 mai 1944 (RF-38 Lightning)",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.359379,-0.838862"
+},
 ];
 
 /* =========================================================

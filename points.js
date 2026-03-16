@@ -13,11 +13,11 @@ const CATEGORIES = {
     color: "#36454F",
     key: ""
   },
-  info: {
-    label: "Point d’information",
-    color: "#ef6c00",
-    key: ""
-  },
+  officeTourism: {
+  label: "Office de tourisme",
+  color: "#1e88e5",
+  key: ""
+},
   museum: {
     label: "Musée",
     color: "#6a1b9a",

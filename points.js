@@ -592,6 +592,20 @@ const POINTS = [
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.362122,-0.882550"
 },
+  {
+  title: "WN 70 – Position allemande en construction",
+  category: "coastalDefense",
+  lat: 49.374931,
+  lng: -0.895209,
+  description:
+    "Le WN70 se trouvait au-dessus de la villa Hardelay et était encore en cours de construction en juin 1944. La position semble avoir été peu occupée. Une fois achevé, le point d’appui devait recevoir deux canons de 75 mm, dont un sous casemate en béton, ainsi qu’un canon antiaérien de 20 mm installé dans un encuvement bétonné. La présence d’un canon de 75 mm le 6 juin reste incertaine : aucune photographie ni témoignage de soldats américains n’en confirme l’installation lorsque la position fut rapidement neutralisée au début du débarquement.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.374931,-0.895209"
+},
 ];
 
 /* ######################################################################### */

@@ -58,7 +58,17 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
+function shareMap() {
+  if (navigator.share) {
+    navigator.share({
+      title: "Carte interactive du Débarquement en Normandie",
+      text: "Découvrez cette carte interactive sur le secteur américain du Débarquement.",
+      url: window.location.href
+    });
+  } else {
+    alert("Le partage n'est pas supporté sur ce navigateur. Copiez simplement le lien.");
+  }
+}
 function isSafeUrl(url) {
   if (!url || typeof url !== "string") return false;
   try {

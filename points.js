@@ -86,6 +86,21 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.394487,-0.986231"
 },
   {
+  title: "Photo d’époque – Poste de direction de tir de la Pointe du Hoc après la bataille",
+  category: "oldphoto",
+  lat: 49.397251,
+  lng: -0.989186,
+  description:
+    "Photographie montrant le poste de direction de tir situé à l’extrémité de la Pointe du Hoc après les combats de juin 1944. Cette position permettait aux Allemands d’observer la mer et de diriger les tirs de la batterie installée sur le site. On remarque sur la structure une 'seconde peau' de béton ajoutée autour de l’ouvrage, destinée à améliorer le camouflage et à renforcer la protection contre les bombardements et les tirs d’artillerie alliés.",
+  image: "https://imgur.com/r8BE8KG",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Pointe du Hoc, poste de direction de tir après la bataille",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.397251,-0.989186"
+},
+  {
     title: "WN65 –  Arrivée de la 2nd Infantry Division",
     category: "oldphoto",
     lat: 49.364151,

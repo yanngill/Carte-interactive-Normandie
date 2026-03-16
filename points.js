@@ -221,6 +221,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.356417,-0.830743"
   },
   {
+  title: "WN 72 – Casemate avec canon antichar de 88 mm",
+  category: "oldphoto",
+  lat: 49.379157,
+  lng: -0.902423,
+  description:
+    "Photographie prise après les combats montrant la casemate du WN72 équipée d’un canon antichar de 88 mm dominant la sortie de Vierville et l’ouest d’Omaha Beach. Des soldats américains inspectent la position. Le bunker est toujours visible aujourd’hui et constitue l’un des monuments les plus reconnaissables du secteur.",
+  image: "https://i.imgur.com/urwKn2B.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.379157,-0.902423"
+},
+  {
   title: "WN66 – Canon de char de 5 cm KwK L/60 sur la plage",
   category: "oldphoto",
   lat: 49.369775,

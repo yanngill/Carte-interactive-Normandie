@@ -6,32 +6,32 @@ const CATEGORIES = {
   remarkable: {
     label: "Lieu remarquable",
     color: "#c62828",
-    key: "Rouge"
+    key: ""
   },
   coastalDefense: {
     label: "Défense côtière allemande",
     color: "#bfc5cc",
-    key: "Gris clair"
+    key: ""
   },
   oldphoto: {
     label: "Photo d’époque",
     color: "#36454F",
-    key: "Noir"
+    key: ""
   },
   info: {
     label: "Point d’information",
     color: "#ef6c00",
-    key: "Orange"
+    key: ""
   },
   museum: {
     label: "Musée",
     color: "#6a1b9a",
-    key: "Violet"
+    key: ""
   },
   practical: {
     label: "Point pratique / logistique",
     color: "#1565c0",
-    key: "Bleu"
+    key: ""
   }
 };
 

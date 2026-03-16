@@ -436,6 +436,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
   },
   {
+  title: "WN 63 – Poste de commandement souterrain",
+  category: "coastalDefense",
+  lat: 49.349510861286554,
+  lng: -0.8462947337976718,
+  description:
+    "À l’endroit où vous vous trouvez se trouve l’entrée d’un abri souterrain allemand utilisé comme poste de commandement. La petite porte visible aujourd’hui permettait d’accéder au bunker enterré. Ce poste servait notamment aux compagnies 3/726 et 8/916 pour coordonner la défense du secteur d’Omaha Beach et les communications entre les différents points d’appui.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.349510861286554,-0.8462947337976718"
+},
+  {
     title: "WN 61 – Défense côtière d’Omaha Beach",
     category: "coastalDefense",
     lat: 49.359379,

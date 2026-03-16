@@ -86,6 +86,21 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
   },
   {
+  title: "Photo d’époque – Prise d’armes au cimetière provisoire de Vierville (12 juin 1944)",
+  category: "oldphoto",
+  lat: 49.373388,
+  lng: -0.885192,
+  description:
+    "Photographie prise le 12 juin 1944 lors d’une prise d’armes organisée au cimetière provisoire installé au pied de la falaise de Vierville, quelques jours après le Débarquement. La cérémonie se déroule lors de la visite de hauts responsables militaires américains venus de Washington. Dès le 7 juin 1944, les unités américaines chargées de l’enregistrement des sépultures militaires commencent à rassembler les corps des soldats tombés sur Omaha Beach. Le plateau n’étant pas encore déminé, un premier cimetière provisoire est aménagé au pied de la falaise. Les corps seront ensuite transférés vers le cimetière de Saint-Laurent-sur-Mer, puis après la guerre vers le cimetière américain actuel de Colleville-sur-Mer.",
+  image: "https://imgur.com/bFZ55Ug",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Vierville-sur-Mer, 12 juin 1944",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.373388,-0.885192"
+},
+  {
     title: "Vue depuis le WN60 – Armada alliée au large d’Omaha Beach (10 juin 1944)",
     category: "oldphoto",
     lat: 49.356869,

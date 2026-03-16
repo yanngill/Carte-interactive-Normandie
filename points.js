@@ -162,6 +162,20 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
   },
   {
+  title: "WN 73 – Omaha Beach sous bombardement",
+  category: "oldphoto",
+  lat: 49.381114,
+  lng: -0.907232,
+  description:
+    "Photographie aérienne prise pendant le débarquement sur le secteur ouest d’Omaha Beach près du WN73. On distingue une barge de débarquement tandis que des explosions dues aux bombardements frappent les positions allemandes. Cette zone correspond à la partie ouest du secteur de Vierville-sur-Mer.",
+  image: "https://i.imgur.com/ULxmVlC.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.381114,-0.907232"
+},
+  {
     title: "WN61 – Casemate allemande capturée",
     category: "oldphoto",
     lat: 49.3597,

@@ -380,7 +380,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "Reconnaissance aérienne américaine – 19 mai 1944 (RF-38 Lightning)",
+  source: "US National Archives - Reconnaissance aérienne américaine – 19 mai 1944 (RF-38 Lightning)",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.359379,-0.838862"
 },
 ];

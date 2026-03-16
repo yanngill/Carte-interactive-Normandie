@@ -131,7 +131,20 @@ const POINTS = [
     source: "US National Archives",
     googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
   },
-
+{
+  title: "Vue depuis le WN60 – Armada alliée au large d’Omaha Beach (10 juin 1944)",
+  category: "oldphoto",
+  lat: 49.356869,
+  lng: -0.832052,
+  description:
+    "Photographie prise depuis le secteur du WN60 en regardant vers l’ouest, quelques jours après le Débarquement. On distingue au large une concentration impressionnante de navires alliés assurant le flux logistique vers Omaha Beach : transports de troupes, cargos, LST et bâtiments de soutien. La plage est alors devenue une immense zone de débarquement où hommes, véhicules et matériel sont acheminés en continu.",
+  image: "https://i.imgur.com/avcMEZf.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Omaha Beach, 10 juin 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
+},
   {
     title: "Patrouille américaine à cheval – Sainte-Mère-Église",
     category: "oldphoto",

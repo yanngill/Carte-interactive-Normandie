@@ -359,23 +359,30 @@ body {
 /* =========================================================
    LABELS GRANDS LIEUX
 ========================================================= */
+/* =========================================================
+   LABELS GRANDS LIEUX
+========================================================= */
 .place-label {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .place-label div {
-  color: #111827;
-  font-size: 1rem;
+  color: rgba(17, 24, 39, 0.78);
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow:
-    0 0 5px rgba(255, 255, 255, 0.95),
-    0 0 8px rgba(255, 255, 255, 0.95),
-    0 0 12px rgba(255, 255, 255, 0.95);
+  letter-spacing: 1.5px;
   white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  text-shadow:
+    1px 1px 3px rgba(255, 255, 255, 0.96),
+    -1px -1px 3px rgba(255, 255, 255, 0.96),
+    1px -1px 3px rgba(255, 255, 255, 0.96),
+    -1px 1px 3px rgba(255, 255, 255, 0.96);
 }
 
 /* =========================================================
@@ -423,8 +430,9 @@ body {
     max-width: 230px;
   }
 
-  .place-label div {
-    font-size: 0.82rem;
+    .place-label div {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }
 

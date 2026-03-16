@@ -3,16 +3,6 @@
 /* ######################################################################### */
 
 const CATEGORIES = {
-  remarkable: {
-    label: "Lieu remarquable",
-    color: "#c62828",
-    key: ""
-  },
-  officeTourism: {
-  label: "Office de tourisme",
-  color: "#1e88e5",
-  key: ""
-},
   coastalDefense: {
     label: "Défense côtière allemande",
     color: "#bfc5cc",
@@ -31,11 +21,6 @@ const CATEGORIES = {
   museum: {
     label: "Musée",
     color: "#6a1b9a",
-    key: ""
-  },
-  practical: {
-    label: "Point pratique / logistique",
-    color: "#1565c0",
     key: ""
   }
 };

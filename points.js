@@ -30,63 +30,7 @@ const CATEGORIES = {
 /* ######################################################################### */
 
 const POINTS = [
-  /* ======================================================================= */
-  /* ========================= LIEUX REMARQUABLES =========================== */
-  /* ======================================================================= */
-
-  {
-    title: "Pointe du Hoc",
-    category: "remarkable",
-    lat: 49.3908,
-    lng: -0.9886,
-    description:
-      "Site majeur du Débarquement américain, célèbre pour l’assaut des Rangers le 6 juin 1944. Lieu emblématique entre Utah et Omaha.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/59/Pointe_du_Hoc_2014_01.JPG",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    googleMapsLink: "https://www.google.com/maps?q=49.3908,-0.9886"
-  },
-
-  /* ======================================================================= */
-  /* ========================= POINTS D’INFORMATION ========================= */
-  /* ======================================================================= */
-
-  {
-    title: "Carentan – Point d’information",
-    category: "info",
-    lat: 49.3032,
-    lng: -1.2469,
-    description:
-      "Carentan est un point de liaison essentiel entre Utah Beach et Omaha Beach. Ce type de point peut servir à expliquer un contexte historique ou stratégique.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Carentan_les_marais.jpg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    googleMapsLink: "https://www.google.com/maps?q=49.3032,-1.2469"
-  },
-
-  /* ======================================================================= */
-  /* ======================== POINTS PRATIQUES / ACCÈS ====================== */
-  /* ======================================================================= */
-
-  {
-    title: "Parking du cimetière américain de Colleville-sur-Mer",
-    category: "practical",
-    lat: 49.3592,
-    lng: -0.8584,
-    description:
-      "Exemple de point pratique ou logistique : parking, accueil, point de départ, toilettes, restauration ou accès visiteurs.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/18/Normandy_American_Cemetery.jpg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    googleMapsLink: "https://www.google.com/maps?q=49.3592,-0.8584"
-  },
-
+ 
   /* ======================================================================= */
   /* ============================ PHOTOS D’ÉPOQUE =========================== */
   /* ======================================================================= */

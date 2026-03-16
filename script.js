@@ -19,10 +19,11 @@ const HELMET_ICON_SVG = `
 `;
 
 const CATEGORIES = {
-  remarkable: {
-    label: "Lieu remarquable",
-    color: "#c62828",
-    key: "Rouge"
+  coastalDefense: {
+  label: "Défense côtière allemande",
+  color: "#bfc5cc",
+  key: "Gris clair"
+}
   },
   oldphoto: {
     label: "Photo d’époque",

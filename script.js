@@ -359,6 +359,23 @@ const POINTS = [
     googleMapsLink: "https://www.google.com/maps?q=49.375519,-1.300947"
   }
 ];
+  /* =========================================================
+     POINTS DEF COTIERE
+  ========================================================= */
+{
+  title: "WN 60 – Défense de l’est d’Omaha",
+  category: "coastalDefense",
+  lat: 49.3566467,
+  lng: -0.8321895,
+  description:
+    "Position allemande de défense côtière située à l’est d’Omaha Beach. Le site comprenait mortiers, tobrouk, bunker BF61a et plusieurs positions de tir pour canon de 75 mm reliées par tranchées et tunnels.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
+}
 
 const BIG_LABELS = [
   { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318 },

@@ -826,9 +826,46 @@ const POINTS = [
 /* ######################################################################### */
 
 const BIG_LABELS = [
-  { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318 },
-  { text: "Utah Beach", lat: 49.42, lng: -1.172 },
-  { text: "Omaha Beach", lat: 49.37, lng: -0.88 },
-  { text: "Carentan", lat: 49.303, lng: -1.247 },
-  { text: "Pointe du Hoc", lat: 49.391, lng: -0.989 }
+  { text: "Utah Beach", lat: 49.42, lng: -1.172, minZoom: 10, maxZoom: 12 },
+  { text: "Omaha Beach", lat: 49.37, lng: -0.88, minZoom: 10, maxZoom: 12 },
+  { text: "Pointe du Hoc", lat: 49.391, lng: -0.989, minZoom: 11, maxZoom: 14 },
+  { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318, minZoom: 11, maxZoom: 14 },
+  { text: "Carentan", lat: 49.303, lng: -1.247, minZoom: 11, maxZoom: 14 }
 ];
+
+let bigLabelsLayer = L.layerGroup().addTo(map);
+
+function getLabelFontSize(zoom) {
+  if (zoom >= 13) return 26;
+  if (zoom >= 12) return 22;
+  if (zoom >= 11) return 18;
+  return 16;
+}
+
+function updateBigLabels() {
+  bigLabelsLayer.clearLayers();
+
+  const currentZoom = map.getZoom();
+  const fontSize = getLabelFontSize(currentZoom);
+
+  BIG_LABELS.forEach(label => {
+    if (
+      currentZoom >= label.minZoom &&
+      (label.maxZoom === undefined || currentZoom <= label.maxZoom)
+    ) {
+      const marker = L.marker([label.lat, label.lng], {
+        icon: L.divIcon({
+          className: "big-map-label",
+          html: `<div style="font-size:${fontSize}px;">${label.text}</div>`,
+          iconSize: null
+        }),
+        interactive: false
+      });
+
+      bigLabelsLayer.addLayer(marker);
+    }
+  });
+}
+
+updateBigLabels();
+map.on("zoomend", updateBigLabels);

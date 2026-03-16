@@ -71,6 +71,21 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
   },
   {
+  title: "Photo d’époque – Bombardement de la Pointe du Hoc (avril 1944)",
+  category: "oldphoto",
+  lat: 49.394487,
+  lng: -0.986231,
+  description:
+    "Photographie aérienne montrant le bombardement de la Pointe du Hoc en avril 1944, dans le cadre de la préparation du Débarquement. Les bombardiers alliés visent la batterie allemande installée sur la falaise, considérée comme une menace majeure pour les plages d’Utah et d’Omaha. Les bombardements et tirs navals transforment progressivement le site en un paysage de cratères. Malgré ces frappes, les Rangers américains devront escalader la falaise le 6 juin 1944 pour neutraliser définitivement la position.",
+  image: "https://imgur.com/T9S7mz8",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Bombardement de la Pointe du Hoc, avril 1944",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.394487,-0.986231"
+},
+  {
     title: "WN65 –  Arrivée de la 2nd Infantry Division",
     category: "oldphoto",
     lat: 49.364151,

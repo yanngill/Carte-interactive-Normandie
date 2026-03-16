@@ -146,7 +146,20 @@ const POINTS = [
     source: "US National Archives / War Documentary – Maxim Chornyi",
     googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.407778,-1.317222"
   },
-
+{
+  title: "WN60 – Tourelle de char Renault R35",
+  category: "oldphoto",
+  lat: 49.356417,
+  lng: -0.830743,
+  description:
+    "Tourelle de char Renault R35 français réemployée par les Allemands au WN60 pour la défense d’Omaha Beach. Armée d’un canon de 37 mm, cette position faisait partie du système de tir couvrant la plage.",
+  image: "https://i.imgur.com/YuR0zrT.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Photo du 336th Engineer Combat Battalion",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.356417,-0.830743"
+},
   {
     title: "Défilé de l’armée américaine – Sainte-Mère-Église",
     category: "oldphoto",

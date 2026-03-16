@@ -8,6 +8,11 @@ const CATEGORIES = {
     color: "#c62828",
     key: ""
   },
+  officeTourism: {
+  label: "Office de tourisme",
+  color: "#1e88e5",
+  key: ""
+},
   coastalDefense: {
     label: "Défense côtière allemande",
     color: "#bfc5cc",
@@ -732,6 +737,99 @@ const POINTS = [
   website: "",
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.429145,-1.189823"
+},
+    /* ======================================================================= */
+  /* ============================ OFFICE DE TOURISME  =========================== */
+  /* ======================================================================= */
+{
+  title: "Office de tourisme – Sainte-Mère-Église",
+  category: "officeTourism",
+  lat: 49.407951,
+  lng: -1.316454,
+  description:
+    "Office de tourisme situé au cœur de Sainte-Mère-Église, l’un des sites emblématiques du Débarquement du 6 juin 1944. Les visiteurs peuvent y obtenir des informations sur les plages du Débarquement, les musées du secteur et les parcours historiques autour des parachutistes américains des 82nd et 101st Airborne.",
+  website: "https://www.encotentin.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.407951,-1.316454"
+},
+  {
+  title: "Office de tourisme – Carentan-les-Marais",
+  category: "officeTourism",
+  lat: 49.303800,
+  lng: -1.248100,
+  description:
+    "Office de tourisme de Carentan-les-Marais, ville stratégique reliant Utah Beach et Omaha Beach lors de la bataille de Normandie. Ce point d’accueil permet d’obtenir des informations sur les sites historiques, les circuits du bocage et les musées du secteur.",
+  website: "https://www.baieducotentin.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.303800,-1.248100"
+},
+  {
+  title: "Office de tourisme – Utah Beach",
+  category: "officeTourism",
+  lat: 49.416050,
+  lng: -1.174900,
+  description:
+    "Point d’accueil touristique situé à proximité immédiate d’Utah Beach. Les visiteurs peuvent y obtenir des informations sur les sites du Débarquement, les musées, les circuits historiques et les visites guidées du secteur américain.",
+  website: "https://www.utah-beach.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.416050,-1.174900"
+},
+  {
+  title: "Office de tourisme – Isigny-sur-Mer",
+  category: "officeTourism",
+  lat: 49.316900,
+  lng: -1.103800,
+  description:
+    "Office de tourisme d’Isigny-sur-Mer, situé entre les secteurs d’Utah Beach et d’Omaha Beach. Il constitue un point d’information important pour les visiteurs souhaitant organiser leur découverte des plages du Débarquement.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.316900,-1.103800"
+},
+  {
+  title: "Office de tourisme – Colleville-sur-Mer",
+  category: "officeTourism",
+  lat: 49.348333,
+  lng: -0.843611,
+  description:
+    "Point d’accueil touristique situé à proximité d’Omaha Beach et du cimetière américain de Colleville-sur-Mer. L’office de tourisme renseigne les visiteurs sur les sites du Débarquement, les musées et les parcours historiques du secteur.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.348333,-0.843611"
+},
+  {
+  title: "Office de tourisme – Saint-Laurent-sur-Mer",
+  category: "officeTourism",
+  lat: 49.359900,
+  lng: -0.863300,
+  description:
+    "Office de tourisme situé au centre du secteur d’Omaha Beach. Il permet aux visiteurs d’obtenir des informations sur les sites du Débarquement, les musées, les circuits de mémoire et les visites guidées.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.359900,-0.863300"
+},
+  {
+  title: "Office de tourisme – Vierville-sur-Mer",
+  category: "officeTourism",
+  lat: 49.375600,
+  lng: -0.903300,
+  description:
+    "Office de tourisme situé à l’ouest d’Omaha Beach, dans l’un des secteurs de débarquement américains du 6 juin 1944. Ce point d’accueil permet d’obtenir des informations sur les sites historiques et les parcours de visite du champ de bataille.",
+  website: "https://www.isigny-omaha-tourisme.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.375600,-0.903300"
+},
+  {
+  title: "Office de tourisme – Port-en-Bessin-Huppain",
+  category: "officeTourism",
+  lat: 49.344400,
+  lng: -0.755700,
+  description:
+    "Office de tourisme situé dans le port de Port-en-Bessin. La ville fut capturée par les Rangers américains après le Débarquement afin de sécuriser un port essentiel au ravitaillement des forces alliées.",
+  website: "https://www.bayeux-bessin-tourisme.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.344400,-0.755700"
+},
+  {
+  title: "Office de tourisme – Bayeux",
+  category: "officeTourism",
+  lat: 49.276000,
+  lng: -0.702000,
+  description:
+    "Office de tourisme de Bayeux, l’une des premières villes libérées après le Débarquement. Bayeux constitue aujourd’hui un centre majeur pour les visiteurs souhaitant découvrir les plages du Débarquement et la bataille de Normandie.",
+  website: "https://www.bayeux-bessin-tourisme.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.276000,-0.702000"
 },
 ];
 

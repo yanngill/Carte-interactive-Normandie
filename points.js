@@ -671,7 +671,7 @@ const POINTS = [
   /* ============================ OFFICE DE TOURISME  =========================== */
   /* ======================================================================= */
 {
-  title: "Office de tourisme – Bayeux",
+  title: "Office de tourisme – Longues-sur-Mer",
   category: "officeTourism",
   lat: 49.342961,
   lng: -0.691930,
@@ -680,7 +680,16 @@ const POINTS = [
   website: "https://www.bayeux-bessin-tourisme.com",
   googleMapsLink: "https://www.google.com/maps?q=49.342961,-0.691930"
 },
-
+{
+  title: "Office de tourisme – Bayeux",
+  category: "officeTourism",
+  lat: 49.276830,
+  lng: -0.700897,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.bayeux-bessin-tourisme.com",
+  googleMapsLink: "https://www.google.com/maps?q=49.276830,-0.700897"
+},
 {
   title: "Office de tourisme – Omaha Beach (Isigny-Omaha Tourisme)",
   category: "officeTourism",

@@ -521,7 +521,21 @@ const POINTS = [
     source: "US National Archives – WN62 bombardé, 6 juin 1944 vers 7h30",
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.360173,-0.847433"
-  }
+  },
+  {
+  title: "WN 66 – Défense du centre d’Omaha Beach",
+  category: "coastalDefense",
+  lat: 49.370053,
+  lng: -0.877262,
+  description:
+    "Position allemande située au centre d’Omaha Beach. Environ vingt soldats du Grenadier-Regiment 726 défendaient ce secteur avec plusieurs mitrailleuses et un canon de char de 5 cm KwK L/60 installé très en avant sur la plage. Comme ailleurs sur la côte, les défenseurs passaient leurs journées à poser mines, barbelés et obstacles. Des photos prises après la bataille montrent le canon presque intact, laissant penser qu’il n’a pas été fortement engagé lors des combats.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.370053,-0.877262"
+},
 ];
 
 /* ######################################################################### */

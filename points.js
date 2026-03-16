@@ -826,19 +826,19 @@ const POINTS = [
 /* ######################################################################### */
 
 const BIG_LABELS = [
-  { text: "Utah Beach", lat: 49.42, lng: -1.172, minZoom: 10, maxZoom: 12 },
-  { text: "Omaha Beach", lat: 49.37, lng: -0.88, minZoom: 10, maxZoom: 12 },
-  { text: "Pointe du Hoc", lat: 49.391, lng: -0.989, minZoom: 11, maxZoom: 14 },
-  { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318, minZoom: 11, maxZoom: 14 },
-  { text: "Carentan", lat: 49.303, lng: -1.247, minZoom: 11, maxZoom: 14 }
+  { text: "Omaha Beach", lat: 49.37, lng: -0.88, minZoom: 8, maxZoom: 14 },
+  { text: "Utah Beach", lat: 49.42, lng: -1.172, minZoom: 9, maxZoom: 14 },
+  { text: "Sainte-Mère-Église", lat: 49.409, lng: -1.318, minZoom: 10, maxZoom: 15 },
+  { text: "Carentan", lat: 49.303, lng: -1.247, minZoom: 11, maxZoom: 15 },
+  { text: "Pointe du Hoc", lat: 49.391, lng: -0.989, minZoom: 11, maxZoom: 15 }
 ];
 
 let bigLabelsLayer = L.layerGroup().addTo(map);
 
-function getLabelFontSize(zoom) {
-  if (zoom >= 13) return 26;
-  if (zoom >= 12) return 22;
-  if (zoom >= 11) return 18;
+function getLabelSize(zoom) {
+  if (zoom >= 14) return 24;
+  if (zoom >= 12) return 20;
+  if (zoom >= 10) return 18;
   return 16;
 }
 
@@ -846,7 +846,7 @@ function updateBigLabels() {
   bigLabelsLayer.clearLayers();
 
   const currentZoom = map.getZoom();
-  const fontSize = getLabelFontSize(currentZoom);
+  const fontSize = getLabelSize(currentZoom);
 
   BIG_LABELS.forEach(label => {
     if (
@@ -854,12 +854,12 @@ function updateBigLabels() {
       (label.maxZoom === undefined || currentZoom <= label.maxZoom)
     ) {
       const marker = L.marker([label.lat, label.lng], {
+        interactive: false,
         icon: L.divIcon({
-          className: "big-map-label",
+          className: "place-label",
           html: `<div style="font-size:${fontSize}px;">${label.text}</div>`,
           iconSize: null
-        }),
-        interactive: false
+        })
       });
 
       bigLabelsLayer.addLayer(marker);

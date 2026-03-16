@@ -368,7 +368,7 @@ const POINTS = [
     website: "",
     source: "",
     googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.3566467,-0.8321895"
-  }
+  },
    {
   title: "WN 61 – Défense côtière d’Omaha Beach",
   category: "coastalDefense",

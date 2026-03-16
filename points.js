@@ -145,6 +145,20 @@ const POINTS = [
   source: "US National Archives – Omaha Beach, 10 juin 1944",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
 },
+   {
+  title: "WN61 – Casemate allemande capturée",
+  category: "oldphoto",
+  lat: 49.359700,
+  lng: -0.838975,
+  description:
+    "Photographie prise quelques jours après le Débarquement. Des soldats américains se tiennent au sommet d’une casemate allemande du WN61 où flotte désormais un drapeau américain accompagné d’un pavillon médical. Le bunker avait abrité un canon antichar couvrant la plage d’Omaha. En regardant derrière vous aujourd’hui, on aperçoit encore la grande casemate du WN61 dominant la plage.",
+  image: "https://i.imgur.com/XmxW4yX.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.359700,-0.838975"
+},
   {
     title: "Patrouille américaine à cheval – Sainte-Mère-Église",
     category: "oldphoto",

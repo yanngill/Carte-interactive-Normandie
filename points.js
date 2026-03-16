@@ -423,6 +423,20 @@ const POINTS = [
   source: "US National Archives - Reconnaissance aérienne américaine – 19 mai 1944 (RF-38 Lightning)",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.359379,-0.838862"
 },
+   {
+  title: "WN 62 – Point d’appui principal d’Omaha Beach",
+  category: "coastalDefense",
+  lat: 49.360173,
+  lng: -0.847433,
+  description:
+    "Le WN62 était l’un des principaux points fortifiés allemands d’Omaha Beach et probablement le plus puissant. Autour de vous se trouvaient plusieurs casemates et bunkers abritant deux canons de 75 mm, des canons antichars de 50 mm, des mortiers et de nombreuses mitrailleuses. Un poste d’observation d’artillerie relié à la batterie de Houtteville permettait de diriger les tirs sur la plage. La position était occupée par environ 25 soldats de la 3./Grenadier-Regiment 726 (716. Infanterie-Division) renforcés par des artilleurs de la 352. Infanterie-Division.",
+  image: "https://i.imgur.com/HerD1dj.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – WN62 bombardé, 6 juin 1944 vers 7h30",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.360173,-0.847433"
+},
 ];
 
 /* =========================================================

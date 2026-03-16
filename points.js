@@ -71,6 +71,21 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
   },
   {
+  title: "Photo d’époque – Passage du Général de Gaulle à Isigny-sur-Mer (14 juin 1944)",
+  category: "oldphoto",
+  lat: 49.318269,
+  lng: -1.101602,
+  description:
+    "Le 14 juin 1944, huit jours après le Débarquement, le général Charles de Gaulle revient en France après plusieurs années d’exil en Grande-Bretagne où il dirige la France Libre. Il débarque du contre-torpilleur La Combattante à Courseulles-sur-Mer avant de se rendre à Bayeux pour y prononcer son premier discours sur le sol français libéré. Il poursuit ensuite sa visite en Normandie en se rendant à Isigny-sur-Mer, où il rencontre une population profondément marquée par les combats et les bombardements. Cette visite contribue à affirmer le retour de l’autorité française dans les territoires libérés.",
+  image: "https://imgur.com/bCXpZE0",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "Archives photographiques – Visite du Général de Gaulle en Normandie, 14 juin 1944",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.318269,-1.101602"
+},
+  {
   title: "Photo d’époque – Bombardement de la Pointe du Hoc (avril 1944)",
   category: "oldphoto",
   lat: 49.394487,

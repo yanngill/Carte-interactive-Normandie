@@ -235,7 +235,20 @@ const POINTS = [
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.408611,-1.315556"
   },
-
+{
+  title: "Vallée du Ruquet – Observation d’Omaha Beach après le débarquement",
+  category: "oldphoto",
+  lat: 49.363088,
+  lng: -0.865405,
+  description:
+    "Des soldats américains observent Omaha Beach depuis les hauteurs de la vallée du Ruquet peu après le débarquement. Au large, la flotte alliée est visible au mouillage tandis que la plage sert déjà de vaste zone logistique pour les troupes et le matériel. Aujourd’hui, le paysage en face est beaucoup plus boisé qu’en 1944. Sur la colline visible en face se trouve désormais le cimetière américain de Colleville-sur-Mer, où reposent 9 388 soldats américains tombés lors de la bataille de Normandie.",
+  image: "https://i.imgur.com/bGjmitr.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.363088,-0.865405"
+},
   {
     title: "Parachutistes américains – Rue Général Koenig",
     category: "oldphoto",

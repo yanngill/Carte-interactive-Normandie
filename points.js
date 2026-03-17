@@ -767,7 +767,7 @@ const POINTS = [
     oldPhoto: "",
     video: "",
     website: "https://www.longues-mer.fr/",
-    source: "Site de la commune de Longues-sur-Mer",
+    source: "",
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.343613,-0.695038"
   },
@@ -782,7 +782,7 @@ const POINTS = [
     oldPhoto: "",
     video: "",
     website: "https://www.abmc.gov/cemeteries-memorials/about-pointe-du-hoc-ranger-monument/",
-    source: "American Battle Monuments Commission (ABMC)",
+    source: "",
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.395949,-0.989413"
   },
@@ -797,7 +797,7 @@ const POINTS = [
     oldPhoto: "",
     video: "",
     website: "https://batterie-azeville.manche.fr/",
-    source: "Site officiel de la Batterie d’Azeville",
+    source: "",
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.460831,-1.307505"
   },
@@ -812,7 +812,7 @@ const POINTS = [
     oldPhoto: "",
     video: "",
     website: "https://www.batteriedecrisbecq.fr/",
-    source: "Site officiel de la Batterie de Crisbecq",
+    source: "",
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.479181,-1.296920"
   },

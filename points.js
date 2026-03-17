@@ -60,6 +60,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Essai d’un Panzerschreck capturé à Sainte-Côme-du-Mont",
+  category: "oldphoto",
+  lat: 49.335792,
+  lng: -1.272346,
+  description:
+    "Deux soldats américains testent le système un lance-roquettes allemand Panzerschreck capturé à Sainte-Côme-du-Mont. Ce type d’arme antichar était redouté pour sa capacité à détruire les blindés à courte distance.",
+  image: "https://i.imgur.com/ucWSITW.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.335792,-1.272346"
+},
+  {
   title: "Char M3 Stuart détruit au Dead Man’s Corner (7 juin 1944)",
   category: "oldphoto",
   lat: 49.328481,

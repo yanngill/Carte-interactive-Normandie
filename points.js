@@ -753,6 +753,85 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.429145,-1.189823"
 },
     /* ======================================================================= */
+  /* ========================== BATTERIES ALLEMANDES ======================== */
+  /* ======================================================================= */
+
+  {
+    title: "Batterie de Longues-sur-Mer",
+    category: "germanBattery",
+    lat: 49.343613,
+    lng: -0.695038,
+    description:
+      "Batterie côtière allemande majeure du Mur de l’Atlantique, située entre Omaha Beach et Gold Beach. Le site conserve plusieurs casemates de tir ainsi que son poste de direction de tir, ce qui en fait l’un des ensembles d’artillerie les mieux préservés de Normandie. Il permet de comprendre concrètement le rôle de l’artillerie allemande dans la défense du littoral le 6 juin 1944.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.longues-mer.fr/",
+    source: "Site de la commune de Longues-sur-Mer",
+    googleMapsLink:
+      "https://www.google.com/maps/dir/?api=1&destination=49.343613,-0.695038"
+  },
+  {
+    title: "Batterie de la Pointe du Hoc",
+    category: "germanBattery",
+    lat: 49.395949,
+    lng: -0.989413,
+    description:
+      "Site emblématique du Débarquement, pris d’assaut par les Rangers américains le 6 juin 1944. La Pointe du Hoc occupait une position stratégique entre Utah Beach et Omaha Beach. On y observe encore un paysage profondément marqué par les bombardements alliés, avec de nombreux cratères, bunkers et postes d’observation. Ce lieu permet de saisir la violence des combats et l’importance tactique de cette batterie allemande sur la falaise.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.abmc.gov/cemeteries-memorials/about-pointe-du-hoc-ranger-monument/",
+    source: "American Battle Monuments Commission (ABMC)",
+    googleMapsLink:
+      "https://www.google.com/maps/dir/?api=1&destination=49.395949,-0.989413"
+  },
+  {
+    title: "Batterie d’Azeville",
+    category: "germanBattery",
+    lat: 49.460831,
+    lng: -1.307505,
+    description:
+      "Important site d’artillerie allemand du secteur d’Utah Beach. La batterie d’Azeville comprenait plusieurs casemates reliées par des galeries souterraines et joua un rôle actif pendant les combats de juin 1944. Le site permet de découvrir l’organisation défensive d’une batterie côtière allemande dans le Cotentin.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://batterie-azeville.manche.fr/",
+    source: "Site officiel de la Batterie d’Azeville",
+    googleMapsLink:
+      "https://www.google.com/maps/dir/?api=1&destination=49.460831,-1.307505"
+  },
+  {
+    title: "Batterie de Crisbecq",
+    category: "germanBattery",
+    lat: 49.479181,
+    lng: -1.296920,
+    description:
+      "Batterie allemande majeure couvrant les approches d’Utah Beach. Plus puissamment armée que de nombreuses autres positions du secteur, elle résista plusieurs jours après le 6 juin 1944. Le site présente aujourd’hui bunkers, encuvements et vestiges permettant de comprendre l’ampleur du dispositif défensif allemand dans le nord du Cotentin.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "https://www.batteriedecrisbecq.fr/",
+    source: "Site officiel de la Batterie de Crisbecq",
+    googleMapsLink:
+      "https://www.google.com/maps/dir/?api=1&destination=49.479181,-1.296920"
+  },
+  {
+    title: "Batterie de Maisy",
+    category: "germanBattery",
+    lat: 49.376517,
+    lng: -1.061353,
+    description:
+      "Ensemble défensif allemand composé de positions d’artillerie, tranchées, abris et ouvrages bétonnés, situé entre Omaha Beach et la Pointe du Hoc. Le site permet d’observer un ensemble de vestiges encore bien lisibles et d’appréhender la profondeur de la défense côtière allemande sur ce secteur du Débarquement.",
+    image: "",
+    oldPhoto: "",
+    video: "",
+    website: "",
+    source: "",
+    googleMapsLink:
+      "https://www.google.com/maps/dir/?api=1&destination=49.376517,-1.061353"
+  },
+    /* ======================================================================= */
   /* ============================ OFFICE DE TOURISME  =========================== */
   /* ======================================================================= */
 {

@@ -88,6 +88,19 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.462127,-1.229918"
 },
   {
+  title: "Photo d’époque – Boeing B-17 sur l’aérodrome E-1 (12 juin 1944)",
+  category: "oldphoto",
+  lat: 49.361686,
+  lng: -0.867092,
+  description: "Le 12 juin 1944, un bombardier Boeing B-17 Flying Fortress est photographié sur l’aérodrome E-1, aménagé par les forces américaines sur le plateau de Saint-Laurent-sur-Mer, au-dessus d’Omaha Beach. Cet aérodrome fait partie des premières infrastructures construites après le Débarquement afin de soutenir les opérations aériennes alliées.\n\nUtilisé pour des missions logistiques, d’observation et de commandement, il illustre la mise en place rapide d’un dispositif aérien avancé directement au contact du front.",
+  image: "https://i.imgur.com/817AyOu.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Aérodrome E-1, Saint-Laurent-sur-Mer, 12 juin 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.361686,-0.867092"
+},
+  {
   title: "Photo d’époque – Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
   category: "oldphoto",
   lat: 49.382206,

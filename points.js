@@ -155,6 +155,20 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.361686,-0.867092"
 },
   {
+  title: "Artilleurs de la 101st Airborne à Carentan (juin 1944)",
+  category: "oldphoto",
+  lat: 49.302955,
+  lng: -1.247369,
+  description:
+    "Des artilleurs de la 101st Airborne Division progressent dans les rues de Carentan après les combats. L’image montre la mise en place de moyens d’appui dans une ville récemment sécurisée.\n\nLa prise de Carentan permet aux forces américaines de relier Utah Beach et Omaha Beach, consolidant ainsi le dispositif allié en Normandie.",
+  image: "https://i.imgur.com/uNbtp8E.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.302955,-1.247369"
+},
+  {
   title: "Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
   category: "oldphoto",
   lat: 49.382206,

@@ -75,6 +75,19 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
   {
+  title: "Photo d’époque – Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
+  category: "oldphoto",
+  lat: 49.382206,
+  lng: -1.221943,
+  description: "Le 7 juin 1944, au lendemain du Débarquement sur Utah Beach, des soldats américains de la 4th Infantry Division traversent la place de l’église de Sainte-Marie-du-Mont. On distingue un véhicule léger chenillé M29 Weasel utilisé pour progresser dans les zones inondées du secteur.\n\nSainte-Marie-du-Mont constitue alors un point clé du dispositif américain. Dès les premières heures du 6 juin, les troupes débarquées sur Utah Beach cherchent à sécuriser les sorties de plage et à rejoindre les parachutistes de la 101st Airborne Division. La prise rapide du village permet de consolider la tête de pont et d’organiser la progression vers l’intérieur des terres.",
+  image: "https://i.imgur.com/YDB2Hrv.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Sainte-Marie-du-Mont, 7 juin 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.382206,-1.221943"
+},
+  {
   title: "Photo d’époque – Automitrailleuse M8 Greyhound à Canisy (26 juillet 1944)",
   category: "oldphoto",
   lat: 49.076241,

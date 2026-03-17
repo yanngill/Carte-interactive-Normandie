@@ -60,7 +60,7 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
-  title: "Photo d’époque – Défenses de plage à Grandcamp-les-Bains (juin 1944)",
+  title: "Défenses de plage à Grandcamp-les-Bains (juin 1944)",
   category: "oldphoto",
   lat: 49.389394,
   lng: -1.038392,
@@ -71,6 +71,19 @@ const POINTS = [
   website: "",
   source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.389394,-1.038392"
+},
+  {
+  title: "Défense de l’entrée du port de Grandcamp (1944)",
+  category: "oldphoto",
+  lat: 49.389653,
+  lng: -1.047880,
+  description: "Après la libération de 1944, l’entrée du port de Grandcamp apparaît fortement défendue. Un filet métallique barre l’accès, tandis qu’un tobrouk est équipé d’une tourelle de char Renault FT armée d’un canon de 37 mm. Ce type d’installation, typique du Mur de l’Atlantique, permettait de contrôler les accès portuaires et de repousser toute tentative d’intrusion par voie maritime.",
+  image: "https://i.imgur.com/rLxDBsH.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.389653,-1.047880"
 },
 {
   title: "WN65 - Poste de commandement provisoire",
@@ -88,7 +101,7 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
   {
-  title: "Photo d’époque – Canon de 88 mm sous casemate H612 à Ravenoville",
+  title: "Canon de 88 mm sous casemate H612 à Ravenoville",
   category: "oldphoto",
   lat: 49.462127,
   lng: -1.229918,
@@ -101,7 +114,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.462127,-1.229918"
 },
   {
-  title: "Photo d’époque – Boeing B-17 sur l’aérodrome E-1 (12 juin 1944)",
+  title: "Boeing B-17 sur l’aérodrome E-1 (12 juin 1944)",
   category: "oldphoto",
   lat: 49.361686,
   lng: -0.867092,
@@ -114,7 +127,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.361686,-0.867092"
 },
   {
-  title: "Photo d’époque – Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
+  title: "Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
   category: "oldphoto",
   lat: 49.382206,
   lng: -1.221943,
@@ -127,7 +140,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.382206,-1.221943"
 },
   {
-  title: "Photo d’époque – Automitrailleuse M8 Greyhound à Canisy (26 juillet 1944)",
+  title: "Automitrailleuse M8 Greyhound à Canisy (26 juillet 1944)",
   category: "oldphoto",
   lat: 49.076241,
   lng: -1.175608,
@@ -140,7 +153,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.076241,-1.175608"
 },
   {
-  title: "Photo d’époque – Prisonniers allemands au cimetière militaire d’Orglandes (12 juillet 1944)",
+  title: "Prisonniers allemands au cimetière militaire d’Orglandes (12 juillet 1944)",
   category: "oldphoto",
   lat: 49.425884,
   lng: -1.448784,
@@ -153,7 +166,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.425884,-1.448784"
 },
 {
-  title: "Photo d’époque – Bombardement de la Pointe du Hoc (avril 1944)",
+  title: "Bombardement de la Pointe du Hoc (avril 1944)",
   category: "oldphoto",
   lat: 49.394487,
   lng: -0.986231,
@@ -168,7 +181,7 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.394487,-0.986231"
 },
 {
-  title: "Photo d’époque – Poste de direction de tir de la Pointe du Hoc après la bataille",
+  title: "Poste de direction de tir de la Pointe du Hoc après la bataille",
   category: "oldphoto",
   lat: 49.397251,
   lng: -0.989186,
@@ -198,7 +211,7 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
 },
   {
-  title: "Photo d’époque – Véhicules américains sur la place Gambetta à Isigny-sur-Mer (4 juillet 1944)",
+  title: "Véhicules américains sur la place Gambetta à Isigny-sur-Mer (4 juillet 1944)",
   category: "oldphoto",
   lat: 49.317970,
   lng: -1.101454,
@@ -211,7 +224,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.317970,-1.101454"
 },
 {
-  title: "Photo d’époque – Prise d’armes au cimetière provisoire de Vierville (12 juin 1944)",
+  title: "Prise d’armes au cimetière provisoire de Vierville (12 juin 1944)",
   category: "oldphoto",
   lat: 49.373388,
   lng: -0.885192,
@@ -271,7 +284,7 @@ const POINTS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.359700,-0.838975"
   },
   {
-  title: "Photo d’époque – Civils et soldats américains à Carentan après la bataille (juin 1944)",
+  title: "Civils et soldats américains à Carentan après la bataille (juin 1944)",
   category: "oldphoto",
   lat: 49.304428,
   lng: -1.243604,

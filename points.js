@@ -134,6 +134,19 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
 },
+  {
+  title: "Photo d’époque – Véhicules américains sur la place Gambetta à Isigny-sur-Mer (4 juillet 1944)",
+  category: "oldphoto",
+  lat: 49.317970,
+  lng: -1.101454,
+  description: "Le 4 juillet 1944, des véhicules militaires américains circulent sur la place Gambetta à Isigny-sur-Mer, au cœur d’une ville fortement détruite par les bombardements. On distingue des camions logistiques traversant les ruines, témoignant de l’intense activité alliée après la libération et de l’importance stratégique d’Isigny dans la progression vers l’intérieur des terres.",
+  image: "https://i.imgur.com/WFvWuPu.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Isigny-sur-Mer, 4 juillet 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.317970,-1.101454"
+},
 {
   title: "Photo d’époque – Prise d’armes au cimetière provisoire de Vierville (12 juin 1944)",
   category: "oldphoto",

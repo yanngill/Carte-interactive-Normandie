@@ -101,6 +101,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
   {
+  title: "Casemate 5 cm KwK (Vf Doppelstand) – Front de mer de Grandcamp",
+  category: "coastalDefense",
+  lat: 49.390684,
+  lng: -1.056624,
+  description:
+    "Casemate allemande de type Vf Doppelstand située en front de mer à Grandcamp. Elle abritait un canon de 5 cm KwK destiné à la défense rapprochée du littoral et des accès portuaires.\n\nCe type d’ouvrage, plus léger que les casemates standardisées du Mur de l’Atlantique, était néanmoins intégré au dispositif défensif et permettait de compléter la couverture des plages et des zones de débarquement.\n\nLa photographie a été prise après les combats de 1944, montrant l’état de la position à la suite de la libération du secteur.",
+  image: "https://i.imgur.com/znNydTU.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.390684,-1.056624"
+},
+  {
   title: "Canon de 88 mm sous casemate H612 à Ravenoville",
   category: "oldphoto",
   lat: 49.462127,

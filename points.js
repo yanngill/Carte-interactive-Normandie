@@ -74,6 +74,19 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
+  {
+  title: "Photo d’époque – Automitrailleuse M8 Greyhound à Canisy (26 juillet 1944)",
+  category: "oldphoto",
+  lat: 49.076241,
+  lng: -1.175608,
+  description: "Le 26 juillet 1944, une automitrailleuse M8 Greyhound de l’escadron C du 82nd Armored Reconnaissance Battalion (2nd Armored Division) progresse dans les rues de Canisy. Les bâtiments en flammes témoignent de la violence des combats lors de la percée américaine après l’opération Cobra. La position exacte de la prise de vue reste incertaine, mais correspond très probablement à ce secteur au vu de l’architecture visible à l’arrière-plan.",
+  image: "https://i.imgur.com/HnpbhnI.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Canisy, 26 juillet 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.076241,-1.175608"
+},
 {
   title: "Photo d’époque – Passage du Général de Gaulle à Isigny-sur-Mer (14 juin 1944)",
   category: "oldphoto",

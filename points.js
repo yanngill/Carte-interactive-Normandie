@@ -4,32 +4,32 @@
 
 const CATEGORIES = {
   coastalDefense: {
-    label: "WN / point de résistance allemand",
+    label: "WN / points de résistance allemand",
     color: "#bfc5cc",
     key: ""
   },
   germanBattery: {
-    label: "Batterie allemande",
+    label: "Batteries allemandes",
     color: "#cc6b62",
     key: ""
   },
   oldphoto: {
-    label: "Photo d’époque",
+    label: "Photos d’époque",
     color: "#36454F",
     key: ""
   },
   officeTourism: {
-    label: "Office de tourisme",
+    label: "Offices de tourisme",
     color: "#1e88e5",
     key: ""
   },
   museum: {
-    label: "Musée",
+    label: "Musées",
     color: "#6a1b9a",
     key: ""
   },
   cemetery: {
-    label: "Cimetière militaire",
+    label: "Cimetières militaires",
     color: "#2e7d32",
     key: ""
   },

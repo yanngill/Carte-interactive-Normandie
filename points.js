@@ -4,8 +4,13 @@
 
 const CATEGORIES = {
   coastalDefense: {
-    label: "Défense côtière allemande",
+    label: "WN / point de résistance allemand",
     color: "#bfc5cc",
+    key: ""
+  },
+  germanBattery: {
+    label: "Batterie allemande",
+    color: "#cc6b62",
     key: ""
   },
   oldphoto: {
@@ -14,20 +19,20 @@ const CATEGORIES = {
     key: ""
   },
   officeTourism: {
-  label: "Office de tourisme",
-  color: "#1e88e5",
-  key: ""
-},
+    label: "Office de tourisme",
+    color: "#1e88e5",
+    key: ""
+  },
   museum: {
     label: "Musée",
     color: "#6a1b9a",
     key: ""
   },
   cemetery: {
-  label: "Cimetière militaire",
-  color: "#2e7d32",
-  key: ""
-},
+    label: "Cimetière militaire",
+    color: "#2e7d32",
+    key: ""
+  },
 };
 
 /* ######################################################################### */

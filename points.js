@@ -60,6 +60,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Messe de soldats américains à Sainte-Marie-du-Mont",
+  category: "oldphoto",
+  lat: 49.378575,
+  lng: -1.225267,
+  description:
+    "Le 11 juin 1944, de nombreux soldats américains assistent à une messe célébrée dans l’église de Sainte-Marie-du-Mont, quelques jours après le débarquement.\n\nCette scène illustre un moment de recueillement au cœur des opérations, dans une zone déjà sécurisée après les combats autour d’Utah Beach.",
+  image: "https://i.imgur.com/rdC52BE.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.378575,-1.225267"
+},
+  {
   title: "Essai d’un Panzerschreck capturé à Sainte-Côme-du-Mont",
   category: "oldphoto",
   lat: 49.335792,

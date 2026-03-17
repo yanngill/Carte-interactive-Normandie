@@ -115,6 +115,20 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.390684,-1.056624"
 },
   {
+  title: "Parachutistes américains à Carentan avec une Kübelwagen capturée (juin 1944)",
+  category: "oldphoto",
+  lat: 49.303114,
+  lng: -1.247626,
+  description:
+    "À Carentan, des parachutistes américains de la 101st Airborne Division utilisent une Kübelwagen capturée aux forces allemandes. Cette scène illustre l’intensité des combats urbains et les récupérations de matériel ennemi dans les jours suivant la libération de la ville.\n\nLa prise de Carentan est un objectif stratégique majeur pour relier les têtes de pont d’Utah Beach et d’Omaha Beach.",
+  image: "https://i.imgur.com/iDr9pnU.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.303114,-1.247626"
+},
+  {
   title: "Canon de 88 mm sous casemate H612 à Ravenoville",
   category: "oldphoto",
   lat: 49.462127,

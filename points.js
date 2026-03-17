@@ -101,6 +101,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
   {
+  title: "Habitants de Carentan célébrant la libération, place de la République (juin 1944)",
+  category: "oldphoto",
+  lat: 49.304282,
+  lng: -1.243234,
+  description:
+    "Des habitants de Carentan déploient un drapeau français depuis un bâtiment de la place de la République pour célébrer la libération de la ville. Cette scène illustre le retour de la population civile après les combats et la fin de l’occupation allemande.\n\nAujourd’hui, le bâtiment se situe au niveau de l’actuel institut, au cœur du centre-ville.",
+  image: "https://i.imgur.com/Caiqn6M.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.304282,-1.243234"
+},
+  {
   title: "Casemate 5 cm KwK (Vf Doppelstand) – Front de mer de Grandcamp",
   category: "coastalDefense",
   lat: 49.390684,

@@ -75,6 +75,19 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
 },
   {
+  title: "Photo d’époque – Canon de 88 mm sous casemate H612 à Ravenoville",
+  category: "oldphoto",
+  lat: 49.462127,
+  lng: -1.229918,
+  description: "Cette photographie montre un canon de 88 mm installé sous casemate de type H612 sur le secteur de Ravenoville. Ces positions constituaient un obstacle sérieux pour les troupes alliées dans les premières heures suivant l’assaut sur Utah Beach.",
+  image: "https://i.imgur.com/hp5PsI5.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.462127,-1.229918"
+},
+  {
   title: "Photo d’époque – Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
   category: "oldphoto",
   lat: 49.382206,
@@ -84,7 +97,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Sainte-Marie-du-Mont, 7 juin 1944",
+  source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.382206,-1.221943"
 },
   {
@@ -97,23 +110,8 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Canisy, 26 juillet 1944",
+  source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.076241,-1.175608"
-},
-{
-  title: "Photo d’époque – Passage du Général de Gaulle à Isigny-sur-Mer (14 juin 1944)",
-  category: "oldphoto",
-  lat: 49.318269,
-  lng: -1.101602,
-  description:
-    "Le 14 juin 1944, huit jours après le Débarquement, le général Charles de Gaulle revient en France après plusieurs années d’exil en Grande-Bretagne où il dirige la France Libre. Il débarque du contre-torpilleur La Combattante à Courseulles-sur-Mer avant de se rendre à Bayeux pour y prononcer son premier discours sur le sol français libéré. Il poursuit ensuite sa visite en Normandie en se rendant à Isigny-sur-Mer, où il rencontre une population profondément marquée par les combats et les bombardements. Cette visite contribue à affirmer le retour de l’autorité française dans les territoires libérés.",
-  image: "https://i.imgur.com/bCXpZE0.jpg",
-  oldPhoto: "",
-  video: "",
-  website: "",
-  source: "Archives photographiques – Visite du Général de Gaulle en Normandie, 14 juin 1944",
-  googleMapsLink:
-    "https://www.google.com/maps/dir/?api=1&destination=49.318269,-1.101602"
 },
   {
   title: "Photo d’époque – Prisonniers allemands au cimetière militaire d’Orglandes (12 juillet 1944)",

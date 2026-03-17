@@ -60,6 +60,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Char M3 Stuart détruit au Dead Man’s Corner (7 juin 1944)",
+  category: "oldphoto",
+  lat: 49.328481,
+  lng: -1.268452,
+  description:
+    "Des soldats américains inspectent l’épave d’un char léger M3 Stuart détruit par un tir de Panzerfaust au carrefour au sud de Saint-Côme-du-Mont, surnommé « Dead Man’s Corner ».\n\nCe point clé marque la progression difficile des troupes américaines entre Utah Beach et Carentan, face à une résistance allemande organisée dans le bocage normand.",
+  image: "https://i.imgur.com/rFF81U7.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.328481,-1.268452"
+},
+  {
   title: "Soldat américain place Vauban à Carentan (juin 1944)",
   category: "oldphoto",
   lat: 49.304281,

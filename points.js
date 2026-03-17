@@ -59,6 +59,19 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
+  {
+  title: "Photo d’époque – Défenses de plage à Grandcamp-les-Bains (juin 1944)",
+  category: "oldphoto",
+  lat: 49.389394,
+  lng: -1.038392,
+  description: "Sur la plage de Grandcamp-les-Bains, devant une position allemande, un photographe américain observe des défenses de plage de type \"Holzpfähle\", constituées de pieux en bois inclinés. Ces obstacles étaient souvent surmontés de mines antichar \"Tellermine\", destinées à détruire les embarcations ou véhicules lors du débarquement.\n\nLa position exacte de la prise de vue reste approximative, mais correspond à cette plage où ces dispositifs défensifs étaient largement déployés.",
+  image: "https://i.imgur.com/E8E52gL.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.389394,-1.038392"
+},
 {
   title: "WN65 - Poste de commandement provisoire",
   category: "oldphoto",

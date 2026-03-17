@@ -60,6 +60,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Soldat américain place Vauban à Carentan (juin 1944)",
+  category: "oldphoto",
+  lat: 49.304281,
+  lng: -1.245453,
+  description:
+    "Un soldat américain observe un panneau directionnel sur la place Vauban à Carentan, peu après les combats. Les indications vers Cherbourg, Carentan, Paris et Saint-Lô témoignent de l’importance stratégique de la ville comme carrefour routier.\n\nLa vue est orientée en direction de l’actuel bureau de poste.",
+  image: "https://i.imgur.com/bQJgkVH.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.304281,-1.245453"
+},
+  {
   title: "Défenses de plage à Grandcamp-les-Bains (juin 1944)",
   category: "oldphoto",
   lat: 49.389394,

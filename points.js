@@ -60,6 +60,20 @@ const POINTS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Volontaire de la Croix-Rouge et soldats américains à Sainte-Marie-du-Mont",
+  category: "oldphoto",
+  lat: 49.378584,
+  lng: -1.226108,
+  description:
+    "Le 12 juin 1944, Marie-Esther Duchenes, volontaire de la Croix-Rouge, se tient aux côtés de soldats américains d’une Engineer Special Brigade devant la fontaine de Sainte-Marie-du-Mont.\n\nLa scène montre la reprise progressive de la vie locale et la coopération entre civils et militaires dans les jours suivant le débarquement à Utah Beach.",
+  image: "https://i.imgur.com/LoVpicq.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.378584,-1.226108"
+},
+  {
   title: "Messe de soldats américains à Sainte-Marie-du-Mont",
   category: "oldphoto",
   lat: 49.378575,

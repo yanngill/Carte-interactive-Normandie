@@ -97,7 +97,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Aérodrome E-1, Saint-Laurent-sur-Mer, 12 juin 1944",
+  source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.361686,-0.867092"
 },
   {
@@ -136,7 +136,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Orglandes, 12 juillet 1944",
+  source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.425884,-1.448784"
 },
 {
@@ -150,7 +150,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Bombardement de la Pointe du Hoc, avril 1944",
+  source: "US National Archives",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.394487,-0.986231"
 },
@@ -165,7 +165,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Pointe du Hoc, poste de direction de tir après la bataille",
+  source: "US National Archives",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.397251,-0.989186"
 },
@@ -194,7 +194,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Isigny-sur-Mer, 4 juillet 1944",
+  source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.317970,-1.101454"
 },
 {
@@ -208,7 +208,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Vierville-sur-Mer, 12 juin 1944",
+  source: "US National Archives",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.373388,-0.885192"
 },
@@ -223,7 +223,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "US National Archives – Omaha Beach, 10 juin 1944",
+  source: "US National Archives",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
 },
@@ -268,7 +268,7 @@ const POINTS = [
   oldPhoto: "",
   video: "",
   website: "",
-  source: "Archives photographiques – Carentan, place de la République, juin 1944",
+  source: "Archives photographiques",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.304428,-1.243604"
 },

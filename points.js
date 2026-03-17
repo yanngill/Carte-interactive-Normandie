@@ -44,45 +44,44 @@ const POINTS = [
   /* ======================================================================= */
   /* ============================ PHOTOS D’ÉPOQUE =========================== */
   /* ======================================================================= */
-
-  {
-    title: "La Pointe du Hoc",
-    category: "oldphoto",
-    lat: 49.3965263,
-    lng: -0.9881764,
-    description:
-      "Position stratégique prise d’assaut par les Rangers américains le 6 juin 1944. Lieu emblématique du secteur américain entre Utah et Omaha.",
-    image: "https://i.imgur.com/1U8cKFq.jpeg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives",
-    googleMapsLink:
-      "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
-  },
-  {
-    title: "WN65 - Poste de commandement provisoire",
-    category: "oldphoto",
-    lat: 49.364435,
-    lng: -0.863437,
-    description:
-      "Au lendemain du Débarquement, des unités d’intendance et d’état-major de l’armée américaine installent un poste de commandement provisoire devant un blockhaus capturé. Le secteur commence à être organisé pour accueillir les renforts et la logistique.",
-    image: "https://i.imgur.com/P6rq0yq.jpeg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives",
-    googleMapsLink:
-      "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
-  },
-  {
+{
+  title: "La Pointe du Hoc",
+  category: "oldphoto",
+  lat: 49.3965263,
+  lng: -0.9881764,
+  description:
+    "Position stratégique prise d’assaut par les Rangers américains le 6 juin 1944. Lieu emblématique du secteur américain entre Utah et Omaha.",
+  image: "https://i.imgur.com/1U8cKFq.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
+},
+{
+  title: "WN65 - Poste de commandement provisoire",
+  category: "oldphoto",
+  lat: 49.364435,
+  lng: -0.863437,
+  description:
+    "Au lendemain du Débarquement, des unités d’intendance et d’état-major de l’armée américaine installent un poste de commandement provisoire devant un blockhaus capturé. Le secteur commence à être organisé pour accueillir les renforts et la logistique.",
+  image: "https://i.imgur.com/P6rq0yq.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.364435,-0.863437"
+},
+{
   title: "Photo d’époque – Passage du Général de Gaulle à Isigny-sur-Mer (14 juin 1944)",
   category: "oldphoto",
   lat: 49.318269,
   lng: -1.101602,
   description:
     "Le 14 juin 1944, huit jours après le Débarquement, le général Charles de Gaulle revient en France après plusieurs années d’exil en Grande-Bretagne où il dirige la France Libre. Il débarque du contre-torpilleur La Combattante à Courseulles-sur-Mer avant de se rendre à Bayeux pour y prononcer son premier discours sur le sol français libéré. Il poursuit ensuite sa visite en Normandie en se rendant à Isigny-sur-Mer, où il rencontre une population profondément marquée par les combats et les bombardements. Cette visite contribue à affirmer le retour de l’autorité française dans les territoires libérés.",
-  image: "https://imgur.com/bCXpZE0",
+  image: "https://i.imgur.com/bCXpZE0.jpg",
   oldPhoto: "",
   video: "",
   website: "",
@@ -90,14 +89,14 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.318269,-1.101602"
 },
-  {
+{
   title: "Photo d’époque – Bombardement de la Pointe du Hoc (avril 1944)",
   category: "oldphoto",
   lat: 49.394487,
   lng: -0.986231,
   description:
     "Photographie aérienne montrant le bombardement de la Pointe du Hoc en avril 1944, dans le cadre de la préparation du Débarquement. Les bombardiers alliés visent la batterie allemande installée sur la falaise, considérée comme une menace majeure pour les plages d’Utah et d’Omaha. Les bombardements et tirs navals transforment progressivement le site en un paysage de cratères. Malgré ces frappes, les Rangers américains devront escalader la falaise le 6 juin 1944 pour neutraliser définitivement la position.",
-  image: "https://imgur.com/T9S7mz8",
+  image: "https://i.imgur.com/T9S7mz8.jpg",
   oldPhoto: "",
   video: "",
   website: "",
@@ -105,14 +104,14 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.394487,-0.986231"
 },
-  {
+{
   title: "Photo d’époque – Poste de direction de tir de la Pointe du Hoc après la bataille",
   category: "oldphoto",
   lat: 49.397251,
   lng: -0.989186,
   description:
     "Photographie montrant le poste de direction de tir situé à l’extrémité de la Pointe du Hoc après les combats de juin 1944. Cette position permettait aux Allemands d’observer la mer et de diriger les tirs de la batterie installée sur le site. On remarque sur la structure une 'seconde peau' de béton ajoutée autour de l’ouvrage, destinée à améliorer le camouflage et à renforcer la protection contre les bombardements et les tirs d’artillerie alliés.",
-  image: "https://imgur.com/r8BE8KG",
+  image: "https://i.imgur.com/r8BE8KG.jpg",
   oldPhoto: "",
   video: "",
   website: "",
@@ -120,29 +119,29 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.397251,-0.989186"
 },
-  {
-    title: "WN65 –  Arrivée de la 2nd Infantry Division",
-    category: "oldphoto",
-    lat: 49.364151,
-    lng: -0.864825,
-    description:
-      "À partir du 7 juin 1944, les renforts américains de la 2nd Infantry Division débarquent sur Omaha Beach pour soutenir l’effort offensif vers l’intérieur des terres. La logistique massive commence à transformer la plage en zone de transit stratégique.",
-    image: "https://i.imgur.com/azReUzU.jpeg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives",
-    googleMapsLink:
-      "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
-  },
-  {
+{
+  title: "WN65 – Arrivée de la 2nd Infantry Division",
+  category: "oldphoto",
+  lat: 49.364151,
+  lng: -0.864825,
+  description:
+    "À partir du 7 juin 1944, les renforts américains de la 2nd Infantry Division débarquent sur Omaha Beach pour soutenir l’effort offensif vers l’intérieur des terres. La logistique massive commence à transformer la plage en zone de transit stratégique.",
+  image: "https://i.imgur.com/azReUzU.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.364151,-0.864825"
+},
+{
   title: "Photo d’époque – Prise d’armes au cimetière provisoire de Vierville (12 juin 1944)",
   category: "oldphoto",
   lat: 49.373388,
   lng: -0.885192,
   description:
     "Photographie prise le 12 juin 1944 lors d’une prise d’armes organisée au cimetière provisoire installé au pied de la falaise de Vierville, quelques jours après le Débarquement. La cérémonie se déroule lors de la visite de hauts responsables militaires américains venus de Washington. Dès le 7 juin 1944, les unités américaines chargées de l’enregistrement des sépultures militaires commencent à rassembler les corps des soldats tombés sur Omaha Beach. Le plateau n’étant pas encore déminé, un premier cimetière provisoire est aménagé au pied de la falaise. Les corps seront ensuite transférés vers le cimetière de Saint-Laurent-sur-Mer, puis après la guerre vers le cimetière américain actuel de Colleville-sur-Mer.",
-  image: "https://imgur.com/bFZ55Ug",
+  image: "https://i.imgur.com/bFZ55Ug.jpg",
   oldPhoto: "",
   video: "",
   website: "",
@@ -150,22 +149,22 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.373388,-0.885192"
 },
-  {
-    title: "Vue depuis le WN60 – Armada alliée au large d’Omaha Beach (10 juin 1944)",
-    category: "oldphoto",
-    lat: 49.356869,
-    lng: -0.832052,
-    description:
-      "Photographie prise depuis le secteur du WN60 en regardant vers l’ouest, quelques jours après le Débarquement. On distingue au large une concentration impressionnante de navires alliés assurant le flux logistique vers Omaha Beach : transports de troupes, cargos, LST et bâtiments de soutien. La plage est alors devenue une immense zone de débarquement où hommes, véhicules et matériel sont acheminés en continu.",
-    image: "https://i.imgur.com/avcMEZf.jpeg",
-    oldPhoto: "",
-    video: "",
-    website: "",
-    source: "US National Archives – Omaha Beach, 10 juin 1944",
-    googleMapsLink:
-      "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
-  },
-  {
+{
+  title: "Vue depuis le WN60 – Armada alliée au large d’Omaha Beach (10 juin 1944)",
+  category: "oldphoto",
+  lat: 49.356869,
+  lng: -0.832052,
+  description:
+    "Photographie prise depuis le secteur du WN60 en regardant vers l’ouest, quelques jours après le Débarquement. On distingue au large une concentration impressionnante de navires alliés assurant le flux logistique vers Omaha Beach : transports de troupes, cargos, LST et bâtiments de soutien. La plage est alors devenue une immense zone de débarquement où hommes, véhicules et matériel sont acheminés en continu.",
+  image: "https://i.imgur.com/avcMEZf.jpeg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Omaha Beach, 10 juin 1944",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.356869,-0.832052"
+},
+{
   title: "WN 73 – Omaha Beach sous bombardement",
   category: "oldphoto",
   lat: 49.381114,
@@ -177,7 +176,8 @@ const POINTS = [
   video: "",
   website: "",
   source: "US National Archives",
-  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.381114,-0.907232"
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.381114,-0.907232"
 },
   {
     title: "WN61 – Casemate allemande capturée",
@@ -201,7 +201,7 @@ const POINTS = [
   lng: -1.243604,
   description:
     "Photographie prise sur la place de la République à Carentan après la libération de la ville en juin 1944. On y voit des soldats américains de la 101st Airborne Division assis au pied du monument aux morts, accompagnés de civils dont une jeune fille. La bataille de Carentan, menée du 10 au 13 juin 1944, permit de relier les têtes de pont d’Utah Beach et d’Omaha Beach. La ville avait déjà subi de lourdes destructions à la suite des bombardements alliés du 6 juin puis des tirs d’artillerie allemands. Au total, au moins 65 civils de Carentan, hommes, femmes et enfants, perdirent la vie durant les combats et bombardements liés à la libération de la ville.",
-  image: "https://imgur.com/gC7FYtv",
+  image: "https://i.imgur.com/gC7FYtv.jpeg",
   oldPhoto: "",
   video: "",
   website: "",

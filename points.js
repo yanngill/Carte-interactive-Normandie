@@ -814,6 +814,20 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.387559,-0.918817"
 },
   {
+  title: "WN 81 – Position défensive de Grandcamp-Maisy (ouest)",
+  category: "coastalDefense",
+  lat: 49.390737,
+  lng: -1.056807,
+  description:
+    "Position allemande située à l’ouest de Grandcamp-Maisy, à proximité du littoral et du port. Le WN81 domine l’estuaire du Grand Vey ainsi que le secteur d’Utah Beach, offrant un point d’observation privilégié sur les opérations de débarquement.\n\nLe 6 juin 1944, ses défenseurs subissent les bombardements aériens alliés avant de pouvoir observer les débarquements sur Utah Beach. La position pouvait potentiellement diriger des tirs d’artillerie provenant des batteries de Maisy (Stp83 et Stp84) si celles-ci restaient opérationnelles.\n\nÀ l’arrière, une batterie de campagne du 1./Artillerie-Regiment 352 équipée de canons de 10,5 cm était installée à Houtteville. Mobile et bien camouflée, elle était difficile à localiser pour les Alliés.\n\nPlusieurs péniches de débarquement se sont égarées dans ce secteur, entraînant la capture de soldats américains. Parmi eux, un officier transportait des documents sensibles liés à l’opération Neptune, rapidement transmis au commandement allemand.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.390737,-1.056807"
+},
+  {
   title: "WN 5 – La Madeleine (Utah Beach)",
   category: "coastalDefense",
   lat: 49.415828,

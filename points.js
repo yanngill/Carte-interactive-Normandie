@@ -89,6 +89,19 @@ const POINTS = [
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.318269,-1.101602"
 },
+  {
+  title: "Photo d’époque – Prisonniers allemands au cimetière militaire d’Orglandes (12 juillet 1944)",
+  category: "oldphoto",
+  lat: 49.425884,
+  lng: -1.448784,
+  description: "Le 12 juillet 1944, des prisonniers allemands creusent des tombes pour leurs camarades tués lors des combats, sous la surveillance de soldats américains. Cette scène, photographiée au cimetière militaire d’Orglandes, illustre la violence des affrontements dans le Cotentin et la gestion immédiate des pertes après la bataille.",
+  image: "https://i.imgur.com/LWLKhGO.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives – Orglandes, 12 juillet 1944",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.425884,-1.448784"
+},
 {
   title: "Photo d’époque – Bombardement de la Pointe du Hoc (avril 1944)",
   category: "oldphoto",

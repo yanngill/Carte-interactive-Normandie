@@ -116,7 +116,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.328481,-1.268452"
 },
   {
-  title: "Soldat américain place Vauban à Carentan (juin 1944)",
+  title: "Soldat américain place Vauban à Carentan",
   category: "oldphoto",
   lat: 49.304281,
   lng: -1.245453,
@@ -130,7 +130,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.304281,-1.245453"
 },
   {
-  title: "Défenses de plage à Grandcamp-les-Bains (juin 1944)",
+  title: "Défenses de plage à Grandcamp-les-Bains",
   category: "oldphoto",
   lat: 49.389394,
   lng: -1.038392,
@@ -199,7 +199,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.390684,-1.056624"
 },
   {
-  title: "Parachutistes américains à Carentan avec une Kübelwagen capturée (juin 1944)",
+  title: "Parachutistes américains à Carentan avec une Kübelwagen capturée",
   category: "oldphoto",
   lat: 49.303114,
   lng: -1.247626,
@@ -253,7 +253,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.302955,-1.247369"
 },
   {
-  title: "Place de l’église de Sainte-Marie-du-Mont (7 juin 1944)",
+  title: "Place de l’église de Sainte-Marie-du-Mont",
   category: "oldphoto",
   lat: 49.382206,
   lng: -1.221943,
@@ -266,12 +266,12 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.382206,-1.221943"
 },
   {
-  title: "Automitrailleuse M8 Greyhound à Canisy (26 juillet 1944)",
+  title: "Automitrailleuse M8 Greyhound à Canisy",
   category: "oldphoto",
   lat: 49.076241,
   lng: -1.175608,
   description: "Le 26 juillet 1944, une automitrailleuse M8 Greyhound de l’escadron C du 82nd Armored Reconnaissance Battalion (2nd Armored Division) progresse dans les rues de Canisy. Les bâtiments en flammes témoignent de la violence des combats lors de la percée américaine après l’opération Cobra. La position exacte de la prise de vue reste incertaine, mais correspond très probablement à ce secteur au vu de l’architecture visible à l’arrière-plan.",
-  image: "https://i.imgur.com/HnpbhnI.jpg",
+  image: "https://i.imgur.com/yAM6YzR.jpg",
   oldPhoto: "",
   video: "",
   website: "",

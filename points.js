@@ -474,7 +474,7 @@ const POINTS = [
   lat: 49.379157,
   lng: -0.902423,
   description:
-    "Photographie prise après les combats montrant la casemate du WN72 équipée d’un canon antichar de 88 mm dominant la sortie de Vierville et l’ouest d’Omaha Beach. Des soldats américains inspectent la position. Le bunker est toujours visible aujourd’hui et constitue l’un des monuments les plus reconnaissables du secteur.",
+    "Photographie prise après les combats montrant la casemate du WN72 équipée d’un canon antichar de 88 mm dominant la sortie de Vierville et l’ouest d’Omaha Beach. Le bunker est toujours visible aujourd’hui et constitue l’un des monuments les plus reconnaissables du secteur.",
   image: "https://i.imgur.com/urwKn2B.jpeg",
   oldPhoto: "",
   video: "",

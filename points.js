@@ -597,8 +597,9 @@ const POINTS = [
   category: "videoArchive",
   lat: 49.358581,
   lng: -0.832416,
-  description:
-    "Extrait d’archives du débarquement sur Omaha Beach montrant des soldats américains progressant sous le feu ennemi.\n\nLes images illustrent la difficulté de progression face aux défenses allemandes et au relief des falaises.\n\nVidéo issue du film du US National Archives (NAID 15082 – 111-ADC-1275).",
+  title: "Soldats américains sur Omaha Beach le 6 juin 1944",
+description:
+  "Extrait d’archives montrant des soldats américains sur Omaha Beach après le débarquement.\n\nLes images montrent des troupes éprouvées, aidant des blessés et s’abritant au pied des dunes.\n\nVidéo issue du film du US National Archives (NAID 15082 – 111-ADC-1275).",
   image: "",
   oldPhoto: "",
   video: "https://drive.google.com/file/d/1NkQgG0Jc7lULk9Zhqt0Vh1M3NF5Vzwh4/preview",

@@ -18,9 +18,14 @@ const CATEGORIES = {
     color: "#36454F",
     key: ""
   },
-  officeTourism: {
-    label: "Offices de tourisme",
-    color: "#1e88e5",
+  videoArchive: {
+  label: "Vidéos d’époque",
+  color: "#d4b483",
+  key: ""
+},
+    cemetery: {
+    label: "Cimetières militaires",
+    color: "#2e7d32",
     key: ""
   },
   museum: {
@@ -28,9 +33,9 @@ const CATEGORIES = {
     color: "#6a1b9a",
     key: ""
   },
-  cemetery: {
-    label: "Cimetières militaires",
-    color: "#2e7d32",
+  officeTourism: {
+    label: "Offices de tourisme",
+    color: "#1e88e5",
     key: ""
   },
 };
@@ -584,7 +589,24 @@ const POINTS = [
     googleMapsLink:
       "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
   },
-
+/* ======================================================================= */
+/* ============================ VIDÉOS D’ÉPOQUE =========================== */
+/* ======================================================================= */
+  {
+  title: "Débarquement sur Omaha Beach (6 juin 1944)",
+  category: "videoArchive",
+  lat: 49.358581,
+  lng: -0.832416,
+  description:
+    "Extrait d’archives du débarquement sur Omaha Beach montrant des soldats américains progressant sous le feu ennemi.\n\nLes images illustrent la difficulté de progression face aux défenses allemandes et au relief des falaises.\n\nVidéo issue du film du US National Archives (NAID 15082 – 111-ADC-1275).",
+  image: "",
+  oldPhoto: "",
+  video: "https://drive.google.com/file/d/1NkQgG0Jc7lULk9Zhqt0Vh1M3NF5Vzwh4/preview",
+  website: "https://catalog.archives.gov/id/15082",
+  source: "US National Archives",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.358581,-0.832416"
+},
   /* ======================================================================= */
   /* ===================== MUSÉES DU DÉBARQUEMENT AMÉRICAIN ================ */
   /* ======================================================================= */

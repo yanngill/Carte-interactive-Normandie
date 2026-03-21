@@ -616,7 +616,7 @@ description:
   "Extrait d’archives montrant des soldats américains sur Omaha Beach après le débarquement.\n\nLes images montrent des troupes éprouvées, aidant des blessés et s’abritant au pied des dunes.\n\nVidéo issue du film du US National Archives (NAID 15082 – 111-ADC-1275).",
   image: "",
   oldPhoto: "",
-  video: "https://drive.google.com/file/d/1NkQgG0Jc7lULk9Zhqt0Vh1M3NF5Vzwh4/preview",
+  video: "assets/videos/Clip-taken-from-111-adc-1275.mp4",
   website: "https://catalog.archives.gov/id/15082",
   source: "US National Archives",
   googleMapsLink:

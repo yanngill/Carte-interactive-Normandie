@@ -442,6 +442,20 @@ const POINTS_OLDPHOTOS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.379157,-0.902423"
 },
   {
+  title: "Planeurs américains – Utah Beach (La Madeleine)",
+  category: "oldphoto",
+  lat: 49.417674,
+  lng: -1.176439,
+  description:
+    "le 6 juin, des planeurs américains survolent Utah Beach pour acheminer du matériel et des renforts aux troupes au sol. La scène est prise depuis les dunes de La Madeleine pendant les opérations du Débarquement.\n\nPosition approximative.",
+  image: "https://catalog.archives.gov/OpaAPI/media/176887920/content",
+  oldPhoto: "",
+  video: "",
+  website: "https://catalog.archives.gov/id/176887920",
+  source: "US National Archives (NAID: 176887920 - ID:111-SC-190293)",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.417674,-1.176439"
+},
+  {
   title: "WN66 – Canon de char de 5 cm KwK L/60 sur la plage",
   category: "oldphoto",
   lat: 49.369775,

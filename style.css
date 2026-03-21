@@ -1,4 +1,5 @@
-/*RESET SIMPLE
+/* =========================================================
+   RESET SIMPLE
 ========================================================= */
 * {
   box-sizing: border-box;
@@ -36,7 +37,6 @@ body {
 
 /* =========================================================
    BOUTON LÉGENDE
-   Placé sous les contrôles Leaflet pour éviter le chevauchement
 ========================================================= */
 .legend-toggle-wrap {
   position: absolute;
@@ -97,10 +97,6 @@ body {
   display: flex;
 }
 
-.legend-sidebar.open {
-  display: flex;
-}
-
 .legend-header-row {
   display: flex;
   justify-content: space-between;
@@ -146,26 +142,6 @@ body {
   line-height: 1.35;
 }
 
-.legend-close-btn {
-  border: 1px solid #cbd5e1;
-  background: #f8fafc;
-  color: #111827;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  flex-shrink: 0;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.legend-close-btn:hover {
-  background: #eef2f7;
-  border-color: #94a3b8;
-}
-
 /* =========================================================
    BOUTONS ACTIONS
 ========================================================= */
@@ -203,7 +179,6 @@ body {
 /* =========================================================
    CONTENU LÉGENDE
 ========================================================= */
-
 .legend-list {
   list-style: none;
   padding: 0;
@@ -265,15 +240,51 @@ body {
   line-height: 1.45;
 }
 
+.legend-feedback {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.feedback-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 7px 12px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.feedback-btn:hover {
+  background: #1d4ed8;
+}
+
+.legend-credits {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
 /* =========================================================
    POPUPS
 ========================================================= */
+.leaflet-popup-content {
+  margin: 14px 16px;
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: 14px;
+  overflow: hidden;
 }
 
 .popup-content {
-  max-width: 280px;
+  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
   color: #1f2937;
 }
 
@@ -304,19 +315,37 @@ body {
   display: grid;
   gap: 10px;
   margin-bottom: 12px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .popup-media img,
-.popup-media iframe {
+.popup-media iframe,
+.popup-media video {
   width: 100%;
-  border-radius: 10px;
   display: block;
-  border: 1px solid #d1d5db;
+  border-radius: 10px;
 }
 
 .popup-media img {
   height: auto;
   cursor: zoom-in;
+  border: 1px solid #d1d5db;
+}
+
+.popup-media iframe {
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
+  border: 0;
+  background: #000;
+}
+
+.popup-media video {
+  height: 180px;
+  border: 1px solid #d1d5db;
+  background: #000;
+  object-fit: contain;
 }
 
 .popup-label {
@@ -326,12 +355,25 @@ body {
   margin-bottom: 5px;
 }
 
-/* Boutons popup */
+.popup-source {
+  font-size: 10px;
+  margin-top: 6px;
+  color: #666666;
+  line-height: 1.35;
+}
+
+.popup-extra-note {
+  font-size: 11px;
+  margin-top: 8px;
+  font-style: italic;
+  color: #333333;
+  line-height: 1.4;
+}
 
 .popup-buttons {
   display: flex;
   flex-direction: column;
-  gap: 4px; /* espace entre les boutons */
+  gap: 4px;
   margin-top: 10px;
 }
 
@@ -342,11 +384,9 @@ body {
   font-size: 13px;
   text-decoration: none;
   border-radius: 4px;
-
   background: #ffffff;
   color: #111111;
   border: 1px solid #111111;
-
   transition: all 0.15s ease;
 }
 
@@ -355,9 +395,6 @@ body {
   color: #ffffff;
 }
 
-/* =========================================================
-   LABELS GRANDS LIEUX
-========================================================= */
 /* =========================================================
    LABELS GRANDS LIEUX
 ========================================================= */
@@ -405,64 +442,8 @@ body {
 }
 
 /* =========================================================
-   RESPONSIVE
+   POSITION UTILISATEUR
 ========================================================= */
-@media (max-width: 900px) {
-  .legend-toggle-wrap {
-    top: 150px;
-    left: 10px;
-  }
-
-  .legend-sidebar {
-    left: 10px;
-    right: 10px;
-    width: auto;
-    max-width: none;
-    top: auto;
-    bottom: 16px;
-    transform: none;
-    max-height: 62vh;
-    padding: 16px;
-  }
-
-  .popup-content {
-    max-width: 230px;
-  }
-
-    .place-label div {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-}
-
-.legend-feedback {
-  margin-top: 12px;
-  padding-top: 10px;
-  border-top: 1px solid #e5e7eb;
-  font-size: 0.9rem;
-}
-
-.feedback-btn {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 7px 12px;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.feedback-btn:hover {
-  background: #1d4ed8;
-}
-
-.legend-credits {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: #6b7280;
-}
 .user-location-icon {
   font-size: 26px;
   text-align: center;
@@ -476,7 +457,7 @@ body {
   left: 50%;
   width: 36px;
   height: 36px;
-  background: rgba(59,130,246,0.35);
+  background: rgba(59, 130, 246, 0.35);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: userPulse 2s infinite;
@@ -487,56 +468,19 @@ body {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.7;
   }
-
   70% {
     transform: translate(-50%, -50%) scale(1.6);
     opacity: 0;
   }
-
   100% {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
   }
 }
+
 /* =========================================================
-   CARROUSELS / CORRECTION STRUCTURE SLIDES
+   CARROUSELS
 ========================================================= */
-
-.leaflet-popup-content {
-  margin: 14px 16px;
-}
-
-.leaflet-popup-content-wrapper {
-  overflow: hidden;
-}
-
-.popup-content {
-  width: 300px;
-  max-width: 300px;
-  overflow: hidden;
-}
-
-.popup-media {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.popup-source {
-  font-size: 10px;
-  margin-top: 6px;
-  color: #666666;
-  line-height: 1.35;
-}
-
-.popup-extra-note {
-  font-size: 11px;
-  margin-top: 8px;
-  font-style: italic;
-  color: #333333;
-  line-height: 1.4;
-}
-
 .carousel-dynamic-title {
   font-weight: 700;
   margin-bottom: 6px;
@@ -645,10 +589,10 @@ body {
 .dots .glider-dot.active {
   background: #111111;
 }
+
 /* =========================================================
    LIGHTBOX PLEIN ÉCRAN
 ========================================================= */
-
 .lightbox {
   display: none;
   position: fixed;
@@ -689,10 +633,42 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 900px) {
+  .legend-toggle-wrap {
+    top: 150px;
+    left: 10px;
+  }
+
+  .legend-sidebar {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: none;
+    top: auto;
+    bottom: 16px;
+    transform: none;
+    max-height: 62vh;
+    padding: 16px;
+  }
+
+  .popup-content {
+    width: 230px;
+    max-width: 230px;
+  }
+
+  .place-label div {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
 /* =========================================================
    MODE FOCUS POPUP SUR MOBILE
 ========================================================= */
-
 @media (max-width: 900px) {
   body.popup-focus .legend-toggle-wrap,
   body.popup-focus .legend-sidebar,

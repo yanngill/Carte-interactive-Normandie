@@ -646,7 +646,7 @@ description:
     "Extrait d’archives montrant des soldats américains progressant dans le secteur de Saint-Marcouf après le débarquement.\n\nLes images montrent l’arrivée des troupes dans la zone, au milieu des destructions et des premiers contacts avec la population locale.",
   image: "",
   oldPhoto: "",
-  video: "https://drive.google.com/file/d/1jeLhqkULeJ9CR-fi7DZm5MGK8vM5PO_p/preview",
+  video: "assets/videos/Stmarcouf.mp4",
   website: "https://catalog.archives.gov/id/15082",
   source: "US National Archives (NAID 15082 – 111-ADC-1275)",
   googleMapsLink:

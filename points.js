@@ -631,7 +631,7 @@ description:
     "Extrait d’archives montrant des parachutistes américains dans le secteur de Ravenoville le 6 juin 1944.\n\nAprès des largages dispersés, des éléments des 82nd et 101st Airborne se regroupent et combattent autour de la ferme Marmion, point stratégique contrôlant les axes vers Utah Beach.",
   image: "",
   oldPhoto: "",
-  video: "https://drive.google.com/file/d/1plcSY0_6NWfDeDwmqVWxBKdiNwOJxXt0/preview",
+  video: "assets/videos/Raveno.mp4",
   website: "https://catalog.archives.gov/id/15082",
   source: "US National Archives (NAID 15082 – 111-ADC-1275)",
   googleMapsLink:

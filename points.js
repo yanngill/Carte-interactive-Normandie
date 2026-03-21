@@ -546,11 +546,11 @@ description:
   lat: 49.564242,
   lng: -1.343459,
   description:
-    "Position d’artillerie allemande du secteur d’Utah Beach intégrée au dispositif du Mur de l’Atlantique. Moins importante que les grandes batteries voisines, elle participe néanmoins à la défense du littoral face au débarquement allié.\n\nLe site permet aujourd’hui d’observer les vestiges de positions défensives côtières dans le nord du Cotentin.",
+    "Position d’artillerie allemande du secteur d’Utah Beach intégrée au dispositif du Mur de l’Atlantique. Moins importante que les grandes batteries voisines, elle participe néanmoins à la défense du littoral face au débarquement allié. Très animé durant les commémorations du débarquement.",
   image: "",
   oldPhoto: "",
   video: "",
-  website: "",
+  website: "https://www.facebook.com/p/Batterie-de-Crasville-61553571353716/",
   source: "",
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.564242,-1.343459"

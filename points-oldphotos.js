@@ -1,1 +1,2 @@
-
+const POINTS_OLDPHOTOS = [
+];

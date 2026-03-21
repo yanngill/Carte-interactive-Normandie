@@ -218,7 +218,7 @@ const POINTS_OLDPHOTOS = [
   lng: -1.247369,
   description:
     "Des artilleurs de la 101st Airborne Division progressent dans les rues de Carentan après les combats. L’image montre la mise en place de moyens d’appui dans une ville récemment sécurisée.\n\nLa prise de Carentan permet aux forces américaines de relier Utah Beach et Omaha Beach, consolidant ainsi le dispositif allié en Normandie.",
-  image: "https://i.imgur.com/uNbtp8E.jpg",
+  image: "https://i.imgur.com/GUnnQoH.jpg",
   oldPhoto: "",
   video: "",
   website: "",

@@ -608,6 +608,21 @@ description:
   googleMapsLink:
     "https://www.google.com/maps/dir/?api=1&destination=49.358581,-0.832416"
 },
+  {
+  title: "Arrivée des troupes américaines à Saint-Marcouf (6 juin 1944)",
+  category: "videoArchive",
+  lat: 49.473570,
+  lng: -1.289201,
+  description:
+    "Extrait d’archives montrant des soldats américains progressant dans le secteur de Saint-Marcouf après le débarquement.\n\nLes images montrent l’arrivée des troupes dans la zone, au milieu des destructions et des premiers contacts avec la population locale.\n\nVidéo issue du film du US National Archives (NAID 15082 – 111-ADC-1275).",
+  image: "",
+  oldPhoto: "",
+  video: "https://drive.google.com/file/d/1O-HWOGpVKzyvzOjR1IYYG-uSR9Q7bQ-H/preview",
+  website: "https://catalog.archives.gov/id/15082",
+  source: "US National Archives",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.473570,-1.289201"
+},
   /* ======================================================================= */
   /* ===================== MUSÉES DU DÉBARQUEMENT AMÉRICAIN ================ */
   /* ======================================================================= */

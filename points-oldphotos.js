@@ -541,7 +541,7 @@ const POINTS_OLDPHOTOS = [
   website: "",
   source: "US National Archives (NAID: 17688842 - ID: 111-SC-275827)",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364477,-0.863543"
-}
+},
   {
   title: "WN 5 – Canon de 5 cm KwK – Utah Beach",
   category: "oldphoto",

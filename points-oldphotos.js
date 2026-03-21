@@ -448,7 +448,7 @@ const POINTS_OLDPHOTOS = [
   lng: -1.176439,
   description:
     "le 6 juin, des planeurs américains survolent Utah Beach pour acheminer du matériel et des renforts aux troupes au sol. La scène est prise depuis les dunes de La Madeleine pendant les opérations du Débarquement.\n\nPosition approximative.",
-  image: "https://catalog.archives.gov/OpaAPI/media/176887920/content",
+ image: "https://i.imgur.com/TMTfHkY.jpg",
   oldPhoto: "",
   video: "",
   website: "https://catalog.archives.gov/id/176887920",

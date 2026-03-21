@@ -143,7 +143,7 @@ const POINTS_OLDPHOTOS = [
   website: "",
   source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.206088,-1.173861"
-}
+},
   {
   title: "Défenses de plage à Grandcamp-les-Bains",
   category: "oldphoto",

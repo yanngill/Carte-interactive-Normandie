@@ -101,19 +101,37 @@ function buildImageBlock(label, url, altText) {
 
 function buildVideoBlock(url) {
   if (!isSafeUrl(url)) return "";
-  return `
-    <div>
-      <div class="popup-label">Vidéo</div>
-      <iframe
-        src="${url}"
-        title="Vidéo intégrée"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
-    </div>
-  `;
+
+  // Cas YouTube
+  if (url.includes("youtube.com") || url.includes("youtu.be")) {
+    return `
+      <div>
+        <div class="popup-label">Vidéo</div>
+        <iframe
+          src="${url}"
+          title="Vidéo YouTube"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+  }
+
+  // Cas fichier MP4
+  if (url.endsWith(".mp4")) {
+    return `
+      <div>
+        <div class="popup-label">Vidéo</div>
+        <video controls playsinline preload="metadata">
+          <source src="${url}" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    `;
+  }
+
+  return "";
 }
 
 function buildPopupContent(point) {

@@ -61,6 +61,20 @@ const POINTS_OLDPHOTOS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.378584,-1.226108"
 },
   {
+  title: "Aérodrome avancé A-8 – Picauville (juillet 1944)",
+  category: "oldphoto",
+  lat: 49.392820,
+  lng: -1.418854,
+  description:
+    "Un office religieux est célébré par le pasteur Franck J. Landolt autour d’un P-47 Thunderbolt sur l’aérodrome avancé A-8 de Picauville.\n\nMis en service dès le 30 juin 1944, cet aérodrome est construit par les unités du génie américain pour soutenir les opérations aériennes. Le 405th Fighter Group y déploie ses P-47 pour des missions d’appui au sol.",
+  image: "https://i.imgur.com/YfFls7k.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.392820,-1.418854"
+},
+  {
   title: "Soldat américain avec un chiot",
   category: "oldphoto",
   lat: 49.204207,

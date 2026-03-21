@@ -515,6 +515,20 @@ const POINTS_OLDPHOTOS = [
       "https://www.google.com/maps/dir/?api=1&destination=49.412970,-1.321191"
   },
   {
+  title: "WN65 – Canon endommagé (Omaha Beach)",
+  category: "oldphoto",
+  lat: 49.364477,
+  lng: -0.863543,
+  description:
+    "Canon allemand endommagé dans une position du majeure du WN65, à la sortie E-1 d’Omaha Beach. La plaque blindée du canon présente un impact massif et le béton est endommagé, témoignant de la violence des tirs subis lors du Débarquement.",
+  image: "https://i.imgur.com/pN6tqM0.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives (NAID: 17688842 - ID: 111-SC-275827)",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.364477,-0.863543"
+}
+  {
   title: "WN 5 – Canon de 5 cm KwK – Utah Beach",
   category: "oldphoto",
   lat: 49.416125,

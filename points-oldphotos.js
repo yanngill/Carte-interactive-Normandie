@@ -145,7 +145,7 @@ const POINTS_OLDPHOTOS = [
 },
   {
   title: "Casemate 5 cm KwK (Vf Doppelstand) – Front de mer de Grandcamp",
-  category: "coastalDefense",
+  category: "oldphoto",
   lat: 49.390684,
   lng: -1.056624,
   description:

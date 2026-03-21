@@ -100,17 +100,28 @@ function buildImageBlock(label, url, altText) {
 }
 
 function buildVideoBlock(url) {
-  if (!isSafeUrl(url)) return "";
+  if (!url || typeof url !== "string") return "";
 
- function buildVideoBlock(url) {
-  if (!isSafeUrl(url)) return "";
+  const trimmedUrl = url.trim();
 
-  if (url.includes("youtube.com") || url.includes("youtu.be")) {
+  if (trimmedUrl.endsWith(".mp4")) {
     return `
-      <div class="popup-video-wrap">
+      <div>
+        <div class="popup-label">Vidéo</div>
+        <video controls playsinline preload="metadata">
+          <source src="${trimmedUrl}" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    `;
+  }
+
+  if (trimmedUrl.includes("youtube.com") || trimmedUrl.includes("youtu.be")) {
+    return `
+      <div>
         <div class="popup-label">Vidéo</div>
         <iframe
-          src="${url}"
+          src="${trimmedUrl}"
           title="Vidéo YouTube"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -120,16 +131,8 @@ function buildVideoBlock(url) {
     `;
   }
 
-  if (url.endsWith(".mp4")) {
-    return `
-      <div class="popup-video-wrap">
-        <div class="popup-label">Vidéo</div>
-        <video class="popup-video" controls playsinline preload="metadata">
-          <source src="${url}" type="video/mp4">
-        </video>
-      </div>
-    `;
-  }
+  return "";
+}
 
   return "";
 }

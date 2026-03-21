@@ -730,3 +730,4 @@ const BIG_LABELS = [
   { text: "Carentan", lat: 49.303, lng: -1.247, minZoom: 11, maxZoom: 15 },
   { text: "Pointe du Hoc", lat: 49.391, lng: -0.989, minZoom: 11, maxZoom: 15 }
 ];
+const ALL_POINTS = POINTS.concat(POINTS_OLDPHOTOS);

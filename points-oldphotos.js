@@ -19,6 +19,20 @@ const POINTS_OLDPHOTOS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Crash du C-47 – Beuzeville-au-Plain (6 juin 1944)",
+  category: "oldphoto",
+  lat: 49.431301,
+  lng: -1.285753,
+  description:
+    "Carcasse d’un avion de transport C-47 Dakota abattu par la défense antiaérienne allemande le 6 juin 1944. L’appareil transportait des parachutistes de la 101st Airborne Division.\n\nLe site correspond aujourd’hui à l’emplacement du monument commémoratif.",
+  image: "https://i.imgur.com/7W0q4FJ.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.431301,-1.285753"
+},
+  {
   title: "Débarquement américain – Utah Beach (7 juin 1944)",
   category: "oldphoto",
   lat: 49.420575,

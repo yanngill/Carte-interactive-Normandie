@@ -575,7 +575,7 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.416125,-1.175023"
 },
   {
-  title: "Parachutiste américain à Ravenoville",
+  title: "Parachutistes américains à Ravenoville",
   category: "oldphoto",
   lat: 49.454362,
   lng: -1.267122,

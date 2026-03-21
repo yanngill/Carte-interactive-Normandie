@@ -19,6 +19,20 @@ const POINTS_OLDPHOTOS = [
     "https://www.google.com/maps/dir/?api=1&destination=49.3965263,-0.9881764"
 },
   {
+  title: "Débarquement américain – Utah Beach (7 juin 1944)",
+  category: "oldphoto",
+  lat: 49.420575,
+  lng: -1.178787,
+  description:
+    "Des soldats américains progressent dans l’eau après leur débarquement à Utah Beach, transportant leur équipement. À l’arrière-plan, une péniche de débarquement marquée \"US 475\".\n\nPosition approximative.",
+  image: "https://i.imgur.com/aju9wKz.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "https://catalog.archives.gov/id/190405",
+  source: "US National Archives (111-SC-190405)",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.420575,-1.178787"
+},
+  {
   title: "Volontaire de la Croix-Rouge et soldats américains à Sainte-Marie-du-Mont",
   category: "oldphoto",
   lat: 49.378584,

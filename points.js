@@ -541,6 +541,21 @@ description:
       "https://www.google.com/maps/dir/?api=1&destination=49.460831,-1.307505"
   },
   {
+  title: "Batterie de Crasville",
+  category: "germanBattery",
+  lat: 49.564242,
+  lng: -1.343459,
+  description:
+    "Position d’artillerie allemande du secteur d’Utah Beach intégrée au dispositif du Mur de l’Atlantique. Moins importante que les grandes batteries voisines, elle participe néanmoins à la défense du littoral face au débarquement allié.\n\nLe site permet aujourd’hui d’observer les vestiges de positions défensives côtières dans le nord du Cotentin.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink:
+    "https://www.google.com/maps/dir/?api=1&destination=49.564242,-1.343459"
+},
+  {
     title: "Batterie de Crisbecq",
     category: "germanBattery",
     lat: 49.479181,

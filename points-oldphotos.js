@@ -534,7 +534,7 @@ const POINTS_OLDPHOTOS = [
   lat: 49.364477,
   lng: -0.863543,
   description:
-    "Canon allemand endommagé dans une position du majeure du WN65, à la sortie E-1 d’Omaha Beach. La plaque blindée du canon présente un impact massif et le béton est endommagé, témoignant de la violence des tirs subis lors du Débarquement.",
+    "Canon allemand endommagé dans une position majeure du WN65, à la sortie E-1 d’Omaha Beach. La plaque blindée du canon présente un impact massif et le béton est endommagé, témoignant de la violence des tirs subis lors du Débarquement.",
   image: "https://i.imgur.com/pN6tqM0.jpg",
   oldPhoto: "",
   video: "",

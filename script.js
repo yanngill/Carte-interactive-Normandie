@@ -286,7 +286,7 @@ Object.keys(CATEGORIES).forEach((categoryKey) => {
   categoryLayers[categoryKey] = L.layerGroup().addTo(map);
 });
 
-POINTS.forEach((point) => {
+ALL_POINTS.forEach((point) => {
   const category = CATEGORIES[point.category];
   if (!category) return;
 

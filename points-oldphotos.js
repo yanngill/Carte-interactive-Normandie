@@ -61,6 +61,20 @@ const POINTS_OLDPHOTOS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.378584,-1.226108"
 },
   {
+  title: "Soldat américain avec un chiot",
+  category: "oldphoto",
+  lat: 49.204207,
+  lng: -1.165420,
+  description:
+    "le 14 Juillet 1944, le première classe Joseph E. Day tient un chiot abandonné qu’il a adopté et baptisé « Invasion », placé dans un casque allemand.\n\nScène prise à Le Dézert après les combats.",
+  image: "https://i.imgur.com/HNPQVxD.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.204207,-1.165420"
+},
+  {
   title: "Messe de soldats américains à Sainte-Marie-du-Mont",
   category: "oldphoto",
   lat: 49.378575,
@@ -116,6 +130,20 @@ const POINTS_OLDPHOTOS = [
   source: "US National Archives",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.304281,-1.245453"
 },
+  {
+  title: "Chars Panther détruits – Le Dézert",
+  category: "oldphoto",
+  lat: 49.206088,
+  lng: -1.173861,
+  description:
+    "Deux chars allemands Panther détruits lors de la contre-attaque de la Panzer Lehr le 11 juillet 1944 dans le secteur du Dézert.\n\nÀ l’aube, les Allemands lancent une offensive avec une vingtaine de chars et de l’infanterie pour repousser les Américains. L’attaque surprend d’abord les lignes américaines, mais elle est rapidement stoppée par les tank destroyers M10 et l’artillerie. Plusieurs blindés allemands sont détruits sur la route.\n\nLe Panther est l’un des chars les plus puissants du conflit : blindage incliné, canon de 75 mm très performant et grande portée. Mais dans le bocage normand, étroit et cloisonné, il perd une grande partie de son avantage et devient vulnérable aux embuscades.\n\nPosition approximative.",
+  image: "https://i.imgur.com/MRaUSn0.jpg",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "US National Archives",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.206088,-1.173861"
+}
   {
   title: "Défenses de plage à Grandcamp-les-Bains",
   category: "oldphoto",

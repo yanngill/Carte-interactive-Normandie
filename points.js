@@ -56,7 +56,7 @@ const POINTS = [
   lng: -0.832416,
   title: "Soldats américains sur Omaha Beach le 6 juin 1944",
 description:
-  "Extrait d’archives montrant des soldats américains sur Omaha Beach après le débarquement.\n\nLes images montrent des troupes éprouvées, aidant des blessés et s’abritant au pied des dunes.",
+  "Vidéo d'archives montrant des soldats américains sur Omaha Beach après le débarquement.\n\nLes images montrent des troupes éprouvées, aidant des blessés et s’abritant au pied des dunes.",
   image: "",
   oldPhoto: "",
   video: "assets/videos/Clip-taken-from-111-adc-1275.mp4",
@@ -71,7 +71,7 @@ description:
   lat: 49.456414,
   lng: -1.270223,
   description:
-    "Extrait d’archives montrant des parachutistes américains dans le secteur de Ravenoville le 6 juin 1944.\n\nAprès des largages dispersés, des éléments des 82nd et 101st Airborne se regroupent et combattent autour de la ferme Marmion, point stratégique contrôlant les axes vers Utah Beach.",
+    "Vidéo d'archives montrant des parachutistes américains dans le secteur de Ravenoville le 6 juin 1944.\n\nAprès des largages dispersés, des éléments des 82nd et 101st Airborne se regroupent et combattent autour de la ferme Marmion, point stratégique contrôlant les axes vers Utah Beach.",
   image: "",
   oldPhoto: "",
   video: "assets/videos/Raveno.mp4",
@@ -86,7 +86,7 @@ description:
   lat: 49.473570,
   lng: -1.289201,
   description:
-    "Extrait d’archives montrant des soldats américains progressant dans le secteur de Saint-Marcouf après le débarquement.\n\nLes images montrent l’arrivée des troupes dans la zone, au milieu des destructions et des premiers contacts avec la population locale.",
+    "Vidéo d'archives montrant des soldats américains progressant dans le secteur de Saint-Marcouf après le débarquement.\n\nLes images montrent l’arrivée des troupes dans la zone, au milieu des destructions et des premiers contacts avec la population locale.",
   image: "",
   oldPhoto: "",
   video: "assets/videos/st-marcouf.mp4",

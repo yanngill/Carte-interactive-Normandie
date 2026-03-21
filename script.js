@@ -134,12 +134,6 @@ function buildVideoBlock(url) {
   return "";
 }
 
-  return "";
-}
-
-  return "";
-}
-
 function buildPopupContent(point) {
   const category = CATEGORIES[point.category];
   const categoryLabel = category ? category.label : "Catégorie";

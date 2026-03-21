@@ -102,10 +102,12 @@ function buildImageBlock(label, url, altText) {
 function buildVideoBlock(url) {
   if (!isSafeUrl(url)) return "";
 
-  // Cas YouTube
+ function buildVideoBlock(url) {
+  if (!isSafeUrl(url)) return "";
+
   if (url.includes("youtube.com") || url.includes("youtu.be")) {
     return `
-      <div>
+      <div class="popup-video-wrap">
         <div class="popup-label">Vidéo</div>
         <iframe
           src="${url}"
@@ -118,18 +120,19 @@ function buildVideoBlock(url) {
     `;
   }
 
-  // Cas fichier MP4
   if (url.endsWith(".mp4")) {
     return `
-      <div>
+      <div class="popup-video-wrap">
         <div class="popup-label">Vidéo</div>
-        <video controls playsinline preload="metadata">
+        <video class="popup-video" controls playsinline preload="metadata">
           <source src="${url}" type="video/mp4">
-          Votre navigateur ne supporte pas la lecture vidéo.
         </video>
       </div>
     `;
   }
+
+  return "";
+}
 
   return "";
 }

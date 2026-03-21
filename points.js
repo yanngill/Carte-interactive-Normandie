@@ -575,12 +575,12 @@ const POINTS = [
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.416125,-1.175023"
 },
   {
-  title: "Parachutiste américain à Ravenoville – Marmion Farm ",
+  title: "Parachutiste américain à Ravenoville",
   category: "oldphoto",
   lat: 49.454362,
   lng: -1.267122,
   description:
-    "Photographie prise le 6 juin 1944 devant la ferme Marmion, dans le secteur de Ravenoville. On y voit le parachutiste américain James Flanagan (2nd Platoon, 1-502nd Parachute Infantry Regiment, 101st Airborne) tenant un drapeau nazi capturé.",
+    "Photographie prise le 6 juin 1944 devant la ferme Marmion, dans le secteur de Ravenoville. On y voit le parachutiste américain James Flanagan (2nd Platoon, 1-502nd Parachute Infantry Regiment, 101st Airborne) tenant un drapeau nazi capturé dans la ferme qui servait de commandement allemand.",
   image: "https://i.imgur.com/TydszEL.jpeg",
   oldPhoto: "",
   video: "",

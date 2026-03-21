@@ -1,5 +1,5 @@
 const POINTS_OLDPHOTOS = [
-];
+
   /* ======================================================================= */
   /* ============================ PHOTOS D’ÉPOQUE =========================== */
   /* ======================================================================= */
@@ -555,5 +555,6 @@ const POINTS_OLDPHOTOS = [
     website: "",
     source: "US National Archives / War Documentary – Maxim Chornyi",
     googleMapsLink:
-      "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
-    ];
+  "https://www.google.com/maps/dir/?api=1&destination=49.411297,-1.319750"
+  }
+];

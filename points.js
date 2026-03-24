@@ -504,6 +504,20 @@ description:
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.429145,-1.189823"
 },
   {
+  title: "WN 9 – Saint-Martin-de-Varreville",
+  category: "coastalDefense",
+  lat: 49.436661,
+  lng: -1.198488,
+  description:
+    "Le WN 9 (Widerstandsnest 9) correspond à un ensemble de positions du Mur de l’Atlantique situées sur la commune de Saint-Martin-de-Varreville, à proximité immédiate d’Utah Beach. Le point localisé ici correspond à un abri pour projecteur, utilisé pour l’éclairage et le repérage nocturne du littoral. Le secteur comprenait également plusieurs ouvrages complémentaires, dont un Schartenstand type 656 servant d’abri de troupe, ainsi qu’un Schartenstand type 677 destiné à abriter un canon antichar Pak 43/41. L’ensemble illustre l’organisation défensive allemande combinant observation, illumination et puissance de feu sur un même point d’appui.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.436661,-1.198488"
+},
+  {
   title: "WN 10 – Saint-Martin-de-Varreville",
   category: "coastalDefense",
   lat: 49.445012,

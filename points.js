@@ -478,6 +478,18 @@ description:
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.415828,-1.174847"
 },
   {
+  title: "WN 14 – Fort Redoute de Ravenoville",
+  category: "coastalDefense",
+  lat: 49.483769761368045,
+  lng: -1.2554299283302996,
+   description: "Le WN 14 correspondait au fort de la Redoute de Ravenoville, un point d’appui allemand du secteur d’Utah Beach dont le nom est directement hérité du fort voisin datant de l’époque de Louis XIV. Le site comprenait notamment une casemate double de type SK (là où vous vous situez), armée d’un canon antichar de 3,7 cm Pak à gauche et d’un canon de 5 cm Pak à droite. Plusieurs autres ouvrages défensifs plus modestes (tobrouks, abris et petits blockhaus) étaient également dispersés aux alentours, notamment dans les jardins des habitations voisines, formant un ensemble défensif intégré au tissu local.", image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.483769761368045,-1.2554299283302996"
+},
+  {
   title: "WN 8 – Redoute d’Auderville / La Hubert (Utah Beach)",
   category: "coastalDefense",
   lat: 49.429145,

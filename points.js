@@ -503,6 +503,20 @@ description:
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.429145,-1.189823"
 },
+  {
+  title: "WN 10 – Saint-Martin-de-Varreville",
+  category: "coastalDefense",
+  lat: 49.445012,
+  lng: -1.209517,
+  description:
+    "Le WN 10 (Widerstandsnest 10) était un point d’appui allemand situé à proximité immédiate d’Utah Beach, sur le secteur de Saint-Martin-de-Varreville. Cette position faisait partie du dispositif défensif côtier destiné à battre la plage et à freiner la progression des troupes alliées lors du Débarquement. Le site comprenait plusieurs ouvrages fortifiés, dont une casemate de type H612, une casemate 676 ainsi que des abris Vf2a. De nombreux tobrouks complétaient l’ensemble, permettant l’installation de mitrailleuses ou d’observateurs. L’armement était orienté vers la plage afin d’assurer une couverture directe des zones de débarquement.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445012,-1.209517"
+},
     /* ======================================================================= */
   /* ========================== BATTERIES ALLEMANDES ======================== */
   /* ======================================================================= */

@@ -532,6 +532,20 @@ description:
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445012,-1.209517"
 },
   {
+  title: "Tobrouk Vf 69 – WN 10",
+  category: "coastalDefense",
+  lat: 49.444856,
+  lng: -1.210679,
+  description:
+    "Ce tobrouk de type Vf 69 présente une configuration rare avec deux puits de tir distincts : l’un pour mitrailleuse lourde, l’autre pour mortier, permettant de combiner tir direct et indirect. Ce type d’ouvrage illustre l’ingéniosité du dispositif défensif allemand. Souvent négligés, les tobrouks jouent pourtant un rôle clé, leur densité traduisant l’importance stratégique du secteur d’Utah Beach.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.444856,-1.210679"
+},
+  {
   title: "WN 102 (WN 11 et WN 12) – Foucarville",
   category: "coastalDefense",
   lat: 49.4574345684949,
@@ -544,6 +558,20 @@ description:
   website: "",
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.4574345684949,-1.224878095394918"
+},
+  {
+  title: "WN 13 – Grand Hameau des Dunes",
+  category: "coastalDefense",
+  lat: 49.473580,
+  lng: -1.243312,
+  description:
+    "Le WN 13 correspond à un point d’appui allemand situé au Grand Hameau des Dunes, organisé autour d’un accès à la plage protégé par un mur antichar (Panzersperre). La position comprenait plusieurs ouvrages, dont deux abris Vf2a pour les troupes, un tobrouk Bf58c et une casemate SK/Doppelschartenstand armée d’un canon de 5 cm KwK L/60 couvrant la plage dans les deux directions. L’armement était complété par un canon antichar de 4,7 cm Pak 181(f) en position de campagne, ainsi qu’un mortier de 8 cm. Des positions de mitrailleuses assuraient la défense du flanc sud le long de la route côtière. Le site était occupé notamment par des éléments du Grenadier-Regiment 919 de la 709. Infanterie-Division.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.473580,-1.243312"
 },
     /* ======================================================================= */
   /* ========================== BATTERIES ALLEMANDES ======================== */

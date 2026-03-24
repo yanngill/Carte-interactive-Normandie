@@ -531,6 +531,20 @@ description:
   source: "",
   googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.445012,-1.209517"
 },
+  {
+  title: "WN 102 (WN 11 et WN 12) – Foucarville",
+  category: "coastalDefense",
+  lat: 49.4574345684949,
+  lng: -1.224878095394918,
+  description:
+    "Le WN 102 correspond à un point d’appui allemand regroupant les anciens Widerstandsnester WN 11 et WN 12, situés sur la commune de Foucarville, dans le secteur d’Utah Beach. Le long du littoral, plusieurs fortifications sont encore visibles aujourd’hui, dont certaines portent toujours les traces des combats de juin 1944, notamment des impacts sur les façades en béton. L’ensemble témoigne de l’organisation défensive allemande le long du mur de l'Atlantik Wall.",
+  image: "",
+  oldPhoto: "",
+  video: "",
+  website: "",
+  source: "",
+  googleMapsLink: "https://www.google.com/maps/dir/?api=1&destination=49.4574345684949,-1.224878095394918"
+},
     /* ======================================================================= */
   /* ========================== BATTERIES ALLEMANDES ======================== */
   /* ======================================================================= */

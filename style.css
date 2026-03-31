@@ -382,24 +382,30 @@ body {
   margin-top: 10px;
 }
 
-.popup-btn {
+.popup-btn,
+.popup-btn:link,
+.popup-btn:visited {
   display: block;
   text-align: center;
   padding: 7px 10px;
   font-size: 13px;
   text-decoration: none;
   border-radius: 6px;
-  
-  background: #2f4f6f; /* bleu */
-  color: #f3efe6;
-  
+
+  background: #2f4f6f;
+  color: #f3efe6 !important;
+
   border: 1px solid #2f4f6f;
   transition: all 0.15s ease;
 }
 
-.popup-btn:hover {
+.popup-btn:hover,
+.popup-btn:active,
+.popup-btn:focus {
   background: #1f3a52;
   border-color: #1f3a52;
+  color: #f8f6f2 !important;
+  text-decoration: none;
 }
 
 /* =========================================================

@@ -277,15 +277,20 @@ body {
 }
 
 .leaflet-popup-content-wrapper {
+  background: #f8f6f2;
   border-radius: 14px;
   overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+.leaflet-popup-tip {
+  background: #f8f6f2;
 }
 
 .popup-content {
   width: 300px;
   max-width: 300px;
   overflow: hidden;
-  color: #1f2937;
+  color: #2b2b2b;
 }
 
 .popup-title {

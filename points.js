@@ -4,7 +4,7 @@
 
 const CATEGORIES = {
   coastalDefense: {
-    label: "WN / points de résistance allemand",
+    label: "WN / points de résistance allemands",
     color: "#bfc5cc",
     key: ""
   },

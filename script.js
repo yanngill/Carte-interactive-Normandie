@@ -33,16 +33,6 @@ const INITIAL_VIEW = {
   center: [49.38, -0.93],
   zoom: 10
 };
-
-const HELMET_ICON_SVG = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#ffffff" />
-  <path d="M14 34c0-11 8-20 18-20s18 9 18 20v2H14v-2z" fill="#556b2f"/>
-  <rect x="12" y="36" width="40" height="8" rx="3" fill="#2f3a19"/>
-  <circle cx="32" cy="32" r="30" fill="none" stroke="#111827" stroke-width="3"/>
-</svg>
-`;
-
 /* =========================================================
    OUTILS UTILITAIRES
 ========================================================= */

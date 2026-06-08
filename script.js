@@ -1,9 +1,7 @@
 /* =========================================================
    CARTE INTERACTIVE DU DÉBARQUEMENT EN NORMANDIE
-   Projet BTS Tourisme – Épreuve GIT
-   Auteur : Yann
+   Projet GIT BTS 2026 Yann
 ========================================================= */
-
 
 /* =========================================================
    SOMMAIRE DU FICHIER

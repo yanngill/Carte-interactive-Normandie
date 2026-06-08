@@ -66,10 +66,6 @@ function isSafeUrl(url) {
     return false;
   }
 }
-
-function svgToDataUri(svgString) {
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svgString)}`;
-}
 /* =========================================================
                     CONSTRUCTION DES POPUPS
 ========================================================= */

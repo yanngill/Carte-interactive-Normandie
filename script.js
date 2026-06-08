@@ -169,7 +169,7 @@ function buildPopupContent(point) {
   `;
 }
 /* =========================================================
-                        LIGHTBOX IMAGE
+                        LIGHTBOX IMAGE (agrandir l'image quand on clic)
 ========================================================= */
 
 function openLightbox(src) {

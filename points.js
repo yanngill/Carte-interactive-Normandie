@@ -733,7 +733,16 @@ description:
   website: "https://www.encotentin.fr",
   googleMapsLink: "https://www.google.com/maps?q=49.507204,-1.470540"
 },
-
+{
+  title: "Office de tourisme – Cotentin",
+  category: "officeTourism",
+  lat: 49.181773, 
+  lng: -0.373040,
+  description:
+    "Office de tourisme : point d’accueil pour obtenir informations, cartes, visites guidées, hébergements, restaurants et services touristiques du secteur.",
+  website: "https://www.encotentin.fr",
+  googleMapsLink: "https://www.google.com/maps?q=49.507204,-1.470540"
+},
 {
   title: "Office de tourisme – Sainte-Mère-Église",
   category: "officeTourism",
